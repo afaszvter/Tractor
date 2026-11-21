@@ -1,0 +1,1794 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="rtwreport.css" /><script language="JavaScript" type="text/javascript">function rtwTableShrink(o) {var t = o.nextSibling;if (t.nodeType != 1) {t = t.nextSibling;}if (t.style.display == "none") {t.style.display = "";o.innerHTML = "[-]"} else {t.style.display = "none";o.innerHTML = "[+] ... "}}</script><script language="JavaScript" type="text/javascript" src="rtwreport_utils.js"></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>
+Code Interface Report for ECU1119_18b_st
+</title>
+
+</head>
+<body ONLOAD="try {if (top) {if (top.rtwPageOnLoad) top.rtwPageOnLoad('rtwIdCodeInterface'); else local_onload();}} catch(err) {};">
+<h1>
+Code Interface Report for ECU1119_18b_st
+</h1>
+<h3>
+Table of Contents
+</h3>
+<ul>
+<li>
+<a href="#sec_Entry-Point_Functions">
+Entry-Point Functions
+</a>
+
+</li>
+<li>
+<a href="#sec_Inports">
+Inports
+</a>
+
+</li>
+<li>
+<a href="#sec_Outports">
+Outports
+</a>
+
+</li>
+<li>
+<a href="#sec_Interface_Parameters">
+Interface Parameters
+</a>
+
+</li>
+<li>
+<a href="#sec_Data_Stores">
+Data Stores
+</a>
+
+</li>
+
+</ul>
+<h3>
+<a name="sec_Entry-Point_Functions">
+Entry-Point Functions
+</a>
+
+</h3>
+<p>
+Function: <a href="ECU1119_18b_st_c.html#fcn_ECU1119_18b_st_initialize">ECU1119_18b_st_initialize</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Prototype
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void ECU1119_18b_st_initialize(void)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Description
+</td>
+<td width="75%" align="left" valign="top">
+Initialization entry point of generated code
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Timing
+</td>
+<td width="75%" align="left" valign="top">
+Must be called exactly once
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Arguments
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Return value
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Header file
+</td>
+<td width="75%" align="left" valign="top">
+<a href="ECU1119_18b_st_h.html">ECU1119_18b_st.h</a>
+</td>
+
+</tr>
+
+</table>
+<p>
+Function: <a href="ECU1119_18b_st_c.html#fcn_ECU1119_18b_st_step">ECU1119_18b_st_step</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Prototype
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void ECU1119_18b_st_step(void)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Description
+</td>
+<td width="75%" align="left" valign="top">
+Output entry point of generated code
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Timing
+</td>
+<td width="75%" align="left" valign="top">
+Must be called periodically, every 0.005 seconds
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Arguments
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Return value
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Header file
+</td>
+<td width="75%" align="left" valign="top">
+<a href="ECU1119_18b_st_h.html">ECU1119_18b_st.h</a>
+</td>
+
+</tr>
+
+</table>
+<p>
+Function: <a href="ECU1119_18b_st_c.html#fcn_ECU1119_18b_st_terminate">ECU1119_18b_st_terminate</a>
+</p>
+<table width="100%" class="AltRow" cellspacing="0">
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Prototype
+</td>
+<td width="75%" align="left" valign="top">
+<b>
+void ECU1119_18b_st_terminate(void)
+</b>
+
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Description
+</td>
+<td width="75%" align="left" valign="top">
+Termination entry point of generated code
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Timing
+</td>
+<td width="75%" align="left" valign="top">
+Must be called exactly once
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Arguments
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="even">
+<td width="25%" align="left" valign="top">
+Return value
+</td>
+<td width="75%" align="left" valign="top">
+None
+</td>
+
+</tr>
+<tr class="odd">
+<td width="25%" align="left" valign="top">
+Header file
+</td>
+<td width="75%" align="left" valign="top">
+<a href="ECU1119_18b_st_h.html">ECU1119_18b_st.h</a>
+</td>
+
+</tr>
+
+</table>
+<h3>
+<a name="sec_Inports">
+Inports
+</a>
+
+</h3>
+<p>
+No Inports in model.
+</p>
+<h3>
+<a name="sec_Outports">
+Outports
+</a>
+
+</h3>
+<p>
+No Outports in model.
+</p>
+<h3>
+<a name="sec_Interface_Parameters">
+Interface Parameters
+</a>
+
+</h3>
+<p>
+No interface/tunable parameters in model.
+</p>
+<h3>
+<a name="sec_Data_Stores">
+Data Stores
+</a>
+
+</h3>
+<span title="Click to shrink or expand table" onclick="rtwTableShrink(this)">[-]</span><table width="100%" class="AltRow FirstColumn" cellspacing="0">
+<tr class="heading">
+<th width="42%" align="left" valign="top">
+<b>
+Data Store Source
+</b>
+
+</th>
+<th width="26%" align="left" valign="top">
+<b>
+Code Identifier
+</b>
+
+</th>
+<th width="21%" align="left" valign="top">
+<b>
+Data Type
+</b>
+
+</th>
+<th width="10%" align="right" valign="top">
+<b>
+Dimension
+</b>
+
+</th>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:885')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory102</a>
+</td>
+<td width="26%" align="left" valign="top">
+HSO08_PWM_DC
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:888')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory106</a>
+</td>
+<td width="26%" align="left" valign="top">
+HSO08_PWM_FRQ
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:889')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory107</a>
+</td>
+<td width="26%" align="left" valign="top">
+HSO14_PWM_DC
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:890')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory108</a>
+</td>
+<td width="26%" align="left" valign="top">
+HSO14_PWM_FRQ
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:891')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory109</a>
+</td>
+<td width="26%" align="left" valign="top">
+LSO18_ETC_DC
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:893')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory110</a>
+</td>
+<td width="26%" align="left" valign="top">
+LSO18_ETC_FRQ
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:894')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory111</a>
+</td>
+<td width="26%" align="left" valign="top">
+LSO19_PWM_DC
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:895')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory112</a>
+</td>
+<td width="26%" align="left" valign="top">
+LSO19_PWM_FRQ
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:896')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory113</a>
+</td>
+<td width="26%" align="left" valign="top">
+DI31_PWM_DC
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:897')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory114</a>
+</td>
+<td width="26%" align="left" valign="top">
+DI31_PWM_FRQ
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:898')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory115</a>
+</td>
+<td width="26%" align="left" valign="top">
+DI32_PWM_DC
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:900')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory117</a>
+</td>
+<td width="26%" align="left" valign="top">
+DI32_PWM_FRQ
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:901')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory118</a>
+</td>
+<td width="26%" align="left" valign="top">
+DI33_PWM_DC
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:902')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory119</a>
+</td>
+<td width="26%" align="left" valign="top">
+DI33_PWM_FRQ
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:903')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory120</a>
+</td>
+<td width="26%" align="left" valign="top">
+DI34_PWM_DC
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:904')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory121</a>
+</td>
+<td width="26%" align="left" valign="top">
+DI34_PWM_FRQ
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:905')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory122</a>
+</td>
+<td width="26%" align="left" valign="top">
+LSO17_ETC_FRQ
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:906')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory123</a>
+</td>
+<td width="26%" align="left" valign="top">
+LSO3_ETC_DC
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:907')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory124</a>
+</td>
+<td width="26%" align="left" valign="top">
+LSO3_ETC_FRQ
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:912')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory129</a>
+</td>
+<td width="26%" align="left" valign="top">
+HS008_ETC_FRQ
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:913')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory130</a>
+</td>
+<td width="26%" align="left" valign="top">
+HSO14_ETC_FRQ
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:914')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory131</a>
+</td>
+<td width="26%" align="left" valign="top">
+LSO19_ETC_DC
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:915')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory132</a>
+</td>
+<td width="26%" align="left" valign="top">
+LSO19_ETC_FRQ
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:922')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory31</a>
+</td>
+<td width="26%" align="left" valign="top">
+AI03
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:923')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory32</a>
+</td>
+<td width="26%" align="left" valign="top">
+AI19
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:925')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory35</a>
+</td>
+<td width="26%" align="left" valign="top">
+AI11
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:926')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory36</a>
+</td>
+<td width="26%" align="left" valign="top">
+AI16
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:927')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory37</a>
+</td>
+<td width="26%" align="left" valign="top">
+AI18
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:928')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory38</a>
+</td>
+<td width="26%" align="left" valign="top">
+AI06
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:929')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory39</a>
+</td>
+<td width="26%" align="left" valign="top">
+AI07
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:930')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory40</a>
+</td>
+<td width="26%" align="left" valign="top">
+AI08
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:931')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory41</a>
+</td>
+<td width="26%" align="left" valign="top">
+AI12
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:932')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory42</a>
+</td>
+<td width="26%" align="left" valign="top">
+AI15
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:933')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory43</a>
+</td>
+<td width="26%" align="left" valign="top">
+AI17
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:934')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory44</a>
+</td>
+<td width="26%" align="left" valign="top">
+AI04
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:936')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory51</a>
+</td>
+<td width="26%" align="left" valign="top">
+AI05
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:937')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory52</a>
+</td>
+<td width="26%" align="left" valign="top">
+AI09
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:938')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory53</a>
+</td>
+<td width="26%" align="left" valign="top">
+AI20
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:957')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory83</a>
+</td>
+<td width="26%" align="left" valign="top">
+LSO17_ETC_DC
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:959')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory85</a>
+</td>
+<td width="26%" align="left" valign="top">
+HS014_ETC_DC
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:964')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory90</a>
+</td>
+<td width="26%" align="left" valign="top">
+HS008_ETC_DC
+</td>
+<td width="21%" align="left" valign="top">
+volatile real32_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:5787')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory1</a>
+</td>
+<td width="26%" align="left" valign="top">
+Cnt_SLOW2
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:5753')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory12</a>
+</td>
+<td width="26%" align="left" valign="top">
+Cnt_TEMP1
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:908')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory125</a>
+</td>
+<td width="26%" align="left" valign="top">
+VCU_Mode
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:5754')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory13</a>
+</td>
+<td width="26%" align="left" valign="top">
+Cnt_TEMP2
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:5758')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory14</a>
+</td>
+<td width="26%" align="left" valign="top">
+Cnt_SLOW1
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:5777')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory62</a>
+</td>
+<td width="26%" align="left" valign="top">
+Cnt_FAST_OUT
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:5778')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory63</a>
+</td>
+<td width="26%" align="left" valign="top">
+Cnt_SLOW_OUT
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:946')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory72</a>
+</td>
+<td width="26%" align="left" valign="top">
+ResetFlg
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:5782')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory8</a>
+</td>
+<td width="26%" align="left" valign="top">
+Cnt_FAST1
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:5783')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory9</a>
+</td>
+<td width="26%" align="left" valign="top">
+Cnt_FAST2
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:972')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory98</a>
+</td>
+<td width="26%" align="left" valign="top">
+Init_flg_SPI
+</td>
+<td width="21%" align="left" valign="top">
+uint8_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:1630')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory</a>
+</td>
+<td width="26%" align="left" valign="top">
+KeyOn
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:882')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory10</a>
+</td>
+<td width="26%" align="left" valign="top">
+HS001
+</td>
+<td width="21%" align="left" valign="top">
+volatile boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:883')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory100</a>
+</td>
+<td width="26%" align="left" valign="top">
+LS007
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:884')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory101</a>
+</td>
+<td width="26%" align="left" valign="top">
+LS012
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:886')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory103</a>
+</td>
+<td width="26%" align="left" valign="top">
+LS013
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:887')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory105</a>
+</td>
+<td width="26%" align="left" valign="top">
+HS008
+</td>
+<td width="21%" align="left" valign="top">
+volatile boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:892')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory11</a>
+</td>
+<td width="26%" align="left" valign="top">
+LS018
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:899')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory116</a>
+</td>
+<td width="26%" align="left" valign="top">
+LS019
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:910')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory127</a>
+</td>
+<td width="26%" align="left" valign="top">
+HS002
+</td>
+<td width="21%" align="left" valign="top">
+volatile boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:916')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory189</a>
+</td>
+<td width="26%" align="left" valign="top">
+HS014
+</td>
+<td width="21%" align="left" valign="top">
+volatile boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:917')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory26</a>
+</td>
+<td width="26%" align="left" valign="top">
+HS003
+</td>
+<td width="21%" align="left" valign="top">
+volatile boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:918')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory27</a>
+</td>
+<td width="26%" align="left" valign="top">
+HS007
+</td>
+<td width="21%" align="left" valign="top">
+volatile boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:919')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory28</a>
+</td>
+<td width="26%" align="left" valign="top">
+HS004
+</td>
+<td width="21%" align="left" valign="top">
+volatile boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:920')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory29</a>
+</td>
+<td width="26%" align="left" valign="top">
+HS005
+</td>
+<td width="21%" align="left" valign="top">
+volatile boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:921')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory30</a>
+</td>
+<td width="26%" align="left" valign="top">
+HS010
+</td>
+<td width="21%" align="left" valign="top">
+volatile boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:924')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory34</a>
+</td>
+<td width="26%" align="left" valign="top">
+LS003
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:935')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory45</a>
+</td>
+<td width="26%" align="left" valign="top">
+LS017
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:939')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory54</a>
+</td>
+<td width="26%" align="left" valign="top">
+DI31
+</td>
+<td width="21%" align="left" valign="top">
+volatile boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:940')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory55</a>
+</td>
+<td width="26%" align="left" valign="top">
+DI32
+</td>
+<td width="21%" align="left" valign="top">
+volatile boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:941')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory67</a>
+</td>
+<td width="26%" align="left" valign="top">
+DI33
+</td>
+<td width="21%" align="left" valign="top">
+volatile boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:942')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory68</a>
+</td>
+<td width="26%" align="left" valign="top">
+DI07
+</td>
+<td width="21%" align="left" valign="top">
+volatile boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:943')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory69</a>
+</td>
+<td width="26%" align="left" valign="top">
+DI01
+</td>
+<td width="21%" align="left" valign="top">
+volatile boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:944')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory70</a>
+</td>
+<td width="26%" align="left" valign="top">
+DI10
+</td>
+<td width="21%" align="left" valign="top">
+volatile boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:945')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory71</a>
+</td>
+<td width="26%" align="left" valign="top">
+DI13
+</td>
+<td width="21%" align="left" valign="top">
+volatile boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:947')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory73</a>
+</td>
+<td width="26%" align="left" valign="top">
+DI15
+</td>
+<td width="21%" align="left" valign="top">
+volatile boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:948')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory74</a>
+</td>
+<td width="26%" align="left" valign="top">
+DI16
+</td>
+<td width="21%" align="left" valign="top">
+volatile boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:949')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory75</a>
+</td>
+<td width="26%" align="left" valign="top">
+DI17
+</td>
+<td width="21%" align="left" valign="top">
+volatile boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:950')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory76</a>
+</td>
+<td width="26%" align="left" valign="top">
+DI18
+</td>
+<td width="21%" align="left" valign="top">
+volatile boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:951')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory77</a>
+</td>
+<td width="26%" align="left" valign="top">
+DI02
+</td>
+<td width="21%" align="left" valign="top">
+volatile boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:952')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory78</a>
+</td>
+<td width="26%" align="left" valign="top">
+DI03
+</td>
+<td width="21%" align="left" valign="top">
+volatile boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:953')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory79</a>
+</td>
+<td width="26%" align="left" valign="top">
+DI34
+</td>
+<td width="21%" align="left" valign="top">
+volatile boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:954')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory80</a>
+</td>
+<td width="26%" align="left" valign="top">
+DI04
+</td>
+<td width="21%" align="left" valign="top">
+volatile boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:955')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory81</a>
+</td>
+<td width="26%" align="left" valign="top">
+DI12
+</td>
+<td width="21%" align="left" valign="top">
+volatile boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:956')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory82</a>
+</td>
+<td width="26%" align="left" valign="top">
+DI08
+</td>
+<td width="21%" align="left" valign="top">
+volatile boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:958')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory84</a>
+</td>
+<td width="26%" align="left" valign="top">
+DI09
+</td>
+<td width="21%" align="left" valign="top">
+volatile boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:960')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory86</a>
+</td>
+<td width="26%" align="left" valign="top">
+LS014
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:961')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory87</a>
+</td>
+<td width="26%" align="left" valign="top">
+LS015
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:962')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory88</a>
+</td>
+<td width="26%" align="left" valign="top">
+LS009
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:963')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory89</a>
+</td>
+<td width="26%" align="left" valign="top">
+LS016
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:965')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory91</a>
+</td>
+<td width="26%" align="left" valign="top">
+LS004
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:966')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory92</a>
+</td>
+<td width="26%" align="left" valign="top">
+LS011
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:967')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory93</a>
+</td>
+<td width="26%" align="left" valign="top">
+LS001
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:968')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory94</a>
+</td>
+<td width="26%" align="left" valign="top">
+HS006
+</td>
+<td width="21%" align="left" valign="top">
+volatile boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:969')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory95</a>
+</td>
+<td width="26%" align="left" valign="top">
+LS002
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:970')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory96</a>
+</td>
+<td width="26%" align="left" valign="top">
+LS010
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="odd">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:971')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory97</a>
+</td>
+<td width="26%" align="left" valign="top">
+LS008
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+<tr class="even">
+<td width="42%" align="left" valign="top">
+<a href="matlab:coder.internal.code2model('ECU1119_18b_st:973')" name="code2model" class="code2model">&lt;Root&gt;/Data Store Memory99</a>
+</td>
+<td width="26%" align="left" valign="top">
+LS006
+</td>
+<td width="21%" align="left" valign="top">
+boolean_T
+</td>
+<td width="10%" align="right" valign="top">
+1
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+VERSION "1.1 - Zhongsheng ADC IN1 force 0-50 kN"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: ZhongshengADC TSMaster
+
+
+BO_ 769 Zhongsheng_ADC_IN1_0x301: 8 ZhongshengADC
+ SG_ IN1_Force_kN : 7|16@0+ (0.002,0) [0|50] "kN"  TSMaster
+
+
+
+CM_ BU_ ZhongshengADC "Zhongsheng Technology 8-channel analog acquisition module; this DBC exposes IN1 only.";
+CM_ BO_ 769 "CAN ID 0x301, DLC 8. Only D0-D1 are decoded as IN1; D2-D7 remain in the frame but are intentionally not defined.";
+CM_ SG_ 769 IN1_Force_kN "Force calibration: transmitter 0-5 V, ADC raw 0-5000, sensor force 0-50 kN. Physical force = raw * 0.01 kN.";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_ "BusType" "CAN";
+

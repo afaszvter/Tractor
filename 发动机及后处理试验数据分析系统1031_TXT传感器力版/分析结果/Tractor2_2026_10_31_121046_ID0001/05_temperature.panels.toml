@@ -1,0 +1,4 @@
+keys = ["EngCoolantTemp", "EngOilTemp1", "EngFuelTemp1", "AmbientAirTemp"]
+labels = ["发动机冷却液温度", "发动机机油温度", "发动机燃油温度", "大气温度"]
+reason = "所需字段均无有效数据"
+generated = true

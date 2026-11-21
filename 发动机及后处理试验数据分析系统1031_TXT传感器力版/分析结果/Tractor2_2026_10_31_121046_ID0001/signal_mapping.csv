@@ -1,0 +1,24 @@
+﻿物理量,CSV字段,单位,DBC报文,PGN或标准ID,说明,DBC已定义
+车速,WheelBasedVehicleSpeed,km/h,CCVS,0xFEF1,CCVS1，按 PGN 匹配源地址,True
+大气压力,BarometricPress,kPa,AMB,0xFEF5,信息表 EEC1 不包含此量；DBC 实为 AMB/0xFEF5,True
+发动机转速,EngSpeed,rpm,EEC1,0xF004,,True
+发动机实际扭矩百分比,ActualEngPercentTorque,%,EEC1,0xF004,相对参考扭矩；不可直接当作 Nm,True
+实际最大可利用发动机扭矩百分比,ActlMaxAvailableEngPercentTorque,%,EEC2,0xF003,信息表为 EEC1；DBC 实为 EEC2/0xF003,True
+油门踏板开度,AccelPedalPos1,%,EEC2,0xF003,,True
+发动机机油油位,EngOilLevel,%,EFL_P1,0xFEEF,,True
+发动机冷却液液位,EngCoolantLevel,%,EFL_P1,0xFEEF,,True
+发动机燃油输出压力,EngFuelDeliveryPress,kPa,EFL_P1,0xFEEF,,True
+发动机机油压力,EngOilPress,kPa,EFL_P1,0xFEEF,,True
+大气温度,AmbientAirTemp,deg C,AMB,0xFEF5,信息表 ET1 不包含此量；DBC 实为 AMB/0xFEF5,True
+发动机冷却液温度,EngCoolantTemp,deg C,ET1,0xFEEE,,True
+发动机燃油温度1,EngFuelTemp1,deg C,ET1,0xFEEE,按工作安排将 -40 标为传感器无效,True
+发动机机油温度,EngOilTemp1,deg C,ET1,0xFEEE,,True
+发动机累积工作时间,EngTotalHoursOfOperation,h,HOURS,0xFEE5,ECU 累计计数,True
+发动机总转数,EngTotalRevolutions,r,HOURS,0xFEE5,ECU 累计计数,True
+发动机燃油消耗率,EngFuelRate,L/h,LFE,0xFEF2,,True
+发动机行程燃油,EngTripFuel,L,LFC,0xFEE9,信息表为 LFE；DBC 实为 LFC/0xFEE9,True
+发动机累计燃油消耗量,IntegratedFuel_L,L,COMPUTED,,按本次记录有效燃油率梯形积分；不是 ECU 生命周期总油耗,True
+发动机输入电压,BatteryPotential_PowerInput1,V,VEP1,0xFEF7,,True
+点火开关电压,KeyswitchBatteryPotential,V,VEP1,0xFEF7,,True
+电源电压采样,ChargingSystemPotential,V,VEP1,0xFEF7,DBC 定义为充电系统输出电压；与原表称呼有差异,True
+传感器力（IN1）,IN1_Force_kN,kN,Zhongsheng_ADC_IN1_0x301,0x301,DBC 系数 0.002，偏移 0.0；不解析未定义字节,True

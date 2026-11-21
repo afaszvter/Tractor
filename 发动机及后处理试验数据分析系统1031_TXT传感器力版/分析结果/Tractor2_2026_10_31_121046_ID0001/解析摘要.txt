@@ -1,0 +1,5 @@
+﻿CAN 记录解析完成：435731 帧；目标匹配 178014 帧。
+要求表中的有效报文物理量：13 项；另有传感器量：1 项；记录内燃油积分见 IntegratedFuel_L。
+CSV：D:\VCU\VCU_Tractor_HaerBin\Tractor2\分析结果\Tractor2_2026_10_31_121046_ID0001\2026_10_31_121046_ID0001_physical.csv
+未取得有效数据：车速、实际最大可利用发动机扭矩百分比、发动机冷却液液位、发动机燃油输出压力、发动机总转数、发动机行程燃油、发动机输入电压、电源电压采样
+映射与质量报告：D:\VCU\VCU_Tractor_HaerBin\Tractor2\分析结果\Tractor2_2026_10_31_121046_ID0001\signal_mapping.csv；D:\VCU\VCU_Tractor_HaerBin\Tractor2\分析结果\Tractor2_2026_10_31_121046_ID0001\decode_report.json

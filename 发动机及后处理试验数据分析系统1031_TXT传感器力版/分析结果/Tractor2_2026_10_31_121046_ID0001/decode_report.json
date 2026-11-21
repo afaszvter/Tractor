@@ -1,0 +1,206 @@
+{
+  "input_format": "CAN表格TXT",
+  "input": "D:\\VCU\\VCU_Tractor_HaerBin\\Tractor2\\2026_10_31_121046_ID0001.txt",
+  "input_sha256": "a491fb69a498b89b2139073ec7f8ea1328f25f506eca272fbc20e51a9498c2e3",
+  "dbcs": [
+    {
+      "path": "D:\\VCU\\VCU_Tractor_HaerBin\\Tractor2\\发动机及后处理试验数据分析系统1031_TXT传感器力版\\_internal\\j1939.dbc",
+      "sha256": "85a0832bf0ce2c40980c3dd531485b7625fd12bb933ea6a7ab2fe14e81709bd1"
+    },
+    {
+      "path": "D:\\VCU\\VCU_Tractor_HaerBin\\Tractor2\\发动机及后处理试验数据分析系统1031_TXT传感器力版\\_internal\\adc_in1_force_10kN.dbc",
+      "sha256": "5879f2e385f273500fe8d02bb355881960b4aa10040076bcdb366565d6ce87b4"
+    }
+  ],
+  "counts": {
+    "table_header": 1,
+    "table_rows": 435731,
+    "timestamped_lines": 435731,
+    "data_frames": 435731,
+    "matched_frames": 178014
+  },
+  "duration_s": 1430.099105,
+  "signal_status_counts": {
+    "IN1_Force_kN": {
+      "valid": 88334
+    },
+    "EngSpeed": {
+      "valid": 54428
+    },
+    "ActualEngPercentTorque": {
+      "valid": 54428
+    },
+    "ActlMaxAvailableEngPercentTorque": {
+      "not_available": 14842
+    },
+    "AccelPedalPos1": {
+      "valid": 14842
+    },
+    "EngFuelRate": {
+      "valid": 7775
+    },
+    "EngTotalHoursOfOperation": {
+      "valid": 7775
+    },
+    "EngTotalRevolutions": {
+      "not_available": 7775
+    },
+    "EngOilLevel": {
+      "valid": 1616
+    },
+    "EngCoolantLevel": {
+      "not_available": 1616
+    },
+    "EngFuelDeliveryPress": {
+      "not_available": 1616
+    },
+    "EngOilPress": {
+      "valid": 1616
+    },
+    "EngCoolantTemp": {
+      "valid": 811
+    },
+    "EngFuelTemp1": {
+      "valid": 811
+    },
+    "EngOilTemp1": {
+      "valid": 811
+    },
+    "BarometricPress": {
+      "valid": 811
+    },
+    "AmbientAirTemp": {
+      "valid": 811
+    },
+    "BatteryPotential_PowerInput1": {
+      "not_available": 811
+    },
+    "KeyswitchBatteryPotential": {
+      "valid": 811
+    },
+    "ChargingSystemPotential": {
+      "not_available": 811
+    },
+    "EngTripFuel": {
+      "not_available": 811
+    }
+  },
+  "signal_streams": {
+    "IN1_Force_kN": {
+      "CH1/standard": 88334
+    },
+    "EngSpeed": {
+      "CH2/SA00": 54428
+    },
+    "ActualEngPercentTorque": {
+      "CH2/SA00": 54428
+    },
+    "ActlMaxAvailableEngPercentTorque": {
+      "CH2/SA00": 14842
+    },
+    "AccelPedalPos1": {
+      "CH2/SA00": 14842
+    },
+    "EngFuelRate": {
+      "CH2/SA00": 7775
+    },
+    "EngTotalHoursOfOperation": {
+      "CH2/SA00": 7775
+    },
+    "EngTotalRevolutions": {
+      "CH2/SA00": 7775
+    },
+    "EngOilLevel": {
+      "CH2/SA00": 1616
+    },
+    "EngCoolantLevel": {
+      "CH2/SA00": 1616
+    },
+    "EngFuelDeliveryPress": {
+      "CH2/SA00": 1616
+    },
+    "EngOilPress": {
+      "CH2/SA00": 1616
+    },
+    "EngCoolantTemp": {
+      "CH2/SA00": 811
+    },
+    "EngFuelTemp1": {
+      "CH2/SA00": 811
+    },
+    "EngOilTemp1": {
+      "CH2/SA00": 811
+    },
+    "BarometricPress": {
+      "CH2/SA00": 811
+    },
+    "AmbientAirTemp": {
+      "CH2/SA00": 811
+    },
+    "BatteryPotential_PowerInput1": {
+      "CH2/SA00": 811
+    },
+    "KeyswitchBatteryPotential": {
+      "CH2/SA00": 811
+    },
+    "ChargingSystemPotential": {
+      "CH2/SA00": 811
+    },
+    "EngTripFuel": {
+      "CH2/SA00": 811
+    }
+  },
+  "unmatched_ids": {
+    "0x302": 88334,
+    "0x18EEFF00": 1,
+    "0x18FF8100": 54428,
+    "0xCFE6C00": 14841,
+    "0xCF00A00": 14840,
+    "0x18F00E00": 14835,
+    "0x18F00F00": 14830,
+    "0x18FEF000": 7775,
+    "0x18FFDF00": 7774,
+    "0x18FD9400": 7774,
+    "0x18FEE000": 7774,
+    "0x18FEDF00": 3201,
+    "0x18FDB200": 1615,
+    "0x18FFF400": 1615,
+    "0x18FD3E00": 1615,
+    "0x18FEF600": 1616,
+    "0x18FECA00": 811,
+    "0x18FDD500": 811,
+    "0x18FF0000": 811,
+    "0x18FD7C00": 811,
+    "0x18FBCB00": 811,
+    "0x18FE5600": 811,
+    "0x18FEE400": 811,
+    "0x18ECFF00": 973,
+    "0x18FEFC00": 811,
+    "0x18EBFF00": 6487,
+    "0x18FEFF00": 81,
+    "0x18FEB100": 81,
+    "0x18FC2A00": 81,
+    "0x400": 28,
+    "0x18EA0021": 154,
+    "0x18E82100": 154,
+    "0x18FEA0F4": 266,
+    "0x185": 56
+  },
+  "integration_skipped_gap_seconds": 0.0,
+  "missing_targets": [
+    "车速",
+    "实际最大可利用发动机扭矩百分比",
+    "发动机冷却液液位",
+    "发动机燃油输出压力",
+    "发动机总转数",
+    "发动机行程燃油",
+    "发动机输入电压",
+    "电源电压采样"
+  ],
+  "rules": [
+    "空单元格代表该报文未更新此信号；NaN 代表无效，均不等于零",
+    "按 J1939 PGN 匹配，保留通道、源地址、原始 ID 和载荷供追溯",
+    "累计燃油只累计记录中可积分区间，断点和无效值不跨越积分",
+    "SensorCAN 保留原 ADC；IN1 仅按单独提供的 kN 标定解析，0x302 不推断为力"
+  ]
+}

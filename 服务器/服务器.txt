@@ -1,0 +1,3 @@
+网址：https://hitwang-tech.github.io/canfd-4g-cloud-platform/
+IP：8.152.197.110
+端口：58023

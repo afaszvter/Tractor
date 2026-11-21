@@ -1,0 +1,4 @@
+keys = ["AccelPedalPos1"]
+labels = ["油门踏板开度"]
+reason = "所需字段均无有效数据"
+generated = true

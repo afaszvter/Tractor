@@ -1,0 +1,4 @@
+keys = ["EngTotalHoursOfOperation", "IntegratedFuel_L"]
+labels = ["发动机累积工作时间", "本次记录累计燃油消耗量"]
+reason = "所需字段均无有效数据"
+generated = true

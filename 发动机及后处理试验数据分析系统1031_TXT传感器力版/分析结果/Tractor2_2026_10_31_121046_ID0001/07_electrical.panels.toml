@@ -1,0 +1,4 @@
+keys = ["KeyswitchBatteryPotential"]
+labels = ["点火开关电压"]
+reason = "所需字段均无有效数据"
+generated = true

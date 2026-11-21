@@ -1,0 +1,4 @@
+keys = ["speed_torque"]
+labels = ["转速与扭矩工作点"]
+reason = ""
+generated = true

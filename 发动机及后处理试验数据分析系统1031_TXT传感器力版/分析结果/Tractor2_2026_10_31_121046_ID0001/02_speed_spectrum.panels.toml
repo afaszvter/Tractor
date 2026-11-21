@@ -1,0 +1,4 @@
+keys = ["spectrum", "spectrum_low"]
+labels = ["转速频谱", "低频细节"]
+reason = ""
+generated = true

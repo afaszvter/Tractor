@@ -1,0 +1,4 @@
+keys = ["EngOilPress", "BarometricPress", "EngOilLevel"]
+labels = ["发动机机油压力", "大气压力", "发动机机油油位"]
+reason = "所需字段均无有效数据"
+generated = true

@@ -1,0 +1,4 @@
+keys = ["EngSpeed", "ActualEngPercentTorque"]
+labels = ["发动机转速分布", "发动机实际扭矩分布"]
+reason = "转速和扭矩均无有效数据"
+generated = true

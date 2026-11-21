@@ -1,0 +1,4 @@
+keys = ["EngSpeed", "EngFuelRate", "ActualEngPercentTorque"]
+labels = ["发动机转速", "发动机燃油消耗率", "发动机实际扭矩百分比"]
+reason = "所需字段均无有效数据"
+generated = true

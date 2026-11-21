@@ -1,0 +1,4 @@
+keys = ["IN1_Force_kN"]
+labels = ["拉力分布：作业样本"]
+reason = "未取得有效非零力样本"
+generated = true
