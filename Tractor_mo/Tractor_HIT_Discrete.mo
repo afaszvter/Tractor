@@ -5,17 +5,17 @@ model Tractor_HIT_Discrete "Import from D:/VCU/VCU_Tractor_HaerBin/Tractor2/Trac
   import Tractor_HIT_Discrete.DataDic.*;
   annotation(__MWORKS(version = "26.8.1",PortArrangement,SysblockVersion = "1.0",modelType = Control,BlockSystem(blockKind = BlockKind.userModel,SampleTime(auto=true),ExternalCResource(SavedInRelationPath = false, IncludeFile, SourceFile, Library, IncludeDirectory = {"classDirectory()/", "D:/VCU/VCU_Tractor_HaerBin/Tractor2/Tractor"}, LibraryDirectory = {"classDirectory()/", "D:/VCU/VCU_Tractor_HaerBin/Tractor2/Tractor"}),OutputInterval=0.001),BindDataXml(XML="Engine1204.modd"),ResultViewerManager(resultViewers={
 ResultViewer(name="ECU_Result_Viewer", executeTrigger=executeTrigger.SimulationFinished, commands={
-CreateLayout(positions=[1, 1, 1, 1], columnSize=[2205], rowSize=[1239]),
-CreatePlot(id=1, x_display_unit="s", legend_layout=1, zoom_x=(0, 60), zoom_y_l=(-500, 3000)),
+CreateLayout(positions=[1, 1, 1, 1], columnSize=[2205], rowSize=[1203]),
+CreatePlot(id=1, x_display_unit="s", legend_layout=1, zoom_x=(0, 60), zoom_y_l=(-200, 800)),
 Plot(legend=["EngineSpdTgt_rpm", ""], y=["ECU.ECU.EngineSpdTgt_rpm", "ECU.EngineSpd_rpm"], line_styles=[2, 1], thicknesses=[2, 2], colors=["4278190335", "4294901760"]),
 CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(2, 1), zoom_x=(0, 60), zoom_y_l=(50, 300)),
-Plot(legend=["", "LoadTrqManu"], y=["EngineModel.EngineTrq_Nm", "WorkloadModel.Transmission.LoadTrqManu.y"], thicknesses=[2, 2], colors=["4278190335", "4294901760"]),
-CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(3, 1), zoom_x=(0, 60), zoom_y_l=(-500, 3000)),
-Plot(legend=["", "", "EngineSpd_rpm"], y=["ECU.EngineInfo.IntakeMass", "ECU.EngineInfo.ExhMassFlow", "EngineModel.EngineSpd_rpm"], thicknesses=[2, 2, 2], colors=["4278190335", "4294940421", "4294901760"]),
-CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(4, 1), zoom_x=(0, 60), zoom_y_l=(0.45, 0.85), zoom_y_r=(-10, 50)),
-Plot(y=["ECU.ThrottleCmd_pct", "ECU.EngineInfo.FuelCyle"], thicknesses=[2, 2], vertical_axes=[1, -1], colors=["4278190335", "4278222848"]),
-CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(5, 1), zoom_x=(0, 60), zoom_y_l=(-0.02, 0.1), zoom_y_r=(-0.0005, 0.0035)),
-Plot(y=["EngineModel.Engine1.ThermalModel.CombustionSystem.'NOx_kg/h'", "EngineModel.Engine1.ThermalModel.CombustionSystem.'PM_kg/h'"], thicknesses=[2, 2], vertical_axes=[1, -1], colors=["4278190335", "4294941456"]),
+Plot(legend=["LoadTrqManu", ""], y=["WorkloadModel.Transmission.LoadTrqManu.y", "EngineModel.EngineTrq_Nm"], thicknesses=[2, 2], colors=["4294942231", "4278190335"]),
+CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(3, 1), zoom_x=(0, 60), zoom_y_l=(-20, 100)),
+Plot(y=["ECU.EngineInfo.IntakeMass", "ECU.EngineInfo.ExhMassFlow"], thicknesses=[2, 2], colors=["4278190335", "4294940421"]),
+CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(4, 1), zoom_x=(0, 60), zoom_y_l=(-0.1, 0.4), zoom_y_r=(-10, 50)),
+Plot(y=["ECU.ThrottleCmd_pct", "ECU.EngineInfo.FuelCyle"], thicknesses=[2, 2], verticalAxes=[1, -1], colors=["4278190335", "4278222848"]),
+CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(5, 1), zoom_x=(0, 60), zoom_y_l=(-0.005, 0.035), zoom_y_r=(-0.0001, 0.0007)),
+Plot(y=["EngineModel.Engine1.ThermalModel.CombustionSystem.'NOx_kg/h'", "EngineModel.Engine1.ThermalModel.CombustionSystem.'PM_kg/h'"], thicknesses=[2, 2], verticalAxes=[1, -1], colors=["4278190335", "4294941456"]),
 CreatePlot(id=2, x_display_unit="s", legend_layout=1, zoom_x=(0, 60), zoom_y_l=(-0.05, 0.3)),
 Plot(legend=["", "EGRTgt"], y=["ECU.EngineInfo.EGRRatio", "ECU.ECU.EGRCtrl.EGRTgt.y"], line_styles=[1, 2], thicknesses=[2, 2], colors=["4278190335", "4294901760"]),
 CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(2, 1), zoom_x=(0, 60), zoom_y_l=(20, 120)),
@@ -35,36 +35,36 @@ Plot(y=["EngineModel.Engine1.AftertreatmentModel.DOC.'DOC_NO_kg/h'", "EngineMode
 CreatePlot(id=4, x_display_unit="s", legend_layout=1, zoom_x=(0, 60), zoom_y_l=(200, 400)),
 Plot(y=["EngineModel.Engine1.AftertreatmentModel.DPF.DOC_Temp_c", "EngineModel.Engine1.AftertreatmentModel.DPF.DPF_Temp_c"], thicknesses=[2, 2], colors=["4278190335", "4294944785"]),
 CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(2, 1), zoom_x=(0, 60), zoom_y_l=(-0.05, 0.35), zoom_y_r=(-0.002, 0.012)),
-Plot(y=["ECU.EngineInfo.DPF_DP", "ECU.ECU.DPF_SootLoad"], thicknesses=[2, 2], vertical_axes=[1, -1], colors=["4294944280", "4278190335"]),
+Plot(y=["ECU.EngineInfo.DPF_DP", "ECU.ECU.DPF_SootLoad"], thicknesses=[2, 2], verticalAxes=[1, -1], colors=["4294944280", "4278190335"]),
 CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(3, 1), zoom_x=(0, 60), zoom_y_l=(-0.0001, 0.0007), zoom_y_r=(-1e-06, 7e-06)),
-Plot(y=["EngineModel.Engine1.AftertreatmentModel.DPF.'DOC_PM_kg/h'", "EngineModel.Engine1.AftertreatmentModel.DPF.'DPF_PM_kg/h'"], thicknesses=[2, 2], vertical_axes=[1, -1], colors=["4278190335", "4294947093"]),
+Plot(y=["EngineModel.Engine1.AftertreatmentModel.DPF.'DOC_PM_kg/h'", "EngineModel.Engine1.AftertreatmentModel.DPF.'DPF_PM_kg/h'"], thicknesses=[2, 2], verticalAxes=[1, -1], colors=["4278190335", "4294947093"]),
 CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(4, 1), zoom_x=(0, 60), zoom_y_l=(-0.002, 0.012)),
 Plot(legend=["SootBurn_Map", ""], y=["EngineModel.Engine1.AftertreatmentModel.DPF.SootLoad.SootBurn_Map.y", "EngineModel.Engine1.AftertreatmentModel.DPF.SootLoad.SootLoad_g"], thicknesses=[2, 2], colors=["4294935060", "4278222848"]),
 CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(5, 1), zoom_x=(0, 60), zoom_y_l=(-0.4, 0.4)),
 Plot(legend=["DPF_regen_req", ""], y=["ECU.ECU.DPF_regen_req", "ECU.ECU.DPF_REGEN.Regen_State"], thicknesses=[4, 2], colors=["4278190335", "4294901760"]),
 CreatePlot(id=5, x_display_unit="s", legend_layout=1, zoom_x=(0, 60), zoom_y_l=(-100, 500)),
 Plot(y=["ECU.EngineInfo.ExhTemp_SCR_out", "EngineModel.Engine1.AftertreatmentModel.SCR.DPF_Temp_c"], thicknesses=[2, 2], colors=["4278190335", "4294901760"]),
-CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(2, 1), zoom_x=(0, 60), zoom_y_l=(-0.05, 0.3)),
-Plot(legend=["", "SCR_dPrs"], y=["ECU.EngineInfo.NH3_Store", "EngineModel.Engine1.AftertreatmentModel.SCR.SCRdPrs.y"], thicknesses=[2, 2], vertical_axes=[-1, 1], colors=["4278190335", "4294941996"]),
-CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(3, 1), zoom_x=(0, 60), zoom_y_l=(-0.02, 0.1)),
+CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(2, 1), zoom_x=(0, 60), zoom_y_l=(-0.02, 0.14)),
+Plot(legend=["", "SCR_dPrs"], y=["ECU.EngineInfo.NH3_Store", "EngineModel.Engine1.AftertreatmentModel.SCR.SCRdPrs.y"], thicknesses=[2, 2], colors=["4278190335", "4294941996"]),
+CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(3, 1), zoom_x=(0, 60), zoom_y_l=(-0.005, 0.035)),
 Plot(y=["ECU.EngineInfo.mNOx_SCR_in", "ECU.EngineInfo.mNOx_SCR_out"], thicknesses=[2, 2], colors=["4278190335", "4294937123"]),
-CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(4, 1), zoom_x=(0, 60), zoom_y_l=(-0.05, 0.3)),
-Plot(legend=["", "mUREA_act"], y=["EngineModel.Engine1.AftertreatmentModel.SCR.mUREA_target", "EngineModel.Engine1.AftertreatmentModel.SCR.'TransferFcn'.y"], thicknesses=[2, 2], colors=["4278190335", "4294901760"]),
-CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(5, 1), zoom_x=(0, 60), zoom_y_l=(-0.005, 0.035)),
-Plot(y=["EngineModel.Engine1.AftertreatmentModel.SCR.OUT_mNH3_slip", "EngineModel.Engine1.AftertreatmentModel.SCR.OUT_NH3store_g"], thicknesses=[2, 2], vertical_axes=[-1, 1], colors=["4294901760", "4278190335"]),
+CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(4, 1), zoom_x=(0, 60), zoom_y_l=(-0.02, 0.12)),
+Plot(legend=["", "mUREA"], y=["EngineModel.Engine1.AftertreatmentModel.SCR.mUREA_target", "EngineModel.Engine1.AftertreatmentModel.SCR.'Transfer Fcn'.y"], thicknesses=[2, 2], colors=["4278190335", "4294901760"]),
+CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(5, 1), zoom_x=(0, 60), zoom_y_l=(-0.005, 0.02)),
+Plot(y=["EngineModel.Engine1.AftertreatmentModel.SCR.OUT_mNH3_slip", "EngineModel.Engine1.AftertreatmentModel.SCR.OUT_NH3store_g"], thicknesses=[2, 2], colors=["4294901760", "4278190335"]),
 CreatePlot(id=6, x_display_unit="s", legend_layout=1, zoom_x=(0, 1), zoom_y_l=(0, 1)),
-CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(2, 1), zoom_x=(0, 60), zoom_y_l=(-20, 120)),
-Plot(legend=["Resistance[kN]", "VehSpd[km/h]"], y=["WorkloadModel.Tractor.Gain2.y", "WorkloadModel.Tractor.Gain1.y"], thicknesses=[2, 2], vertical_axes=[1, -1], colors=["4278190335", "4294901760"]),
-CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(3, 1), zoom_x=(0, 60), zoom_y_l=(-2, 3)),
-Plot(legend=["VehSpd[m/s]", "", ""], y=["WorkloadModel.'Tires_and_Ground'.Slip_calc.'VehSpd[m/s]'", "WorkloadModel.'Tires_and_Ground'.Slip_calc.'WhlSpdF[m/s]'", "WorkloadModel.'Tires_and_Ground'.Slip_calc.'SlipF[-]'"], thicknesses=[2, 2, 2], vertical_axes=[1, 1, -1], colors=["4278190335", "4294901760", "4278222848"]),
-CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(4, 1), zoom_x=(0, 60), zoom_y_l=(-2, 3)),
-Plot(legend=["VehSpd[m/s]", "", ""], y=["WorkloadModel.'Tires_and_Ground'.Slip_calc.'VehSpd[m/s]'", "WorkloadModel.'Tires_and_Ground'.Slip_calc.'WhlSpdR[m/s]'", "WorkloadModel.'Tires_and_Ground'.Slip_calc.'SlipR[-]'"], thicknesses=[2, 2, 2], vertical_axes=[1, 1, -1], colors=["4278190335", "4294901760", "4278222848"]),
+CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(2, 1), zoom_x=(0, 60), zoom_y_l=(25, 60), zoom_y_r=(-0.002, 0.012)),
+Plot(legend=["Resistance[kN]", "VehSpd[km/h]"], y=["WorkloadModel.Tractor.Gain2.y", "WorkloadModel.Tractor.Gain1.y"], thicknesses=[2, 2], verticalAxes=[1, -1], colors=["4278190335", "4294901760"]),
+CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(3, 1), zoom_x=(0, 60), zoom_y_l=(-0.002, 0.012), zoom_y_r=(-1.5, 1.5)),
+Plot(y=["WorkloadModel.'Tires and Ground'.Slip_calc.'VehSpd [m/s]'", "WorkloadModel.'Tires and Ground'.Slip_calc.'SlipF [-]'", "WorkloadModel.'Tires and Ground'.Slip_calc.'WhlSpdF[m/s]'"], thicknesses=[2, 2, 2], verticalAxes=[1, -1, 1], colors=["4294902015", "4294901760", "4278222848"]),
+CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(4, 1), zoom_x=(0, 60), zoom_y_l=(-0.002, 0.012), zoom_y_r=(-1.5, 1.5)),
+Plot(y=["WorkloadModel.'Tires and Ground'.Slip_calc.'VehSpd [m/s]'", "WorkloadModel.'Tires and Ground'.Slip_calc.'SlipR [-]'", "WorkloadModel.'Tires and Ground'.Slip_calc.'WhlSpdR[m/s]'"], thicknesses=[2, 2, 2], verticalAxes=[1, -1, 1], colors=["4278190335", "4294901760", "4278222848"]),
 CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(5, 1), zoom_x=(0, 1), zoom_y_l=(0, 1)),
-CreatePlot(id=7, x_display_unit="s", legend_layout=1, zoom_x=(0, 60), zoom_y_l=(-2, 8)),
-CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(2, 1), zoom_x=(0, 60), zoom_y_l=(-50, 300)),
-Plot(y=["ECU.EngineInfo.FuelCyle", "EngineModel.EngineTrq_Nm"], thicknesses=[2, 2], vertical_axes=[1, -1], colors=["4278190335", "4294901760"]),
-CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(3, 1), zoom_x=(0, 60), zoom_y_l=(-0.0001, 0.0004)),
-Plot(y=["EngineModel.Engine1.AftertreatmentModel.DPF.'DPF_PM_kg/h'", "EngineModel.Engine1.AftertreatmentModel.SCR.'OUT_NOx_kg/h'"], thicknesses=[2, 2], vertical_axes=[-1, 1], colors=["4278190335", "4294901760"]),
+CreatePlot(id=7, x_display_unit="s", legend_layout=1, zoom_x=(0, 1), zoom_y_l=(0, 1)),
+CreatePlot(id=-1, x_display_unit="s", legend_layout=13, sub_plot=(2, 1), zoom_x=(0, 60), zoom_y_l=(-50, 300)),
+Plot(y=["ECU.EngineInfo.FuelCyle", "EngineModel.EngineTrq_Nm"], thicknesses=[2, 2], colors=["4278190335", "4294901760"]),
+CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(3, 1), zoom_x=(0, 60), zoom_y_l=(-5e-05, 0.0002)),
+Plot(y=["EngineModel.Engine1.AftertreatmentModel.DPF.'DPF_PM_kg/h'", "EngineModel.Engine1.AftertreatmentModel.SCR.'OUT_NOx_kg/h'"], thicknesses=[2, 2], colors=["4278190335", "4294901760"]),
 CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(4, 1), zoom_x=(0, 1), zoom_y_l=(0, 1))})
 })), Icon(coordinateSystem(preserveAspectRatio = false)), Diagram(coordinateSystem(extent={{-100,-100},{100,100}},
 grid={2,2}),graphics = {Rectangle(origin={-154,-20.7},
@@ -88,7 +88,7 @@ fontSize=22,
 textStyle={TextStyle.None},
 textColor={0,0,0},
 horizontalAlignment=TextAlignment.Left)}), uses(SysplorerEmbeddedCoder));
-  annotation(experiment(Algorithm = Euler, Interval = 0.001, InlineStepSize = false, InlineIntegrator = false, StartTime = 0.0, StopTime = 60, Tolerance = 0.0001));
+  annotation(experiment(Algorithm=Euler,Interval=0.001,InlineStepSize=false,InlineIntegrator=false,StartTime=0,StopTime=440,Tolerance=0.0001,DoublePrecision=true,IntegratorStep=0.001,StoreContEventValue=false,StoreDiscEventValue=true,ZeroCrossing=false));
   ECU_type ECU 
     annotation(Placement(transformation(origin = {-154, -25.7},
     extent = {{-88, -35}, {88, 35}})), __MWORKS(PortLabels(labelType = "PortName")));
@@ -121,6 +121,9 @@ extent={{-52.5,-30.5},{52.5,30.5}})), __MWORKS(PortLabels(labelType = "PortName"
   WorkloadModel_type1 WorkloadModel(Parameter1 = 0) 
     annotation(Placement(transformation(origin={354.5,15.75},
 extent={{-52.5,-40.25},{52.5,40.25}})), __MWORKS(PortLabels(labelType = "PortName"),ComponentMask(backgroundColor={170,255,0})));
+  Cockpit_type Cockpit1(FSCmd=1,GearMCmd=3,GearACmd=2,DriveCmd=1,ThrottleCmd=70,Scene=0,Soil=0,Moisture=50,Density=1.6,Terrain=0,TypeCmd=5,PTOSpdCmd=0,TravelDistance=200,_LoadCmd__k=1000,_WorkCmd__k=1) if false 
+    annotation (Placement(transformation(origin={548.5,-195.4},
+extent={{-52.5,-30.5},{52.5,30.5}})),__MWORKS(PortLabels(labelType="PortName"),BlockSystem(SampleTime=-1),ComponentMask(backgroundColor={170,255,0})));
   model ModelWorkspace
     annotation(__MWORKS(hide = true,BlockSystem(blockKind=BlockKind.modelWorkspace)));
   end ModelWorkspace;
@@ -5315,20 +5318,35 @@ fileName="modelica://Tractor_HIT_Discrete/png/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%
     verticalAlignment=TextAlignment.Top)},sizePolicy=SizePolicy.Fixed,rotationPolicy=RotationPolicy.Ignore),Protection(access=Access.packageDuplicate),Diagram(coordinateSystem(extent={{-100,-100},{100,100}},
 grid={2,2})));
       SysplorerEmbeddedCoder.Port.Inport EngineSpd_rpm 
-        annotation (Placement(transformation(origin = {-336.000000, -59.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1,outputFunctionCall=false,latchByDelayingOutsideSignal=false,latchFeedbackFuncCallSubsystemSignal=false)));
+        annotation (Placement(transformation(origin={-358,137.25},
+extent={{-10,-10},{10,10}}),
+iconTransformation(origin={-301.8,100},
+extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1,outputFunctionCall=false,latchByDelayingOutsideSignal=false,latchFeedbackFuncCallSubsystemSignal=false)));
       SysplorerEmbeddedCoder.Port.Inport FuelCyleTgt_mg 
-        annotation (Placement(transformation(origin = {-343.000000, 304.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1,outputFunctionCall=false,latchByDelayingOutsideSignal=false,latchFeedbackFuncCallSubsystemSignal=false)));
+        annotation (Placement(transformation(origin={-367,-257.25},
+extent={{-10,-10},{10,10}}),
+iconTransformation(origin={-301.8,60},
+extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1,outputFunctionCall=false,latchByDelayingOutsideSignal=false,latchFeedbackFuncCallSubsystemSignal=false)));
       SysplorerEmbeddedCoder.Port.Inport EGROpeningTgt_pct 
-        annotation (Placement(transformation(origin = {-343.000000, 281.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1,outputFunctionCall=false,latchByDelayingOutsideSignal=false,latchFeedbackFuncCallSubsystemSignal=false)));
+        annotation (Placement(transformation(origin={-367,-125.75},
+extent={{-10,-10},{10,10}}),
+iconTransformation(origin={-301.8,20},
+extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1,outputFunctionCall=false,latchByDelayingOutsideSignal=false,latchFeedbackFuncCallSubsystemSignal=false)));
       SysplorerEmbeddedCoder.Port.Inport PostInj_Request 
-        annotation (Placement(transformation(origin = {-343.000000, 250.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1,outputFunctionCall=false,latchByDelayingOutsideSignal=false,latchFeedbackFuncCallSubsystemSignal=false)));
+        annotation (Placement(transformation(origin={-367,5.75},
+extent={{-10,-10},{10,10}}),
+iconTransformation(origin={-301.8,-20},
+extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1,outputFunctionCall=false,latchByDelayingOutsideSignal=false,latchFeedbackFuncCallSubsystemSignal=false)));
       SysplorerEmbeddedCoder.Port.Inport DPF_regen_req 
-        annotation (Placement(transformation(origin={58,285},
+        annotation (Placement(transformation(origin={42,-299.5},
 extent={{-10,-10},{10,10}}),
 iconTransformation(origin={-301.8,-60},
 extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1,outputFunctionCall=false,latchByDelayingOutsideSignal=false,latchFeedbackFuncCallSubsystemSignal=false)));
       SysplorerEmbeddedCoder.Port.Inport mUREA_target 
-        annotation (Placement(transformation(origin = {58.000000, 236.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1,outputFunctionCall=false,latchByDelayingOutsideSignal=false,latchFeedbackFuncCallSubsystemSignal=false)));
+        annotation (Placement(transformation(origin={42,-272.5},
+extent={{-10,-10},{10,10}}),
+iconTransformation(origin={-301.8,-100},
+extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1,outputFunctionCall=false,latchByDelayingOutsideSignal=false,latchFeedbackFuncCallSubsystemSignal=false)));
       AftertreatmentModel_type AftertreatmentModel 
         annotation (Placement(transformation(origin = {181.000000, -178.000000}, extent = {{-81.500000, -135.000000}, {81.500000, 135.000000}},rotation=0)),__MWORKS(PortLabels(labelType="PortName")));
       SysplorerEmbeddedCoder.Utilities.Terminator Terminator 
@@ -5417,9 +5435,15 @@ extent={{-6.5,-36.5},{6.5,36.5}})),__MWORKS(BlockSystem(Instance(u(u1,u2,u3),y(T
         SysplorerEmbeddedCoder.Port.Inport 'PM_kg/h' 
           annotation (Placement(transformation(origin = {-495.000000, -164.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1,outputFunctionCall=false,latchByDelayingOutsideSignal=false,latchFeedbackFuncCallSubsystemSignal=false)));
         SysplorerEmbeddedCoder.Port.Inport mUREA_target 
-          annotation (Placement(transformation(origin = {222.000000, 170.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1,outputFunctionCall=false,latchByDelayingOutsideSignal=false,latchFeedbackFuncCallSubsystemSignal=false)));
+          annotation (Placement(transformation(origin={210,24.9999952},
+extent={{-10,-10},{10,10}}),
+iconTransformation(origin={-301.8,-84},
+extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1,outputFunctionCall=false,latchByDelayingOutsideSignal=false,latchFeedbackFuncCallSubsystemSignal=false)));
         SysplorerEmbeddedCoder.Port.Inport DPF_regen_req 
-          annotation (Placement(transformation(origin = {-77.000000, 170.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1,outputFunctionCall=false,latchByDelayingOutsideSignal=false,latchFeedbackFuncCallSubsystemSignal=false)));
+          annotation (Placement(transformation(origin={-110,-85},
+extent={{-10,-10},{10,10}}),
+iconTransformation(origin={-301.8,-108},
+extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1,outputFunctionCall=false,latchByDelayingOutsideSignal=false,latchFeedbackFuncCallSubsystemSignal=false)));
         DOC_type DOC 
           annotation (Placement(transformation(origin = {-309.000000, -32.000000}, extent = {{-71.000000, -148.500000}, {71.000000, 148.500000}},rotation=0)),__MWORKS(PortLabels(labelType="PortName")));
         DPF_type DPF 
@@ -5447,13 +5471,19 @@ extent={{-6.5,-36.5},{6.5,36.5}})),__MWORKS(BlockSystem(Instance(u(u1,u2,u3),y(T
         SysplorerEmbeddedCoder.Port.Outport ExhTemp_DOC_out 
           annotation (Placement(transformation(origin = {-155.000000, 91.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
         SysplorerEmbeddedCoder.Port.Outport ExhTemp_DPF_out 
-          annotation (Placement(transformation(origin = {151.000000, 98.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
+          annotation (Placement(transformation(origin={151,82.9999952},
+extent={{-10,-10},{10,10}}),
+iconTransformation(origin={301.8,65.4545},
+extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
         SysplorerEmbeddedCoder.Port.Outport ExhTemp_SCR_out 
           annotation (Placement(transformation(origin = {491.000000, 95.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
         SysplorerEmbeddedCoder.Port.Outport ExhMassFlow 
           annotation (Placement(transformation(origin = {-427.000000, 119.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
         SysplorerEmbeddedCoder.Port.Outport mNOx_SCR_in 
-          annotation (Placement(transformation(origin = {151.000000, 44.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
+          annotation (Placement(transformation(origin={151,26.9999952},
+extent={{-10,-10},{10,10}}),
+iconTransformation(origin={301.8,1.42109e-14},
+extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
         SysplorerEmbeddedCoder.Port.Outport mNOx_SCR_out 
           annotation (Placement(transformation(origin = {494.000000, 61.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
         SysplorerEmbeddedCoder.Port.Outport Soot_Load 
@@ -6398,7 +6428,7 @@ extent={{-6.5,-36.5},{6.5,36.5}})),__MWORKS(BlockSystem(Instance(u(u1,u2,u3),y(T
             annotation (Placement(transformation(origin = {283.000000, 29.000000}, extent = {{-8.500000, -41.000000}, {8.500000, 41.000000}},rotation=0)),__MWORKS(BlockSystem(Instance(y(Type(inherit=InheritType.sameAsSecondInput))))));
           Scope_type Scope 
             annotation (Placement(transformation(origin = {395.000000, -175.000000}, extent = {{-11.500000, -64.500000}, {11.500000, 64.500000}},rotation=0)));
-          SysplorerEmbeddedCoder.Continuous.TransferFcn 'TransferFcn'(numerator=1,denominator=[1,1]) 
+          SysplorerEmbeddedCoder.Continuous.TransferFcn 'Transfer Fcn'(numerator=1,denominator=[1,1]) 
             annotation (Placement(transformation(origin = {-487.000000, 226.000000}, extent = {{-20.000000, -12.000000}, {20.000000, 12.000000}},rotation=0)));
           SysplorerEmbeddedCoder.LookupTable.LookupTable2D eta_NOx(table=etaPM,axis1=etaPM_x,axis2=etaPM_y,interpolationMethod=SysplorerEmbeddedCoder.LookupTable.LookupTable2D.InterpolationMethod.linearPointSlope,extrapolationMethod=SysplorerEmbeddedCoder.LookupTable.LookupTable2D.ExtrapolationMethod.clip) 
             annotation (Placement(transformation(origin = {-335.000000, 15.000000}, extent = {{-22.000000, -21.500000}, {22.000000, 21.500000}},rotation=0)));
@@ -6493,12 +6523,9 @@ extent={{-6.5,-36.5},{6.5,36.5}})),__MWORKS(BlockSystem(Instance(u(u1,u2,u3),y(T
           connect(eta_NOx.y, Product2.u2) 
           annotation(Line(origin={0,0},
           points={{-308,15},{-246,15},{-246,16},{-185,16}}),Text(origin={-215,19},extent={{0,-3},{0,3}},textString="%signal",fontSize=12),__MWORKS(BlockSystem(NamedSignal(name="etaNOx"))));
-          connect('TransferFcn'.y, Product1.u1) 
+          connect('Transfer Fcn'.y, Product1.u1) 
           annotation(Line(origin={0,0},
-points={{-465.2,226},{-416.8,226},{-416.8,225.5}}),Text(origin={-441,229.469},
-extent={{0,-3},{0,3}},
-textString="%signal",
-fontSize=12),__MWORKS(BlockSystem(NamedSignal(name="mUREA_act"))));
+          points={{-462,226},{-420,226}}),Text(origin={-441,229},extent={{0,-3},{0,3}},textString="%signal",fontSize=12),__MWORKS(BlockSystem(NamedSignal(name="mUREA"))));
           connect(Product1.y, Add1.u1) 
           annotation(Line(origin={0,0},
           points={{-404,205},{-42,205},{-42,49},{-2,49}}),Text(origin={-22,52},extent={{0,-3},{0,3}},textString="%signal",fontSize=12),__MWORKS(BlockSystem(NamedSignal(name="mNH3_in"))));
@@ -6571,7 +6598,7 @@ fontSize=12),__MWORKS(BlockSystem(NamedSignal(name="mUREA_act"))));
           connect('-60-14-53-40-59-88-74-561'.y, Product1.u2) 
           annotation(Line(origin={0,0},
           points={{-441,185},{-420,185}}));
-          connect(mUREA_target, 'TransferFcn'.u) 
+          connect(mUREA_target, 'Transfer Fcn'.u) 
           annotation(Line(origin={0,0},
           points={{-548,225},{-548,226},{-512,226}}));
           connect(Add1.y, 'kg/h2g/s'.u) 
@@ -6638,13 +6665,13 @@ fontSize=12),__MWORKS(BlockSystem(NamedSignal(name="mUREA_act"))));
         points={{-233,-72},{-233,-57},{-85,-57}}));
         connect(DPF_regen_req, DPF.DPF_regen_req) 
         annotation(Line(origin={0,0},
-        points={{-77,170},{-16,170},{-16,-85},{-85,-85}}));
+points={{-98,-85},{-81.8,-85}}));
         connect(DPF.'DPF_Flow_kg/h', SCR.'DPF_Flow_kg/h') 
         annotation(Line(origin={0,0},
         points={{81,111},{81,113},{251,113}}));
         connect(DPF.DPF_Temp_c, ExhTemp_DPF_out) 
         annotation(Line(origin={0,0},
-        points={{81,83},{102,83},{102,100},{102,98},{151,98}}));
+points={{77.8,83},{139,83}}));
         connect(DPF.DPF_Temp_c, SCR.DPF_Temp_c) 
         annotation(Line(origin={0,0},
         points={{81,83},{102,83},{102,91},{251,91}}));
@@ -6656,7 +6683,7 @@ fontSize=12),__MWORKS(BlockSystem(NamedSignal(name="mUREA_act"))));
         points={{405,97},{405,95},{491,95}}));
         connect(DPF.'DPF_NOx_kg/h', mNOx_SCR_in) 
         annotation(Line(origin={0,0},
-        points={{81,27},{103,27},{103,44},{151,44}}));
+points={{77.8,27},{139,27}}));
         connect(DPF.'DPF_NOx_kg/h', SCR.'DPF_NOx_kg/h') 
         annotation(Line(origin={0,0},
         points={{81,27},{103,27},{103,47},{251,47}}));
@@ -6674,7 +6701,7 @@ fontSize=12),__MWORKS(BlockSystem(NamedSignal(name="mUREA_act"))));
         points={{405,25},{405,27},{494,27}}));
         connect(mUREA_target, SCR.mUREA_target) 
         annotation(Line(origin={0,0},
-        points={{222,170},{313,170},{313,25},{251,25}}));
+points={{222,25},{254.2,25}}));
         connect(SCR.'OUT_Flow_kg/h', Terminator.x) 
         annotation(Line(origin={0,0},
         points={{405,115},{405,112},{431,112}}));
@@ -7974,10 +8001,10 @@ fontSize=12),__MWORKS(BlockSystem(NamedSignal(name="mUREA_act"))));
     equation
       connect(FuelCyleTgt_mg, ThermalModel.FuelCyleTgt_mg) 
       annotation(Line(origin={0,0},
-      points={{-343,304},{-150,304},{-150,-255},{-270,-255}}));
+points={{-355,-257.25},{-266.8,-257.25}}));
       connect(EGROpeningTgt_pct, ThermalModel.EGROpeningTgt_pct) 
       annotation(Line(origin={0,0},
-      points={{-343,281},{-201,281},{-201,-124},{-270,-124}}));
+points={{-355,-125.75},{-266.8,-125.75}}));
       connect(ThermalModel.RailPrs_kpa, RailPrs_kpa) 
       annotation(Line(origin={0,0},
       points={{-104,115},{-104,111},{-7,111}}));
@@ -8022,7 +8049,7 @@ points={{-107.2,-305.467},{-103.4,-305.467},{-103.4,-260},{93.9,-260},{93.9,-245
       points={{-104,80},{-104,77},{-7,77}}));
       connect(DPF_regen_req, AftertreatmentModel.DPF_regen_req) 
       annotation(Line(origin={0,0},
-points={{70,285},{268.1,285},{268.1,-315},{93.9,-315},{93.9,-299.5},{97.7,-299.5}}));
+points={{54,-299.5},{97.7,-299.5}}));
       connect(AftertreatmentModel.ExhTemp_DOC_in, ExhTemp_DOC_in) 
       annotation(Line(origin={0,0},
       points={{267,-55},{267,-59},{343,-59}}));
@@ -8058,16 +8085,16 @@ points={{70,285},{268.1,285},{268.1,-315},{93.9,-315},{93.9,-299.5},{97.7,-299.5
       points={{267,-295},{267,-297},{343,-297}}));
       connect(mUREA_target, AftertreatmentModel.mUREA_target) 
       annotation(Line(origin={0,0},
-      points={{58,236},{126,236},{126,-272},{95,-272}}));
+points={{54,-272.5},{97.7,-272.5}}));
       connect(ThermalModel.'BSFC_kg/h', Terminator.x) 
       annotation(Line(origin={0,0},
       points={{-104,-25},{-104,-27},{-17,-27}}));
       connect(PostInj_Request, ThermalModel.PostInj_Request) 
       annotation(Line(origin={0,0},
-      points={{-343,250},{-252,250},{-252,6},{-270,6}}));
+points={{-355,5.75},{-266.8,5.75}}));
       connect(EngineSpd_rpm, ThermalModel.EngineSpd_rpm) 
       annotation(Line(origin={0,0},
-      points={{-336,-59},{-336,137},{-270,137}}));
+points={{-346,137.25},{-266.8,137.25}}));
       connect(ThermalModel.FuelCycle_mg, Product.u3) 
       annotation(Line(origin={-51,211},
 points={{-56.2,-25.5333},{-56.2,-32},{-23,-32},{-23,32.1667},{56.7,32.1667}}));
@@ -10568,7 +10595,7 @@ fontSize=12),__MWORKS(BlockSystem(NamedSignal(name="O2_frac"))));
   extent={{-13.5,-10},{13.5,10}})));
     SysplorerEmbeddedCoder.SignalRouting.BusCreator 'Bus10Creator' 
       annotation(Placement(transformation(origin={-265.75,-105.003},
-  extent={{-2.25,-40.9968},{2.25,40.9968}})), __MWORKS(BlockSystem(Instance(u(u1, u2, u3), y(Type)),BusCreator(showSignalNames = true),Signals(u1="FastSlowCmd", u2="GearMCmd", u3="GearACmd"))));
+  extent={{-2.25,-40.9968},{2.25,40.9968}})), __MWORKS(BlockSystem(Instance(y(Type(inherit=InheritType. auto),Dimension(dimensionType=DimensionType.auto)),u(u1,u2,u3)),BusCreator(showSignalNames=true),Signals(u1="FSCmd", u2="GearMCmd", u3="GearACmd"))));
     SysplorerEmbeddedCoder.SignalRouting.BusCreator 'Bus10Creator2' 
       annotation(Placement(transformation(origin={-335.75,17.2861},
   extent={{-2.25,-54.7981},{2.25,54.7981}})), __MWORKS(BlockSystem(Instance(y(Type(inherit=InheritType. auto),Dimension(dimensionType=DimensionType.auto)),u(u1,u2,u3,u4)),BusCreator(showSignalNames=true),Signals(u1="Soil", u2="Moisture", u3="Density", u4="Terrain"))));
@@ -10610,7 +10637,7 @@ fontSize=12),__MWORKS(BlockSystem(NamedSignal(name="O2_frac"))));
   extent={{-21.633,-10},{21.633,10}})), __MWORKS(BlockSystem(GotoTag(tagName="LoadCmd",tagSocped="",tagVisibility="Global"))));
     parameter RealAuto WorkCmd = 0 annotation(__MWORKS(BlockSystem(Type(inherit = InheritType.none, ref = "double"), Dimension(dimensionType = DimensionType.none) = 1, blkParameter = true)), HideResult = true);
     parameter SysplorerEmbeddedCoder.Types.Auto _LoadCmd__k = LoadCmd annotation(__MWORKS(BlockSystem(Type(inherit = InheritType.auto), Dimension(dimensionType = DimensionType.auto), blkParameter = true, promoted = true)), HideResult = true);
-    SysplorerEmbeddedCoder.Sources.FromFile fromFile(dataStyle = SysplorerEmbeddedCoder.Sources.FromFile.DataStyle.PiecewistContinuous, dimension = -1, ndimension = 0, file_name = "D:/VCU/VCU_Tractor_HaerBin/Tractor2/Tractor_mo/TestCommand.csv",endExtrapolation=SysplorerEmbeddedCoder.Sources.FromFile.EndExtrapolation.KeepEnd,firstExtrapolation=SysplorerEmbeddedCoder.Sources.FromFile.FirstExtrapolation.KeepFirst,interpolation=SysplorerEmbeddedCoder.Sources.FromFile.Interpolation.ZeroHold) 
+    SysplorerEmbeddedCoder.Sources.FromFile fromFile(dataStyle = SysplorerEmbeddedCoder.Sources.FromFile.DataStyle.DiscreteStep, dimension = -1, ndimension = 0, file_name = "D:/A_project/MATLAB_programs/Tractor_HIT/Tractor_MW/Tractor_MWorks/TestCommand.csv") 
       annotation(Placement(transformation(origin={-588,-91.7366},
   extent={{-27,-10},{27,10}})), __MWORKS(BlockSystem(SampleTime(auto=false)=-1)));
     SysplorerEmbeddedCoder.SignalRouting.DeMux deMux(portNumber = 14) 
@@ -10695,7 +10722,7 @@ points={{-71.2,2.84822},{71.2,2.84822},{71.2,3.3282}},
 color={0,0,0}),Text(origin={0,6.75864},
 extent={{0,-3},{0,3}},
 textString="%signal",
-fontSize=14),__MWORKS(BlockSystem(NamedSignal(name="FastSlowCmd"))));
+fontSize=14),__MWORKS(BlockSystem(NamedSignal(name="FSCmd"))));
     connect(deMux.y10, Gain1.u) 
     annotation(Line(origin={-356,-160},
   points={{-56.2,0.339293},{-4.8,0.339}},
@@ -10758,7 +10785,7 @@ fillColor={255,255,255},
 pattern=LinePattern.None,
 fillPattern=FillPattern.Solid,
 extent={{-156,30},{156,-30}})},sizePolicy=SizePolicy.Fixed,rotationPolicy=RotationPolicy.Ignore), Protection(access = Access.packageDuplicate), Diagram(coordinateSystem(extent={{-100,-100},{100,100}},
-  grid={2,2})));
+grid={2,2})));
     parameter SysplorerEmbeddedCoder.Types.Auto Parameter1 = 0 annotation(__MWORKS(BlockSystem(blkParameter = true, Type(inherit = InheritType.internalRule), Dimension(dimensionType = DimensionType.auto))), HideResult = true);
     SysplorerEmbeddedCoder.Port.Inport 'EngTrq [Nm]' 
       annotation(Placement(transformation(origin = {-346, 94.6667},
@@ -10778,17 +10805,17 @@ extent={{-156,30},{156,-30}})},sizePolicy=SizePolicy.Fixed,rotationPolicy=Rotati
     SysplorerEmbeddedCoder.SignalRouting.From From34 
       annotation(Placement(transformation(origin = {-19.000000, 115.000000}, extent = {{-17.000000, -6.000000}, {17.000000, 6.000000}}, rotation = 0)), __MWORKS(BlockSystem(GotoTag(tagName="Land",tagSocped="",tagVisibility="Global"))));
     SysplorerEmbeddedCoder.SignalRouting.Goto Goto1 
-      annotation(Placement(transformation(origin={141.5,-17.29},
-  extent={{-15,-6.5},{15,6.5}})), __MWORKS(BlockSystem(GotoTag(tagName="Width",tagSocped="",tagVisibility="Global"))));
+      annotation(Placement(transformation(origin={152.5,-17.2019},
+extent={{-15,-6.5},{15,6.5}})), __MWORKS(BlockSystem(GotoTag(tagName="Width",tagSocped="",tagVisibility="Global"))));
     SysplorerEmbeddedCoder.SignalRouting.Goto Goto23 
-      annotation(Placement(transformation(origin={146,-68.258},
-  extent={{-19.5,-6.5},{19.5,6.5}})), __MWORKS(BlockSystem(GotoTag(tagName="PwrDraught",tagSocped="",tagVisibility="Global"))));
+      annotation(Placement(transformation(origin={157,-68.1699},
+extent={{-19.5,-6.5},{19.5,6.5}})), __MWORKS(BlockSystem(GotoTag(tagName="PwrDraught",tagSocped="",tagVisibility="Global"))));
     SysplorerEmbeddedCoder.SignalRouting.Goto Goto24 
-      annotation(Placement(transformation(origin={146.5,-144.71},
-  extent={{-19.5,-6.5},{19.5,6.5}})), __MWORKS(BlockSystem(GotoTag(tagName="PwrPTO",tagSocped="",tagVisibility="Global"))));
+      annotation(Placement(transformation(origin={157.5,-144.622},
+extent={{-19.5,-6.5},{19.5,6.5}})), __MWORKS(BlockSystem(GotoTag(tagName="PwrPTO",tagSocped="",tagVisibility="Global"))));
     SysplorerEmbeddedCoder.SignalRouting.Goto Goto32 
       annotation(Placement(transformation(origin = {355.000000, 95.000000}, extent = {{-27.000000, -6.500000}, {27.000000, 6.500000}}, rotation = 0)), __MWORKS(BlockSystem(GotoTag(tagName="VehSpd",tagSocped="",tagVisibility="Global"))));
-    'Tires and Ground_type' 'Tires_and_Ground' 
+    'Tires and Ground_type' 'Tires and Ground' 
       annotation(Placement(transformation(origin = {71.000000, 95.000000}, extent = {{-59.500000, -41.000000}, {59.500000, 41.000000}}, rotation = 0)), __MWORKS(PortLabels(labelType = "PortName")));
     Tractor_type Tractor 
       annotation(Placement(transformation(origin = {243.75, 95},
@@ -10801,17 +10828,17 @@ extent={{-156,30},{156,-30}})},sizePolicy=SizePolicy.Fixed,rotationPolicy=Rotati
     SysplorerEmbeddedCoder.Port.Outport 'EngSpd [rpm]' 
       annotation(Placement(transformation(origin = {-87.000000, 115.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}}, rotation = 0)), __MWORKS(BlockSystem(Type(inherit = InheritType.auto), Dimension(dimensionType = DimensionType.auto) = -1, SampleTime(auto = true) = -1)));
     SysplorerEmbeddedCoder.SignalRouting.From from 
-      annotation(Placement(transformation(origin={-96,2.25},
-  extent={{-20,-6.5},{20,6.5}})), __MWORKS(BlockSystem(GotoTag(tagName="WorkCmd",tagSocped="",tagVisibility="Global"))));
+      annotation(Placement(transformation(origin={-98,6.41377},
+extent={{-20,-6.5},{20,6.5}})), __MWORKS(BlockSystem(GotoTag(tagName="WorkCmd",tagSocped="",tagVisibility="Global"))));
     SysplorerEmbeddedCoder.SignalRouting.Goto goto 
-      annotation(Placement(transformation(origin={146,-93.742},
-  extent={{-15,-6.5},{15,6.5}})), __MWORKS(BlockSystem(GotoTag(tagName="LiftTrq",tagSocped="",tagVisibility="Global"))));
+      annotation(Placement(transformation(origin={157,-93.6539},
+extent={{-15,-6.5},{15,6.5}})), __MWORKS(BlockSystem(GotoTag(tagName="LiftTrq",tagSocped="",tagVisibility="Global"))));
     SysplorerEmbeddedCoder.SignalRouting.Goto goto1 
-      annotation(Placement(transformation(origin={146,-42.774},
-  extent={{-19.5,-6.5},{19.5,6.5}})), __MWORKS(BlockSystem(GotoTag(tagName="TractiveResis",tagSocped="",tagVisibility="Global"))));
+      annotation(Placement(transformation(origin={157,-42.6859},
+extent={{-19.5,-6.5},{19.5,6.5}})), __MWORKS(BlockSystem(GotoTag(tagName="TractiveResis",tagSocped="",tagVisibility="Global"))));
     SysplorerEmbeddedCoder.SignalRouting.Goto goto2 
-      annotation(Placement(transformation(origin={144,-119.2256},
-  extent={{-17,-6.5},{17,6.5}})), __MWORKS(BlockSystem(GotoTag(tagName="PTOTrq",tagSocped="",tagVisibility="Global"))));
+      annotation(Placement(transformation(origin={155,-119.137},
+extent={{-17,-6.5},{17,6.5}})), __MWORKS(BlockSystem(GotoTag(tagName="PTOTrq",tagSocped="",tagVisibility="Global"))));
     SysplorerEmbeddedCoder.SignalRouting.From from1 
       annotation(Placement(transformation(origin = {-305, 81.3333},
       extent = {{-24, -6.5}, {24, 6.5}})), __MWORKS(BlockSystem(GotoTag(tagName="PTOTrq",tagSocped="",tagVisibility="Global"))));
@@ -10822,50 +10849,50 @@ extent={{-156,30},{156,-30}})},sizePolicy=SizePolicy.Fixed,rotationPolicy=Rotati
       annotation(Placement(transformation(origin = {156, 64.25},
       extent = {{-15, -6.5}, {15, 6.5}})), __MWORKS(BlockSystem(GotoTag(tagName="TractiveResis",tagSocped="",tagVisibility="Global"))));
     SysplorerEmbeddedCoder.SignalRouting.MultiportSwitch multiportSwitch(portOrder = SysplorerEmbeddedCoder.SignalRouting.MultiportSwitch.DataPortOrder.Zerobased_Contiguous, portNumber = 3) 
-      annotation(Placement(transformation(origin={-23,-81.75},
-  extent={{-23,-112},{23,112}})), __MWORKS(BlockSystem(Instance(u(u1, u2, u3)), DataPortIndices), PortLabels(labelType = "CustomType", labels(label(text = "0", instance = "u1"), label(text = "1", instance = "u2"), label(text = "2", instance = "u3")))));
+      annotation(Placement(transformation(origin={-19,-79.3085},
+extent={{-20,-116.434},{20,116.434}})), __MWORKS(BlockSystem(Instance(u(u1,u2,u3)),DataPortIndices),PortLabels(labelType="CustomType",labels(label(text="0",instance="u1"),label(text="1",instance="u2"),label(text="2",instance="u3")))));
     _AgriculturalImplement_type_ AgriculturalImplement 
-      annotation(Placement(transformation(origin={-170,-109.75},
-  extent={{-52,-25.4},{52,25.4}})), __MWORKS(PortLabels(labelType = "PortName", labels(label(text = "_LiftTrq_Nm_", instance = "_LiftTrq_Nm_"), label(text = "_TractiveResis_N_", instance = "_TractiveResis_N_"), label(text = "_Width_m_", instance = "_Width_m_"), label(text = "_PwrDraught_kW_", instance = "_PwrDraught_kW_"), label(text = "actionPort", instance = "actionPort"))), BlockSystem(SampleTime = -1)));
+      annotation(Placement(transformation(origin={-170,-102.65},
+extent={{-52,-25.4},{52,25.4}})), __MWORKS(PortLabels(labelType = "PortName", labels(label(text = "_LiftTrq_Nm_", instance = "_LiftTrq_Nm_"), label(text = "_TractiveResis_N_", instance = "_TractiveResis_N_"), label(text = "_Width_m_", instance = "_Width_m_"), label(text = "_PwrDraught_kW_", instance = "_PwrDraught_kW_"), label(text = "actionPort", instance = "actionPort"))),BlockSystem(SampleTime = -1),showInternal=false));
     SubSystem1 PTO 
-      annotation(Placement(transformation(origin={-170,-171.3625},
-  extent={{-52,-30.6375},{52,30.6375}})));
+      annotation(Placement(transformation(origin={-170,-168.2375},
+extent={{-52,-30.6375},{52,30.6375}})),__MWORKS(showInternal=false));
     _TiresandGround_type_1 Trailer 
-      annotation(Placement(transformation(origin={-170,-53.75},
-  extent={{-52,-17.5},{52,17.5}})), __MWORKS(PortLabels(labelType = "PortName")));
+      annotation(Placement(transformation(origin={-170,-50.2},
+extent={{-52,-17.5},{52,17.5}})), __MWORKS(PortLabels(labelType = "PortName"),showInternal=false));
     SysplorerEmbeddedCoder.SignalRouting.DeMux deMux(portNumber = 6) 
-      annotation(Placement(transformation(origin={71,-81},
-  extent={{-2,-76.4521},{2,76.4521}})), __MWORKS(BlockSystem(Instance(y(y1, y2, y3, y4, y5, y6)))));
+      annotation(Placement(transformation(origin={82,-80.9119},
+extent={{-2,-76.4521},{2,76.4521}})), __MWORKS(BlockSystem(Instance(y(y1, y2, y3, y4, y5, y6)))));
     SysplorerEmbeddedCoder.SignalRouting.From from4 
-      annotation(Placement(transformation(origin={-281,-45},
-  extent={{-20,-5},{20,5}})), __MWORKS(BlockSystem(GotoTag(tagName="Land",tagSocped="",tagVisibility="Global"))));
+      annotation(Placement(transformation(origin={-281,-41.45},
+extent={{-20,-5},{20,5}})), __MWORKS(BlockSystem(GotoTag(tagName="Land",tagSocped="",tagVisibility="Global"))));
     SysplorerEmbeddedCoder.SignalRouting.From from5 
-      annotation(Placement(transformation(origin={-281,-62.5},
-  extent={{-20,-5},{20,5}})), __MWORKS(BlockSystem(GotoTag(tagName="Scene",tagSocped="",tagVisibility="Global"))));
+      annotation(Placement(transformation(origin={-281,-58.95},
+extent={{-20,-5},{20,5}})), __MWORKS(BlockSystem(GotoTag(tagName="Scene",tagSocped="",tagVisibility="Global"))));
     SysplorerEmbeddedCoder.SignalRouting.From From1 
-      annotation(Placement(transformation(origin={-280.5,-119.91},
-  extent={{-19.5,-5},{19.5,5}})), __MWORKS(BlockSystem(GotoTag(tagName="VehSpd",tagSocped="",tagVisibility="Global"))));
+      annotation(Placement(transformation(origin={-280.5,-112.81},
+extent={{-19.5,-5},{19.5,5}})), __MWORKS(BlockSystem(GotoTag(tagName="VehSpd",tagSocped="",tagVisibility="Global"))));
     SysplorerEmbeddedCoder.SignalRouting.From from6 
-      annotation(Placement(transformation(origin={-280,-109.75},
-  extent={{-20,-5},{20,5}})), __MWORKS(BlockSystem(GotoTag(tagName="TypeCmd",tagSocped="",tagVisibility="Global"))));
+      annotation(Placement(transformation(origin={-280,-102.65},
+extent={{-20,-5},{20,5}})), __MWORKS(BlockSystem(GotoTag(tagName="TypeCmd",tagSocped="",tagVisibility="Global"))));
     SysplorerEmbeddedCoder.SignalRouting.From from7 
-      annotation(Placement(transformation(origin={-264,-146.558},
-  extent={{-20,-5},{20,5}})), __MWORKS(BlockSystem(GotoTag(tagName="TypeCmd",tagSocped="",tagVisibility="Global"))));
+      annotation(Placement(transformation(origin={-264,-143.433},
+extent={{-20,-5},{20,5}})), __MWORKS(BlockSystem(GotoTag(tagName="TypeCmd",tagSocped="",tagVisibility="Global"))));
     SysplorerEmbeddedCoder.SignalRouting.From From2 
-      annotation(Placement(transformation(origin={-263.5,-159.775},
-  extent={{-19.5,-5},{19.5,5}})), __MWORKS(BlockSystem(GotoTag(tagName="VehSpd",tagSocped="",tagVisibility="Global"))));
+      annotation(Placement(transformation(origin={-263.5,-156.65},
+extent={{-19.5,-5},{19.5,5}})), __MWORKS(BlockSystem(GotoTag(tagName="VehSpd",tagSocped="",tagVisibility="Global"))));
     SysplorerEmbeddedCoder.SignalRouting.From From4 
-      annotation(Placement(transformation(origin={-263.5,-171.3625},
-  extent={{-19.5,-5},{19.5,5}})), __MWORKS(BlockSystem(GotoTag(tagName="PTOSpdCmd",tagSocped="",tagVisibility="Global"))));
+      annotation(Placement(transformation(origin={-263.5,-168.2375},
+extent={{-19.5,-5},{19.5,5}})), __MWORKS(BlockSystem(GotoTag(tagName="PTOSpdCmd",tagSocped="",tagVisibility="Global"))));
     SysplorerEmbeddedCoder.SignalRouting.From From5 
-      annotation(Placement(transformation(origin={-326.5,-130.15},
-  extent={{-19.5,-5},{19.5,5}})), __MWORKS(BlockSystem(GotoTag(tagName="LiftCmd",tagSocped="",tagVisibility="Global"))));
+      annotation(Placement(transformation(origin={-326.5,-123.05},
+extent={{-19.5,-5},{19.5,5}})), __MWORKS(BlockSystem(GotoTag(tagName="LiftCmd",tagSocped="",tagVisibility="Global"))));
     SysplorerEmbeddedCoder.SignalRouting.From from8 
-      annotation (Placement(transformation(origin={-266,-183.6175},
-  extent={{-17,-5},{17,5}})),__MWORKS(BlockSystem(GotoTag(tagName="LoadCmd",tagSocped="",tagVisibility="Global"))));
+      annotation (Placement(transformation(origin={-266,-180.4925},
+extent={{-17,-5},{17,5}})),__MWORKS(BlockSystem(GotoTag(tagName="LoadCmd",tagSocped="",tagVisibility="Global"))));
     SysplorerEmbeddedCoder.SignalRouting.From from9 
-      annotation(Placement(transformation(origin={-263,-195.8725},
-  extent={{-20,-5},{20,5}})), __MWORKS(BlockSystem(GotoTag(tagName="Land",tagSocped="",tagVisibility="Global"))));
+      annotation(Placement(transformation(origin={-263,-192.7475},
+extent={{-20,-5},{20,5}})), __MWORKS(BlockSystem(GotoTag(tagName="Land",tagSocped="",tagVisibility="Global"))));
     block 'Tires and Ground_type' "子系统
 通过子系统创建模型分层结构。"
 
@@ -10921,12 +10948,6 @@ extent={{-156,30},{156,-30}})},sizePolicy=SizePolicy.Fixed,rotationPolicy=Rotati
   extent={{-1.75,-26.5},{1.75,26.5}})),__MWORKS(BlockSystem(Instance(y(y1(elementName="Soil"),y2(elementName="Moisture"),y3(elementName="Density"),y4(elementName="Terrain"))))));
       CI_Calc_type CI_Calc 
         annotation (Placement(transformation(origin = {-304.000000, 0.000000}, extent = {{-37.000000, -26.500000}, {37.000000, 26.500000}},rotation=0)),__MWORKS(PortLabels(labelType="PortName")));
-      Display 'Display' 
-        annotation (Placement(transformation(origin = {453.000000, -31.000000}, extent = {{-30.500000, -10.000000}, {30.500000, 10.000000}},rotation=0)));
-      Display1 'Display1' 
-        annotation (Placement(transformation(origin = {453.000000, 54.000000}, extent = {{-30.500000, -10.000000}, {30.500000, 10.000000}},rotation=0)));
-      Display2 'Display2' 
-        annotation (Placement(transformation(origin = {-188.000000, -24.000000}, extent = {{-30.500000, -10.000000}, {30.500000, 10.000000}},rotation=0)));
       Display3 'Display3' 
         annotation (Placement(transformation(origin = {161.000000, 159.000000}, extent = {{-30.500000, -10.000000}, {30.500000, 10.000000}},rotation=0)));
       F_longitudinal_Calc_single_type F_longitudinal_Calc_single 
@@ -10972,7 +10993,10 @@ extent={{-156,30},{156,-30}})},sizePolicy=SizePolicy.Fixed,rotationPolicy=Rotati
   iconTransformation(origin={301.8,90},
   extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
       SysplorerEmbeddedCoder.Port.Outport 'RollResis[N]' 
-        annotation (Placement(transformation(origin = {467.000000, 7.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
+        annotation (Placement(transformation(origin={460,8.9999952},
+extent={{-10,-10},{10,10}}),
+iconTransformation(origin={301.8,30},
+extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
       SysplorerEmbeddedCoder.Port.Outport 'SlopeResis[N]' 
         annotation (Placement(transformation(origin = {-155.000000, 71.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
       SysplorerEmbeddedCoder.Port.Outport 'WhlSpdR[m/s]' 
@@ -10983,6 +11007,9 @@ extent={{-156,30},{156,-30}})},sizePolicy=SizePolicy.Fixed,rotationPolicy=Rotati
       SysplorerEmbeddedCoder.Discrete.UnitDelay unitDelay1 
         annotation (Placement(transformation(origin={-85.75,-75},
   extent={{-10,-10},{10,10}})));
+      Scope1 scope 
+        annotation (Placement(transformation(origin={-199,-30.5},
+extent={{-10,-10},{10,10}})),WindowAttribute={2560, 1494});
       block Bn_Calc_single_type "子系统
 通过子系统创建模型分层结构。"
 
@@ -11594,7 +11621,7 @@ extent={{-156,30},{156,-30}})},sizePolicy=SizePolicy.Fixed,rotationPolicy=Rotati
             annotation (Placement(transformation(origin = {-60.000000, 49.000000}, extent = {{-23.500000, -6.500000}, {23.500000, 6.500000}},rotation=0)),__MWORKS(BlockSystem(SampleTime(auto=false)=-1,Instance(y(Type(inherit=InheritType.constantValue))))));
           SysplorerEmbeddedCoder.Sources.Constant C2(k=20.22) 
             annotation (Placement(transformation(origin = {-36.000000, -40.000000}, extent = {{-23.500000, -6.500000}, {23.500000, 6.500000}},rotation=0)),__MWORKS(BlockSystem(SampleTime(auto=false)=-1,Instance(y(Type(inherit=InheritType.constantValue))))));
-          SysplorerEmbeddedCoder.Sources.Constant C3(k=47.41) 
+          SysplorerEmbeddedCoder.Sources.Constant C3(k=43.41) 
             annotation (Placement(transformation(origin={-176.5,-138},
   extent={{-23.5,-6.5},{23.5,6.5}})),__MWORKS(BlockSystem(SampleTime(auto=false)=-1,Instance(y(Type(inherit=InheritType.constantValue))))));
           SysplorerEmbeddedCoder.Sources.Constant C4(k=6.60) 
@@ -11610,21 +11637,24 @@ extent={{-156,30},{156,-30}})},sizePolicy=SizePolicy.Fixed,rotationPolicy=Rotati
           SysplorerEmbeddedCoder.MathOperation.Sum Subtract(inputs="+-",isSaturate=false) 
             annotation (Placement(transformation(origin = {-87.000000, -72.000000}, extent = {{-10.000000, -10.500000}, {10.000000, 10.500000}},rotation=0)),__MWORKS(BlockSystem(Instance(u(u1,u2),y(Type(inherit=InheritType.internalRule))),Type(overflowKind=SysplorerEmbeddedCoder.Types.OverflowKind.wrap)),PortLabels(labelType="CustomType",labels(label(text="+",instance="u1"),label(text="-",instance="u2")))));
           SysplorerEmbeddedCoder.Port.Outport CI 
-            annotation (Placement(transformation(origin={172,-13},
-  extent={{-10,-10},{10,10}}),
-  iconTransformation(origin={301.8,0},
-  extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
+            annotation (Placement(transformation(origin={194,-11.5},
+extent={{-10,-10},{10,10}}),
+iconTransformation(origin={301.8,0},
+extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
           SysplorerEmbeddedCoder.Port.Inport inport 
-            annotation (Placement(transformation(origin={-196,-120},
-  extent={{-10,-10},{10,10}}),
-  iconTransformation(origin={-301.8,-80},
-  extent={{-1.8,-1.8},{1.8,1.8}})));
+            annotation (Placement(transformation(origin={-236,-120},
+extent={{-10,-10},{10,10}}),
+iconTransformation(origin={-301.8,-80},
+extent={{-1.8,-1.8},{1.8,1.8}})));
           SysplorerEmbeddedCoder.SignalRouting.Switch switch(ct=SysplorerEmbeddedCoder.SignalRouting.Switch.ConditionType.Great,threshold=0) 
             annotation (Placement(transformation(origin={-128,-120},
   extent={{-10,-10},{10,10}})));
           SysplorerEmbeddedCoder.Sources.Constant C5(k=7.41) 
             annotation (Placement(transformation(origin={-196,-95.5},
   extent={{-23.5,-6.5},{23.5,6.5}})),__MWORKS(BlockSystem(SampleTime(auto=false)=-1,Instance(y(Type(inherit=InheritType.constantValue))))));
+          SysplorerEmbeddedCoder.MathOperation.Gain gain(k=1.2) 
+            annotation (Placement(transformation(origin={154.5,-11.5},
+extent={{-10,-10},{10,10}})));
           equation
           connect('moisture[%]', Subtract.u1) 
           annotation(Line(origin={0,0},
@@ -11656,13 +11686,10 @@ extent={{-156,30},{156,-30}})},sizePolicy=SizePolicy.Fixed,rotationPolicy=Rotati
           connect(Product.y, Divide.u1) 
           annotation(Line(origin={0,0},
           points={{27,20},{61,20},{61,-3},{61,-6},{92,-6}}));
-          connect(Divide.y, CI) 
-          annotation(Line(origin={0,0},
-          points={{122,-11},{122,-13},{172,-13}}));
           connect(switch.u2, inport) 
           annotation(Line(origin={-162,-120},
-          points={{22.2,0},{-22,0}},
-          color={0,0,0}));
+points={{22.2,0},{-62,0}},
+color={0,0,0}));
           connect(switch.u1, C5.y) 
           annotation(Line(origin={-148,-113},
   points={{8.2,-0.333333},{-5.4,-0.333333},{-5.4,17.5},{-22.7,17.5}},
@@ -11675,90 +11702,197 @@ extent={{-156,30},{156,-30}})},sizePolicy=SizePolicy.Fixed,rotationPolicy=Rotati
           annotation(Line(origin={-145,-132},
           points={{-6.2,-6},{1.4,-6},{1.4,5.33333},{5.2,5.33333}},
           color={0,0,0}));
+          connect(Divide.y, gain.u) 
+          annotation(Line(origin={126,-11},
+points={{-7.2,0},{16.7,0},{16.7,-0.5}},
+color={0,0,0}));
+          connect(gain.y, CI) 
+          annotation(Line(origin={159,-11},
+points={{7.3,-0.5},{23,-0.5}},
+color={0,0,0}));
           end 'If Action10Subsystem_type';
         block 'If Action10Subsystem2_type' "子系统
 通过子系统创建模型分层结构。"
-
-          annotation (defaultComponentName="subSystem", __MWORKS(PortArrangement(Left('moisture[%]', 'density[g/cm3]'), Top('Action Port'), Right(CI)),BlockSystem(blockKind=BlockKind.subSystem,SampleTime(auto=true),SubSystem(virtual=false,functionPack=FunctionPack.auto,functionName="",sourceFile="")),PortLabels(labelType="PortName"),sourceModel=SysplorerEmbeddedCoder.SubSystems.SubSystem,independentInstance=true,hide=true), Icon(coordinateSystem(extent={{-300,-120},{300,120}},
-        grid={2,2}),graphics = {Rectangle(sizePolicy=SizePolicy.Expanding,
-        rotationPolicy=RotationPolicy.Follow,
-        origin={0,0},
-        fillColor={255,255,255},
-        fillPattern=FillPattern.Solid,
-        lineThickness=3,
-        extent={{-300,120},{300,-120}}), Text(origin={0,-140},
-        lineColor={0,0,0},
-        extent={{0,-20},{0,20}},
-        textString="%name",
-        fontSize=14,
-        textStyle={TextStyle.None},
-        textColor={0,0,0},
-        verticalAlignment=TextAlignment.Top)},sizePolicy=SizePolicy.Fixed,rotationPolicy=RotationPolicy.Ignore),Protection(access=Access.packageDuplicate));
+          annotation(defaultComponentName = "subSystem", __MWORKS(PortArrangement(Left('moisture[%]', 'density[g/cm3]'), Top('Action Port'), Right(CI)), BlockSystem(blockKind = BlockKind.subSystem, SampleTime(auto = true), SubSystem(virtual = false, functionPack = FunctionPack.auto, functionName = "", sourceFile = "")), PortLabels(labelType = "PortName"), sourceModel = SysplorerEmbeddedCoder.SubSystems.SubSystem, independentInstance = true, hide = true), Icon(coordinateSystem(extent = {{-300, -120}, {300, 120}},
+            grid = {2, 2}), graphics = {Rectangle(sizePolicy = SizePolicy.Expanding,
+            rotationPolicy = RotationPolicy.Follow,
+            origin = {0, 0},
+            fillColor = {255, 255, 255},
+            fillPattern = FillPattern.Solid,
+            lineThickness = 3,
+            extent = {{-300, 120}, {300, -120}}), Text(origin = {0, -140},
+            lineColor = {0, 0, 0},
+            extent = {{0, -20}, {0, 20}},
+            textString = "%name",
+            fontSize = 14,
+            textStyle = {TextStyle.None},
+            textColor = {0, 0, 0},
+            verticalAlignment = TextAlignment.Top)}, sizePolicy = SizePolicy.Fixed, rotationPolicy = RotationPolicy.Ignore), Protection(access = Access.packageDuplicate), Diagram(coordinateSystem(extent={{-100,-100},{100,100}},
+grid={2,2})));
           SysplorerEmbeddedCoder.Port.Inport 'moisture[%]' 
-            annotation (Placement(transformation(origin = {-172.000000, -50.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
+            annotation(Placement(transformation(origin = {-280, -50},
+            extent = {{-10, -10}, {10, 10}}),
+            iconTransformation(origin = {-301.8, 60},
+            extent = {{-1.8, -1.8}, {1.8, 1.8}})), __MWORKS(BlockSystem(Type(inherit = InheritType.auto), Dimension(dimensionType = DimensionType.auto) = -1, SampleTime(auto = true) = -1)));
           SysplorerEmbeddedCoder.Port.Inport 'density[g/cm3]' 
-            annotation (Placement(transformation(origin = {-172.000000, 48.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
+            annotation(Placement(transformation(origin={-280,47.5},
+extent={{-10,-10},{10,10}}),
+iconTransformation(origin={-301.8,-60},
+extent={{-1.8,-1.8},{1.8,1.8}})), __MWORKS(BlockSystem(Type(inherit = InheritType.auto), Dimension(dimensionType = DimensionType.auto) = -1, SampleTime(auto = true) = -1)));
           SysplorerEmbeddedCoder.SubSystems.ActionPort 'Action Port' 
-            annotation (Placement(transformation(origin = {71.000000, 76.000000}, extent = {{-25.000000, -9.500000}, {25.000000, 9.500000}},rotation=0)),__MWORKS(portFlag="%actionPort(elseif (u1 == 2))"));
-          SysplorerEmbeddedCoder.MathOperation.Sum Add(inputs="++",isSaturate=false) 
-            annotation (Placement(transformation(origin = {36.000000, -69.000000}, extent = {{-10.000000, -10.500000}, {10.000000, 10.500000}},rotation=0)),__MWORKS(BlockSystem(Instance(u(u1,u2),y(Type(inherit=InheritType.internalRule))),Type(overflowKind=SysplorerEmbeddedCoder.Types.OverflowKind.wrap)),PortLabels(labelType="CustomType",labels(label(text="+",instance="u1"),label(text="+",instance="u2")))));
-          SysplorerEmbeddedCoder.Sources.Constant C1(k=1.10) 
-            annotation (Placement(transformation(origin = {-60.000000, 49.000000}, extent = {{-23.500000, -6.500000}, {23.500000, 6.500000}},rotation=0)),__MWORKS(BlockSystem(SampleTime(auto=false)=-1,Instance(y(Type(inherit=InheritType.constantValue))))));
-          SysplorerEmbeddedCoder.Sources.Constant C2(k=2.19) 
-            annotation (Placement(transformation(origin = {-36.000000, -40.000000}, extent = {{-23.500000, -6.500000}, {23.500000, 6.500000}},rotation=0)),__MWORKS(BlockSystem(SampleTime(auto=false)=-1,Instance(y(Type(inherit=InheritType.constantValue))))));
-          SysplorerEmbeddedCoder.Sources.Constant C3(k=3.29) 
-            annotation (Placement(transformation(origin = {-172.000000, -77.000000}, extent = {{-23.500000, -6.500000}, {23.500000, 6.500000}},rotation=0)),__MWORKS(BlockSystem(SampleTime(auto=false)=-1,Instance(y(Type(inherit=InheritType.constantValue))))));
-          SysplorerEmbeddedCoder.Sources.Constant C4(k=9.34) 
-            annotation (Placement(transformation(origin = {-172.000000, 11.000000}, extent = {{-23.500000, -6.500000}, {23.500000, 6.500000}},rotation=0)),__MWORKS(BlockSystem(SampleTime(auto=false)=-1,Instance(y(Type(inherit=InheritType.constantValue))))));
-          SysplorerEmbeddedCoder.MathOperation.Product Divide(inputs="*/",isSaturate=false,multiplication=SysplorerEmbeddedCoder.MathOperation.Product.MultiplicationType.elementWise) 
-            annotation (Placement(transformation(origin = {107.000000, -11.000000}, extent = {{-10.000000, -10.500000}, {10.000000, 10.500000}},rotation=0)),__MWORKS(BlockSystem(Instance(u(u1,u2),y(Type(inherit=InheritType.internalRule))),Type(overflowKind=SysplorerEmbeddedCoder.Types.OverflowKind.wrap)),PortLabels(labelType="CustomType",labels(label(text="*",instance="u1"),label(text="/",instance="u2")))));
-          SysplorerEmbeddedCoder.MathOperation.MathFunction 'Math10Function'(operatorType=SysplorerEmbeddedCoder.MathOperation.MathFunction.OperatorType.pow) 
-            annotation (Placement(transformation(origin = {-73.000000, 16.000000}, extent = {{-10.000000, -10.500000}, {10.000000, 10.500000}},rotation=0)));
-          SysplorerEmbeddedCoder.MathOperation.Product Product(inputs="2",isSaturate=false,multiplication=SysplorerEmbeddedCoder.MathOperation.Product.MultiplicationType.elementWise) 
-            annotation (Placement(transformation(origin = {12.000000, 20.000000}, extent = {{-10.000000, -10.500000}, {10.000000, 10.500000}},rotation=0)),__MWORKS(BlockSystem(Instance(u(u1,u2),y(Type(inherit=InheritType.internalRule))),Type(overflowKind=SysplorerEmbeddedCoder.Types.OverflowKind.wrap)),PortLabels(labelType="CustomType",labels(label(text="*",instance="u1"),label(text="*",instance="u2")))));
-          SysplorerEmbeddedCoder.MathOperation.MathFunction Square(operatorType=SysplorerEmbeddedCoder.MathOperation.MathFunction.OperatorType.square) 
-            annotation (Placement(transformation(origin = {-26.000000, -74.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)));
-          SysplorerEmbeddedCoder.MathOperation.Sum Subtract(inputs="+-",isSaturate=false) 
-            annotation (Placement(transformation(origin = {-87.000000, -72.000000}, extent = {{-10.000000, -10.500000}, {10.000000, 10.500000}},rotation=0)),__MWORKS(BlockSystem(Instance(u(u1,u2),y(Type(inherit=InheritType.internalRule))),Type(overflowKind=SysplorerEmbeddedCoder.Types.OverflowKind.wrap)),PortLabels(labelType="CustomType",labels(label(text="+",instance="u1"),label(text="-",instance="u2")))));
+            annotation(Placement(transformation(origin = {71.000000, 76.000000}, extent = {{-25.000000, -9.500000}, {25.000000, 9.500000}}, rotation = 0)), __MWORKS(portFlag = "%actionPort(elseif (u1 == 2))"));
+          SysplorerEmbeddedCoder.MathOperation.Sum Add(inputs = "++", isSaturate = false) 
+            annotation(Placement(transformation(origin = {36.000000, -69.000000}, extent = {{-10.000000, -10.500000}, {10.000000, 10.500000}}, rotation = 0)), __MWORKS(BlockSystem(Instance(u(u1, u2), y(Type(inherit = InheritType.internalRule))), Type(overflowKind = SysplorerEmbeddedCoder.Types.OverflowKind.wrap)), PortLabels(labelType = "CustomType", labels(label(text = "+", instance = "u1"), label(text = "+", instance = "u2")))));
+          SysplorerEmbeddedCoder.Sources.Constant C1(k = 1.10) 
+            annotation(Placement(transformation(origin = {-60.000000, 49.000000}, extent = {{-23.500000, -6.500000}, {23.500000, 6.500000}}, rotation = 0)), __MWORKS(BlockSystem(SampleTime(auto = false) = -1, Instance(y(Type(inherit = InheritType.constantValue))))));
+          SysplorerEmbeddedCoder.Sources.Constant C2(k = 2.19) 
+            annotation(Placement(transformation(origin = {-36.000000, -40.000000}, extent = {{-23.500000, -6.500000}, {23.500000, 6.500000}}, rotation = 0)), __MWORKS(BlockSystem(SampleTime(auto = false) = -1, Instance(y(Type(inherit = InheritType.constantValue))))));
+          SysplorerEmbeddedCoder.Sources.Constant C3(k = 3.29) 
+            annotation(Placement(transformation(origin = {-172.000000, -77.000000}, extent = {{-23.500000, -6.500000}, {23.500000, 6.500000}}, rotation = 0)), __MWORKS(BlockSystem(SampleTime(auto = false) = -1, Instance(y(Type(inherit = InheritType.constantValue))))));
+          SysplorerEmbeddedCoder.Sources.Constant C4(k = 9.34) 
+            annotation(Placement(transformation(origin = {-172.000000, 11.000000}, extent = {{-23.500000, -6.500000}, {23.500000, 6.500000}}, rotation = 0)), __MWORKS(BlockSystem(SampleTime(auto = false) = -1, Instance(y(Type(inherit = InheritType.constantValue))))));
+          SysplorerEmbeddedCoder.MathOperation.Product Divide(inputs = "*/", isSaturate = false, multiplication = SysplorerEmbeddedCoder.MathOperation.Product.MultiplicationType.elementWise) 
+            annotation(Placement(transformation(origin = {107.000000, -11.000000}, extent = {{-10.000000, -10.500000}, {10.000000, 10.500000}}, rotation = 0)), __MWORKS(BlockSystem(Instance(u(u1, u2), y(Type(inherit = InheritType.internalRule))), Type(overflowKind = SysplorerEmbeddedCoder.Types.OverflowKind.wrap)), PortLabels(labelType = "CustomType", labels(label(text = "*", instance = "u1"), label(text = "/", instance = "u2")))));
+          SysplorerEmbeddedCoder.MathOperation.MathFunction 'Math10Function'(operatorType = SysplorerEmbeddedCoder.MathOperation.MathFunction.OperatorType.pow) 
+            annotation(Placement(transformation(origin = {-73.000000, 16.000000}, extent = {{-10.000000, -10.500000}, {10.000000, 10.500000}}, rotation = 0)));
+          SysplorerEmbeddedCoder.MathOperation.Product Product(inputs = "2", isSaturate = false, multiplication = SysplorerEmbeddedCoder.MathOperation.Product.MultiplicationType.elementWise) 
+            annotation(Placement(transformation(origin = {12.000000, 20.000000}, extent = {{-10.000000, -10.500000}, {10.000000, 10.500000}}, rotation = 0)), __MWORKS(BlockSystem(Instance(u(u1, u2), y(Type(inherit = InheritType.internalRule))), Type(overflowKind = SysplorerEmbeddedCoder.Types.OverflowKind.wrap)), PortLabels(labelType = "CustomType", labels(label(text = "*", instance = "u1"), label(text = "*", instance = "u2")))));
+          SysplorerEmbeddedCoder.MathOperation.MathFunction Square(operatorType = SysplorerEmbeddedCoder.MathOperation.MathFunction.OperatorType.square) 
+            annotation(Placement(transformation(origin = {-26.000000, -74.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}}, rotation = 0)));
+          SysplorerEmbeddedCoder.MathOperation.Sum Subtract(inputs = "+-", isSaturate = false) 
+            annotation(Placement(transformation(origin = {-87.000000, -72.000000}, extent = {{-10.000000, -10.500000}, {10.000000, 10.500000}}, rotation = 0)), __MWORKS(BlockSystem(Instance(u(u1, u2), y(Type(inherit = InheritType.internalRule))), Type(overflowKind = SysplorerEmbeddedCoder.Types.OverflowKind.wrap)), PortLabels(labelType = "CustomType", labels(label(text = "+", instance = "u1"), label(text = "-", instance = "u2")))));
           SysplorerEmbeddedCoder.Port.Outport CI 
-            annotation (Placement(transformation(origin = {172.000000, -13.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
+            annotation(Placement(transformation(origin={252,-174},
+extent={{-10,-10},{10,10}}),
+iconTransformation(origin={301.8,0},
+extent={{-1.8,-1.8},{1.8,1.8}})), __MWORKS(BlockSystem(Type(inherit = InheritType.auto), Dimension(dimensionType = DimensionType.auto) = -1, SampleTime(auto = true) = -1)));
+          SysplorerEmbeddedCoder.MathOperation.Sum Add1(inputs = "++", isSaturate = false) 
+            annotation(Placement(transformation(origin = {43, -237},
+            extent = {{-10, -10.5}, {10, 10.5}})), __MWORKS(BlockSystem(Instance(u(u1, u2), y(Type(inherit = InheritType.internalRule))), Type(overflowKind = SysplorerEmbeddedCoder.Types.OverflowKind.wrap)), PortLabels(labelType = "CustomType", labels(label(text = "+", instance = "u1"), label(text = "+", instance = "u2")))));
+          SysplorerEmbeddedCoder.Sources.Constant C5(k = 928.1) 
+            annotation(Placement(transformation(origin = {-53, -119},
+            extent = {{-23.5, -6.5}, {23.5, 6.5}})), __MWORKS(BlockSystem(SampleTime(auto = false) = -1, Instance(y(Type(inherit = InheritType.constantValue))))));
+          SysplorerEmbeddedCoder.Sources.Constant C6(k = 20.22) 
+            annotation(Placement(transformation(origin = {-29, -208},
+            extent = {{-23.5, -6.5}, {23.5, 6.5}})), __MWORKS(BlockSystem(SampleTime(auto = false) = -1, Instance(y(Type(inherit = InheritType.constantValue))))));
+          SysplorerEmbeddedCoder.Sources.Constant C7(k = 8.41) 
+            annotation(Placement(transformation(origin = {-143.5, -245.5},
+            extent = {{-23.5, -6.5}, {23.5, 6.5}})), __MWORKS(BlockSystem(SampleTime(auto = false) = -1, Instance(y(Type(inherit = InheritType.constantValue))))));
+          SysplorerEmbeddedCoder.Sources.Constant C8(k = 6.60) 
+            annotation(Placement(transformation(origin = {-165, -157},
+            extent = {{-23.5, -6.5}, {23.5, 6.5}})), __MWORKS(BlockSystem(SampleTime(auto = false) = -1, Instance(y(Type(inherit = InheritType.constantValue))))));
+          SysplorerEmbeddedCoder.MathOperation.Product Divide1(inputs = "*/", isSaturate = false, multiplication = SysplorerEmbeddedCoder.MathOperation.Product.MultiplicationType.elementWise) 
+            annotation(Placement(transformation(origin = {114, -179},
+            extent = {{-10, -10.5}, {10, 10.5}})), __MWORKS(BlockSystem(Instance(u(u1, u2), y(Type(inherit = InheritType.internalRule))), Type(overflowKind = SysplorerEmbeddedCoder.Types.OverflowKind.wrap)), PortLabels(labelType = "CustomType", labels(label(text = "*", instance = "u1"), label(text = "/", instance = "u2")))));
+          SysplorerEmbeddedCoder.MathOperation.MathFunction _Math10Function_(operatorType = SysplorerEmbeddedCoder.MathOperation.MathFunction.OperatorType.pow) 
+            annotation(Placement(transformation(origin = {-66, -152},
+            extent = {{-10, -10.5}, {10, 10.5}})));
+          SysplorerEmbeddedCoder.MathOperation.Product Product1(inputs = "2", isSaturate = false, multiplication = SysplorerEmbeddedCoder.MathOperation.Product.MultiplicationType.elementWise) 
+            annotation(Placement(transformation(origin = {19, -148},
+            extent = {{-10, -10.5}, {10, 10.5}})), __MWORKS(BlockSystem(Instance(u(u1, u2), y(Type(inherit = InheritType.internalRule))), Type(overflowKind = SysplorerEmbeddedCoder.Types.OverflowKind.wrap)), PortLabels(labelType = "CustomType", labels(label(text = "*", instance = "u1"), label(text = "*", instance = "u2")))));
+          SysplorerEmbeddedCoder.MathOperation.MathFunction Square1(operatorType = SysplorerEmbeddedCoder.MathOperation.MathFunction.OperatorType.square) 
+            annotation(Placement(transformation(origin = {-19, -242},
+            extent = {{-10, -10}, {10, 10}})));
+          SysplorerEmbeddedCoder.MathOperation.Sum Subtract1(inputs = "+-", isSaturate = false) 
+            annotation(Placement(transformation(origin = {-80, -240},
+            extent = {{-10, -10.5}, {10, 10.5}})), __MWORKS(BlockSystem(Instance(u(u1, u2), y(Type(inherit = InheritType.internalRule))), Type(overflowKind = SysplorerEmbeddedCoder.Types.OverflowKind.wrap)), PortLabels(labelType = "CustomType", labels(label(text = "+", instance = "u1"), label(text = "-", instance = "u2")))));
+          SysplorerEmbeddedCoder.MathOperation.Sum sum1 
+            annotation (Placement(transformation(origin={204,-174},
+extent={{-10,-10},{10,10}})),__MWORKS(BlockSystem(Instance(u(u1,u2)))));
+          SysplorerEmbeddedCoder.MathOperation.Gain gain(k=25) 
+            annotation (Placement(transformation(origin={164,-84},
+extent={{-10,-10},{10,10}})));
+          SysplorerEmbeddedCoder.MathOperation.Gain gain1(k=0.75) 
+            annotation (Placement(transformation(origin={158,-179},
+extent={{-10,-10},{10,10}})));
         equation
           connect(C3.y, Subtract.u2) 
-          annotation(Line(origin={0,0},
-          points={{-144,-77},{-102,-77}}));
+            annotation(Line(origin = {0, 0},
+            points = {{-144, -77}, {-102, -77}}));
           connect('moisture[%]', Subtract.u1) 
-          annotation(Line(origin={0,0},
-          points={{-172,-50},{-141,-50},{-141,-67},{-102,-67}}));
+            annotation(Line(origin = {0, 0},
+            points = {{-268, -50}, {-141, -50}, {-141, -66.75}, {-98.8, -66.75}}));
           connect(Subtract.y, Square.u1) 
-          annotation(Line(origin={0,0},
-          points={{-72,-72},{-72,-74},{-41,-74}}));
+            annotation(Line(origin = {0, 0},
+            points = {{-72, -72}, {-72, -74}, {-41, -74}}));
           connect(Square.y, Add.u2) 
-          annotation(Line(origin={0,0},
-          points={{-11,-74},{21,-74}}));
+            annotation(Line(origin = {0, 0},
+            points = {{-11, -74}, {21, -74}}));
           connect(C2.y, Add.u1) 
-          annotation(Line(origin={0,0},
-          points={{-8,-40},{7,-40},{7,-63},{7,-64},{21,-64}}));
+            annotation(Line(origin = {0, 0},
+            points = {{-8, -40}, {7, -40}, {7, -63}, {7, -64}, {21, -64}}));
           connect(Add.y, Divide.u2) 
-          annotation(Line(origin={0,0},
-          points={{51,-69},{73,-69},{73,-15},{73,-16},{92,-16}}));
+            annotation(Line(origin = {0, 0},
+            points = {{51, -69}, {73, -69}, {73, -15}, {73, -16}, {92, -16}}));
           connect('density[g/cm3]', 'Math10Function'.u1) 
-          annotation(Line(origin={0,0},
-          points={{-172,48},{-130,48},{-130,21},{-88,21}}));
+            annotation(Line(origin={0,0},
+points={{-268,47.5000048},{-130,47.5000048},{-130,21.25},{-84.8,21.25}}));
           connect(C4.y, 'Math10Function'.u2) 
-          annotation(Line(origin={0,0},
-          points={{-144,11},{-88,11}}));
+            annotation(Line(origin = {0, 0},
+            points = {{-144, 11}, {-88, 11}}));
           connect('Math10Function'.y, Product.u2) 
-          annotation(Line(origin={0,0},
-          points={{-58,16},{-58,15},{-3,15}}));
+            annotation(Line(origin = {0, 0},
+            points = {{-58, 16}, {-58, 15}, {-3, 15}}));
           connect(C1.y, Product.u1) 
-          annotation(Line(origin={0,0},
-          points={{-32,49},{-17,49},{-17,26},{-17,25},{-3,25}}));
+            annotation(Line(origin = {0, 0},
+            points = {{-32, 49}, {-17, 49}, {-17, 26}, {-17, 25}, {-3, 25}}));
           connect(Product.y, Divide.u1) 
-          annotation(Line(origin={0,0},
-          points={{27,20},{61,20},{61,-3},{61,-6},{92,-6}}));
-          connect(Divide.y, CI) 
-          annotation(Line(origin={0,0},
-          points={{122,-11},{122,-13},{172,-13}}));
+            annotation(Line(origin = {0, 0},
+            points = {{27, 20}, {61, 20}, {61, -3}, {61, -6}, {92, -6}}));
+          connect('moisture[%]', Subtract1.u1) 
+            annotation(Line(origin={-180,-142},
+points={{-88,92.0000048},{46,92.0000048},{46,-92.75},{88.2,-92.75}}));
+          connect(Subtract1.y, Square1.u1) 
+            annotation(Line(origin = {7, -168},
+            points = {{-75.2, -72}, {-72, -72}, {-72, -74}, {-37.8, -74}}));
+          connect(Square1.y, Add1.u2) 
+            annotation(Line(origin = {7, -168},
+            points = {{-14.2, -74}, {24.2, -74}, {24.2, -74.25}}));
+          connect(C6.y, Add1.u1) 
+            annotation(Line(origin = {7, -168},
+            points = {{-10.7, -40}, {7, -40}, {7, -63.75}, {24.2, -63.75}}));
+          connect(Add1.y, Divide1.u2) 
+            annotation(Line(origin = {7, -168},
+            points = {{47.8, -69}, {73, -69}, {73, -16.25}, {95.2, -16.25}}));
+          connect('density[g/cm3]', _Math10Function_.u1) 
+            annotation(Line(origin={-173,-50},
+points={{-95,97.5000048},{43,97.5000048},{43,71.25},{49,71.25},{49,-96.75},{95.2,-96.75}}));
+          connect(C8.y, _Math10Function_.u2) 
+            annotation(Line(origin = {7, -168},
+            points = {{-146.7, 11}, {-84.8, 11}, {-84.8, 10.75}}));
+          connect(_Math10Function_.y, Product1.u2) 
+            annotation(Line(origin = {7, -168},
+            points = {{-61.2, 16}, {0.2, 16}, {0.2, 14.75}}));
+          connect(C5.y, Product1.u1) 
+            annotation(Line(origin = {7, -168},
+            points = {{-34.7, 49}, {-17, 49}, {-17, 25.25}, {0.2, 25.25}}));
+          connect(Product1.y, Divide1.u1) 
+            annotation(Line(origin = {7, -168},
+            points = {{23.8, 20}, {61, 20}, {61, -5.75}, {95.2, -5.75}}));
+          connect(C7.y, Subtract1.u2) 
+            annotation(Line(origin = {-105, -245},
+            points = {{-13.2, -0.5}, {13.2, -0.5}, {13.2, -0.25}},
+            color = {0, 0, 0}));
+          connect(sum1.y, CI) 
+          annotation(Line(origin={228,-174},
+          points={{-12.2,0},{12,2.84217e-14}},
+          color={0,0,0}));
+          connect(sum1.u1, gain.y) 
+          annotation(Line(origin={185,-169},
+points={{7.2,0},{-5.4,0},{-5.4,85},{-9.2,85}},
+color={0,0,0}));
+          connect(gain.u, Divide.y) 
+          annotation(Line(origin={137,-90},
+points={{15.2,6},{-14.4,6},{-14.4,79},{-18.2,79}},
+color={0,0,0}));
+          connect(Divide1.y, gain1.u) 
+          annotation(Line(origin={136,-179},
+          points={{-10.2,0},{10.2,0}},
+          color={0,0,0}));
+          connect(gain1.y, sum1.u2) 
+          annotation(Line(origin={181,-179},
+          points={{-11.2,0},{11.2,0}},
+          color={0,0,0}));
           end 'If Action10Subsystem2_type';
         block _IfAction10Subsystem1_type_ "子系统
 通过子系统创建模型分层结构。"
@@ -11864,15 +11998,15 @@ extent={{-156,30},{156,-30}})},sizePolicy=SizePolicy.Fixed,rotationPolicy=Rotati
         verticalAlignment=TextAlignment.Top)},sizePolicy=SizePolicy.Fixed,rotationPolicy=RotationPolicy.Ignore),Protection(access=Access.packageDuplicate),Diagram(coordinateSystem(extent={{-100,-100},{100,100}},
         grid={2,2})));
           SysplorerEmbeddedCoder.Port.Inport 'moisture[%]' 
-            annotation (Placement(transformation(origin={-172,-50},
-  extent={{-10,-10},{10,10}}),
-  iconTransformation(origin={-301.8,60},
-  extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
+            annotation (Placement(transformation(origin={-232,-53},
+extent={{-10,-10},{10,10}}),
+iconTransformation(origin={-301.8,60},
+extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
           SysplorerEmbeddedCoder.Port.Inport 'density[g/cm3]' 
-            annotation (Placement(transformation(origin={-172,48},
-  extent={{-10,-10},{10,10}}),
-  iconTransformation(origin={-301.8,-60},
-  extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
+            annotation (Placement(transformation(origin={-232,43},
+extent={{-10,-10},{10,10}}),
+iconTransformation(origin={-301.8,-60},
+extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
           SysplorerEmbeddedCoder.SubSystems.ActionPort 'Action Port' 
             annotation (Placement(transformation(origin = {76.000000, 76.000000}, extent = {{-20.000000, -9.500000}, {20.000000, 9.500000}},rotation=0)),__MWORKS(portFlag="%actionPort(elseif (u1 == 1))"));
           SysplorerEmbeddedCoder.MathOperation.Sum Add(inputs="++",isSaturate=false) 
@@ -11897,14 +12031,17 @@ extent={{-156,30},{156,-30}})},sizePolicy=SizePolicy.Fixed,rotationPolicy=Rotati
           SysplorerEmbeddedCoder.MathOperation.Sum Subtract(inputs="+-",isSaturate=false) 
             annotation (Placement(transformation(origin = {-87.000000, -72.000000}, extent = {{-10.000000, -10.500000}, {10.000000, 10.500000}},rotation=0)),__MWORKS(BlockSystem(Instance(u(u1,u2),y(Type(inherit=InheritType.internalRule))),Type(overflowKind=SysplorerEmbeddedCoder.Types.OverflowKind.wrap)),PortLabels(labelType="CustomType",labels(label(text="+",instance="u1"),label(text="-",instance="u2")))));
           SysplorerEmbeddedCoder.Port.Outport CI 
-            annotation (Placement(transformation(origin={172,-13},
-  extent={{-10,-10},{10,10}}),
-  iconTransformation(origin={301.8,0},
-  extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
+            annotation (Placement(transformation(origin={170,-11},
+extent={{-10,-10},{10,10}}),
+iconTransformation(origin={301.8,0},
+extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
+          SysplorerEmbeddedCoder.MathOperation.Gain gain(k=1.2) 
+            annotation (Placement(transformation(origin={138.5,-11},
+extent={{-10,-10},{10,10}})));
           equation
           connect('moisture[%]', Subtract.u1) 
           annotation(Line(origin={0,0},
-          points={{-172,-50},{-141,-50},{-141,-67},{-102,-67}}));
+points={{-220,-53},{-141,-53},{-141,-66.75},{-98.8,-66.75}}));
           connect(Subtract.y, Square.u1) 
           annotation(Line(origin={0,0},
           points={{-72,-72},{-72,-74},{-41,-74}}));
@@ -11919,7 +12056,7 @@ extent={{-156,30},{156,-30}})},sizePolicy=SizePolicy.Fixed,rotationPolicy=Rotati
           points={{51,-69},{73,-69},{73,-15},{73,-16},{92,-16}}));
           connect('density[g/cm3]', 'Math10Function'.u1) 
           annotation(Line(origin={0,0},
-          points={{-172,48},{-130,48},{-130,21},{-88,21}}));
+points={{-220,43.0000048},{-130,43.0000048},{-130,21.25},{-84.8,21.25}}));
           connect(C4.y, 'Math10Function'.u2) 
           annotation(Line(origin={0,0},
           points={{-144,11},{-88,11}}));
@@ -11932,12 +12069,17 @@ extent={{-156,30},{156,-30}})},sizePolicy=SizePolicy.Fixed,rotationPolicy=Rotati
           connect(Product.y, Divide.u1) 
           annotation(Line(origin={0,0},
           points={{27,20},{61,20},{61,-3},{61,-6},{92,-6}}));
-          connect(Divide.y, CI) 
-          annotation(Line(origin={0,0},
-          points={{122,-11},{122,-13},{172,-13}}));
           connect(C3.y, Subtract.u2) 
           annotation(Line(origin={-112,-77},
           points={{-13.2,-0.5},{13.2,-0.5},{13.2,-0.25}},
+          color={0,0,0}));
+          connect(Divide.y, gain.u) 
+          annotation(Line(origin={123,-11},
+          points={{-4.2,0},{3.7,2.41224e-6}},
+          color={0,0,0}));
+          connect(gain.y, CI) 
+          annotation(Line(origin={154,-11},
+          points={{-3.7,2.41224e-6},{4.00004,4.8e-6}},
           color={0,0,0}));
           end _IfAction10Subsystem_type_;
       equation
@@ -11998,201 +12140,6 @@ extent={{-156,30},{156,-30}})},sizePolicy=SizePolicy.Fixed,rotationPolicy=Rotati
         points={{86,-4.8667},{86,5},{-85.2,5}},
         color={0,0,0}));
         end CI_Calc_type;
-      block Display "显示
-显示输入数据的值。"
-
-
-        type NumericDisplayFormat = enumeration(
-          short "short",
-          long "long",
-          short_e "short_e",
-          long_e "long_e",
-          bank "bank",
-          hex "hex(Integer)",
-          binary "binary(Integer)",
-          decimal "decimal(Integer)",
-          octal "octal(Integer)") 
-          annotation(__MWORKS(hide = true),Protection(access=Access.packageDuplicate));
-
-        parameter SysplorerEmbeddedCoder.Types.NumericDisplayFormat format = SysplorerEmbeddedCoder.Types.NumericDisplayFormat.short "数值显示格式" 
-          annotation(HideResult = true, choices(choice = NumericDisplayFormat.short "short", choice = NumericDisplayFormat.long "long", choice = NumericDisplayFormat.short_e "short_e", choice = NumericDisplayFormat.long_e "long_e", choice = NumericDisplayFormat.bank "bink", choice = NumericDisplayFormat.hex "hex(Integer)", choice = NumericDisplayFormat.binary "binary(Integer)", choice = NumericDisplayFormat.decimal "decimal(Integer)", choice = NumericDisplayFormat.octal "octal(Integer)"));
-        parameter Integer decimation = 1 "抽取(显示的频率)" 
-          annotation(HideResult = true);
-        SysplorerEmbeddedCoder.Types.InputAuto u 
-          annotation(Placement(transformation(origin = {-110, 0},
-          extent = {{-10, -10}, {10, 10}}),
-          iconTransformation(origin = {-101.8, 0},
-          extent = {{-1.8, -1.8}, {1.8, 1.8}})),
-          __MWORKS(BlockSystem(AllowDimension(choices(choice = DimensionType.scalar, choice = DimensionType.array1D, choice = DimensionType.scalar, choice = DimensionType.rowVector2D, choice = DimensionType.columnVector2D, choice = DimensionType.array2D)),
-          AllowType(choices(choice = "double", choice = "float", choice = "int8", choice = "uint8", choice = "int16", choice = "uint16", choice = "int32",
-          choice = "uint32", choice = "int64", choice = "uint64", choice = "string", choice = "boolean", choice = "enum")))));
-
-        SysplorerEmbeddedCoder.Types.OutputAuto y 
-          annotation(
-          __MWORKS(BlockSystem(AllowDimension(choices(choice = DimensionType.scalar, choice = DimensionType.array1D, choice = DimensionType.scalar, choice = DimensionType.rowVector2D, choice = DimensionType.columnVector2D, choice = DimensionType.array2D)),
-          AllowType(choices(choice = "double", choice = "float", choice = "int8", choice = "uint8", choice = "int16", choice = "uint16", choice = "int32",
-          choice = "uint32", choice = "int64", choice = "uint64", choice = "string", choice = "boolean", choice = "enum")))));
-
-      algorithm
-        y := u;
-
-        annotation(defaultComponentName = "disPlay", __MWORKS(BlockSystem(blockKind = Types.BlockKind.atomic, bltBlockKind = Types.BltBlockKind.display),PortArrangement(Left(u)),sourceModel=SysplorerEmbeddedCoder.Utilities.Display,independentInstance=true,hide=true), Icon(coordinateSystem(extent={{-100,-100},{100,100}},
-      grid={2,2}),graphics = {Rectangle(origin={0,0},
-      fillColor={255,255,255},
-      fillPattern=FillPattern.Solid,
-      lineThickness=3,
-      extent={{-100,100},{100,-100}},
-      rotationPolicy=RotationPolicy.Follow), Rectangle(origin={0,70},
-      fillColor={255,255,255},
-      fillPattern=FillPattern.Solid,
-      lineThickness=2,
-      extent={{-90,20},{90,-20}}), Text(origin={0,70},
-      lineColor={0,0,0},
-      extent={{-88,20},{88,-20}},
-      textString="%{u(short)}",
-      fontSize=12,
-      textStyle={TextStyle.None},
-      textColor={0,0,0},
-      horizontalAlignment=TextAlignment.Left), Text(origin={0,-120},
-      lineColor={0,0,0},
-      extent={{0,-20},{0,20}},
-      textString="%name",
-      fontSize=14,
-      textStyle={TextStyle.None},
-      textColor={0,0,0},
-      verticalAlignment=TextAlignment.Top)},rotationPolicy=RotationPolicy.Ignore), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}},
-          grid = {2, 2})),Protection(access=Access.packageDuplicate));
-      end Display;
-      block Display1 "显示
-显示输入数据的值。"
-
-
-        type NumericDisplayFormat = enumeration(
-          short "short",
-          long "long",
-          short_e "short_e",
-          long_e "long_e",
-          bank "bank",
-          hex "hex(Integer)",
-          binary "binary(Integer)",
-          decimal "decimal(Integer)",
-          octal "octal(Integer)") 
-          annotation(__MWORKS(hide = true),Protection(access=Access.packageDuplicate));
-
-        parameter SysplorerEmbeddedCoder.Types.NumericDisplayFormat format = SysplorerEmbeddedCoder.Types.NumericDisplayFormat.short "数值显示格式" 
-          annotation(HideResult = true, choices(choice = NumericDisplayFormat.short "short", choice = NumericDisplayFormat.long "long", choice = NumericDisplayFormat.short_e "short_e", choice = NumericDisplayFormat.long_e "long_e", choice = NumericDisplayFormat.bank "bink", choice = NumericDisplayFormat.hex "hex(Integer)", choice = NumericDisplayFormat.binary "binary(Integer)", choice = NumericDisplayFormat.decimal "decimal(Integer)", choice = NumericDisplayFormat.octal "octal(Integer)"));
-        parameter Integer decimation = 1 "抽取(显示的频率)" 
-          annotation(HideResult = true);
-        SysplorerEmbeddedCoder.Types.InputAuto u 
-          annotation(Placement(transformation(origin = {-110, 0},
-          extent = {{-10, -10}, {10, 10}}),
-          iconTransformation(origin = {-101.8, 0},
-          extent = {{-1.8, -1.8}, {1.8, 1.8}})),
-          __MWORKS(BlockSystem(AllowDimension(choices(choice = DimensionType.scalar, choice = DimensionType.array1D, choice = DimensionType.scalar, choice = DimensionType.rowVector2D, choice = DimensionType.columnVector2D, choice = DimensionType.array2D)),
-          AllowType(choices(choice = "double", choice = "float", choice = "int8", choice = "uint8", choice = "int16", choice = "uint16", choice = "int32",
-          choice = "uint32", choice = "int64", choice = "uint64", choice = "string", choice = "boolean", choice = "enum")))));
-
-        SysplorerEmbeddedCoder.Types.OutputAuto y 
-          annotation(
-          __MWORKS(BlockSystem(AllowDimension(choices(choice = DimensionType.scalar, choice = DimensionType.array1D, choice = DimensionType.scalar, choice = DimensionType.rowVector2D, choice = DimensionType.columnVector2D, choice = DimensionType.array2D)),
-          AllowType(choices(choice = "double", choice = "float", choice = "int8", choice = "uint8", choice = "int16", choice = "uint16", choice = "int32",
-          choice = "uint32", choice = "int64", choice = "uint64", choice = "string", choice = "boolean", choice = "enum")))));
-
-      algorithm
-        y := u;
-
-        annotation(defaultComponentName = "disPlay", __MWORKS(BlockSystem(blockKind = Types.BlockKind.atomic, bltBlockKind = Types.BltBlockKind.display),PortArrangement(Left(u)),sourceModel=SysplorerEmbeddedCoder.Utilities.Display,independentInstance=true,hide=true), Icon(coordinateSystem(extent={{-100,-100},{100,100}},
-      grid={2,2}),graphics = {Rectangle(origin={0,0},
-      fillColor={255,255,255},
-      fillPattern=FillPattern.Solid,
-      lineThickness=3,
-      extent={{-100,100},{100,-100}},
-      rotationPolicy=RotationPolicy.Follow), Rectangle(origin={0,70},
-      fillColor={255,255,255},
-      fillPattern=FillPattern.Solid,
-      lineThickness=2,
-      extent={{-90,20},{90,-20}}), Text(origin={0,70},
-      lineColor={0,0,0},
-      extent={{-88,20},{88,-20}},
-      textString="%{u(short)}",
-      fontSize=12,
-      textStyle={TextStyle.None},
-      textColor={0,0,0},
-      horizontalAlignment=TextAlignment.Left), Text(origin={0,-120},
-      lineColor={0,0,0},
-      extent={{0,-20},{0,20}},
-      textString="%name",
-      fontSize=14,
-      textStyle={TextStyle.None},
-      textColor={0,0,0},
-      verticalAlignment=TextAlignment.Top)},rotationPolicy=RotationPolicy.Ignore), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}},
-          grid = {2, 2})),Protection(access=Access.packageDuplicate));
-      end Display1;
-      block Display2 "显示
-显示输入数据的值。"
-
-
-        type NumericDisplayFormat = enumeration(
-          short "short",
-          long "long",
-          short_e "short_e",
-          long_e "long_e",
-          bank "bank",
-          hex "hex(Integer)",
-          binary "binary(Integer)",
-          decimal "decimal(Integer)",
-          octal "octal(Integer)") 
-          annotation(__MWORKS(hide = true),Protection(access=Access.packageDuplicate));
-
-        parameter SysplorerEmbeddedCoder.Types.NumericDisplayFormat format = SysplorerEmbeddedCoder.Types.NumericDisplayFormat.short "数值显示格式" 
-          annotation(HideResult = true, choices(choice = NumericDisplayFormat.short "short", choice = NumericDisplayFormat.long "long", choice = NumericDisplayFormat.short_e "short_e", choice = NumericDisplayFormat.long_e "long_e", choice = NumericDisplayFormat.bank "bink", choice = NumericDisplayFormat.hex "hex(Integer)", choice = NumericDisplayFormat.binary "binary(Integer)", choice = NumericDisplayFormat.decimal "decimal(Integer)", choice = NumericDisplayFormat.octal "octal(Integer)"));
-        parameter Integer decimation = 1 "抽取(显示的频率)" 
-          annotation(HideResult = true);
-        SysplorerEmbeddedCoder.Types.InputAuto u 
-          annotation(Placement(transformation(origin = {-110, 0},
-          extent = {{-10, -10}, {10, 10}}),
-          iconTransformation(origin = {-101.8, 0},
-          extent = {{-1.8, -1.8}, {1.8, 1.8}})),
-          __MWORKS(BlockSystem(AllowDimension(choices(choice = DimensionType.scalar, choice = DimensionType.array1D, choice = DimensionType.scalar, choice = DimensionType.rowVector2D, choice = DimensionType.columnVector2D, choice = DimensionType.array2D)),
-          AllowType(choices(choice = "double", choice = "float", choice = "int8", choice = "uint8", choice = "int16", choice = "uint16", choice = "int32",
-          choice = "uint32", choice = "int64", choice = "uint64", choice = "string", choice = "boolean", choice = "enum")))));
-
-        SysplorerEmbeddedCoder.Types.OutputAuto y 
-          annotation(
-          __MWORKS(BlockSystem(AllowDimension(choices(choice = DimensionType.scalar, choice = DimensionType.array1D, choice = DimensionType.scalar, choice = DimensionType.rowVector2D, choice = DimensionType.columnVector2D, choice = DimensionType.array2D)),
-          AllowType(choices(choice = "double", choice = "float", choice = "int8", choice = "uint8", choice = "int16", choice = "uint16", choice = "int32",
-          choice = "uint32", choice = "int64", choice = "uint64", choice = "string", choice = "boolean", choice = "enum")))));
-
-      algorithm
-        y := u;
-
-        annotation(defaultComponentName = "disPlay", __MWORKS(BlockSystem(blockKind = Types.BlockKind.atomic, bltBlockKind = Types.BltBlockKind.display),PortArrangement(Left(u)),sourceModel=SysplorerEmbeddedCoder.Utilities.Display,independentInstance=true,hide=true), Icon(coordinateSystem(extent={{-100,-100},{100,100}},
-      grid={2,2}),graphics = {Rectangle(origin={0,0},
-      fillColor={255,255,255},
-      fillPattern=FillPattern.Solid,
-      lineThickness=3,
-      extent={{-100,100},{100,-100}},
-      rotationPolicy=RotationPolicy.Follow), Rectangle(origin={0,70},
-      fillColor={255,255,255},
-      fillPattern=FillPattern.Solid,
-      lineThickness=2,
-      extent={{-90,20},{90,-20}}), Text(origin={0,70},
-      lineColor={0,0,0},
-      extent={{-88,20},{88,-20}},
-      textString="%{u(short)}",
-      fontSize=12,
-      textStyle={TextStyle.None},
-      textColor={0,0,0},
-      horizontalAlignment=TextAlignment.Left), Text(origin={0,-120},
-      lineColor={0,0,0},
-      extent={{0,-20},{0,20}},
-      textString="%name",
-      fontSize=14,
-      textStyle={TextStyle.None},
-      textColor={0,0,0},
-      verticalAlignment=TextAlignment.Top)},rotationPolicy=RotationPolicy.Ignore), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}},
-          grid = {2, 2})),Protection(access=Access.packageDuplicate));
-      end Display2;
       block Display3 "显示
 显示输入数据的值。"
 
@@ -12625,9 +12572,15 @@ extent={{-156,30},{156,-30}})},sizePolicy=SizePolicy.Fixed,rotationPolicy=Rotati
           SysplorerEmbeddedCoder.Port.Outport 'FR_r[N]' 
             annotation (Placement(transformation(origin = {271.000000, 88.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
           SysplorerEmbeddedCoder.Port.Outport 'FX_f[N]' 
-            annotation (Placement(transformation(origin = {452.000000, -7.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
+            annotation (Placement(transformation(origin={271,-51},
+extent={{-10,-10},{10,10}}),
+iconTransformation(origin={301.8,-30},
+extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
           SysplorerEmbeddedCoder.Port.Outport 'FX_r[N]' 
-            annotation (Placement(transformation(origin = {452.000000, -35.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
+            annotation (Placement(transformation(origin={276,-167},
+extent={{-10,-10},{10,10}}),
+iconTransformation(origin={301.8,-90},
+extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
         equation
           connect(Subtract1.y, Product.u3) 
           annotation(Line(origin={0,0},
@@ -12799,7 +12752,10 @@ extent={{-156,30},{156,-30}})},sizePolicy=SizePolicy.Fixed,rotationPolicy=Rotati
           points={{-74,101},{-74,102},{-70,102}}));
           connect(Product2.y, 'FX_f[N]') 
           annotation(Line(origin={0,0},
-          points={{208,-51},{323,-51},{323,-7},{452,-7}}),Text(origin={387,-4},extent={{0,-3},{0,3}},textString="%signal",fontSize=12),__MWORKS(BlockSystem(NamedSignal(name="FX_f"))));
+points={{204.8,-51},{259,-51}}),Text(origin={231.9,-47.5306},
+extent={{0,-3},{0,3}},
+textString="%signal",
+fontSize=12),__MWORKS(BlockSystem(NamedSignal(name="FX_f"))));
           connect(Divide1.y, Add2.u2) 
           annotation(Line(origin={0,0},
           points={{-169,178},{-169,176},{-22,176}}));
@@ -12808,7 +12764,10 @@ extent={{-156,30},{156,-30}})},sizePolicy=SizePolicy.Fixed,rotationPolicy=Rotati
           points={{-81,-198},{-81,-197},{-70,-197}}));
           connect(Product4.y, 'FX_r[N]') 
           annotation(Line(origin={0,0},
-          points={{208,-167},{383,-167},{383,-35},{452,-35}}),Text(origin={417,-32},extent={{0,-3},{0,3}},textString="%signal",fontSize=12),__MWORKS(BlockSystem(NamedSignal(name="FX_r"))));
+points={{204.8,-167},{264,-167}}),Text(origin={234.4,-163.531},
+extent={{0,-3},{0,3}},
+textString="%signal",
+fontSize=12),__MWORKS(BlockSystem(NamedSignal(name="FX_r"))));
           end '-70-75-52-17/-71-5-44-80_type';
         block component "子系统
 通过子系统创建模型分层结构。"
@@ -14675,7 +14634,7 @@ extent={{-156,30},{156,-30}})},sizePolicy=SizePolicy.Fixed,rotationPolicy=Rotati
       block Slip_calc_type "子系统
 通过子系统创建模型分层结构。"
 
-        annotation (defaultComponentName="subSystem", __MWORKS(PortArrangement(Left('VehSpd[m/s]', 'WhlSpdF[m/s]', 'WhlSpdR[m/s]'), Right('SlipF[-]', 'SlipR[-]')),BlockSystem(blockKind=BlockKind.subSystem, SampleTime(auto=true), SubSystem(virtual=true, functionPack=FunctionPack.auto, functionName="", sourceFile="")),PortLabels(labelType="PortName"),sourceModel=SysplorerEmbeddedCoder.SubSystems.SubSystem,independentInstance=true,hide=true), Icon(coordinateSystem(extent={{-300,-120},{300,120}},
+        annotation (defaultComponentName="subSystem", __MWORKS(PortArrangement(Left('VehSpd [m/s]', 'WhlSpdF[m/s]', 'WhlSpdR[m/s]'), Right('SlipF [-]', 'SlipR [-]')),BlockSystem(blockKind=BlockKind.subSystem, SampleTime(auto=true), SubSystem(virtual=true, functionPack=FunctionPack.auto, functionName="", sourceFile="")),PortLabels(labelType="PortName"),sourceModel=SysplorerEmbeddedCoder.SubSystems.SubSystem,independentInstance=true,hide=true), Icon(coordinateSystem(extent={{-300,-120},{300,120}},
       grid={2,2}),graphics = {Rectangle(sizePolicy=SizePolicy.Expanding,
       rotationPolicy=RotationPolicy.Follow,
       origin={0,0},
@@ -14690,7 +14649,7 @@ extent={{-156,30},{156,-30}})},sizePolicy=SizePolicy.Fixed,rotationPolicy=Rotati
       textStyle={TextStyle.None},
       textColor={0,0,0},
       verticalAlignment=TextAlignment.Top)},sizePolicy=SizePolicy.Fixed,rotationPolicy=RotationPolicy.Ignore),Protection(access=Access.packageDuplicate));
-        SysplorerEmbeddedCoder.Port.Inport 'VehSpd[m/s]' 
+        SysplorerEmbeddedCoder.Port.Inport 'VehSpd [m/s]' 
           annotation (Placement(transformation(origin = {-113.000000, 62.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
         SysplorerEmbeddedCoder.Port.Inport 'WhlSpdF[m/s]' 
           annotation (Placement(transformation(origin = {-113.000000, 18.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
@@ -14716,9 +14675,9 @@ extent={{-156,30},{156,-30}})},sizePolicy=SizePolicy.Fixed,rotationPolicy=Rotati
           annotation (Placement(transformation(origin = {52.000000, -139.000000}, extent = {{-8.500000, -43.500000}, {8.500000, 43.500000}},rotation=0)),__MWORKS(BlockSystem(Instance(u(u1,u2),y(Type(inherit=InheritType.internalRule))),Type(overflowKind=SysplorerEmbeddedCoder.Types.OverflowKind.wrap))));
         Scope 'Scope' 
           annotation (Placement(transformation(origin = {-1.000000, 180.000000}, extent = {{-13.500000, -21.000000}, {13.500000, 21.000000}},rotation=0)));
-        SysplorerEmbeddedCoder.Port.Outport 'SlipF[-]' 
+        SysplorerEmbeddedCoder.Port.Outport 'SlipF [-]' 
           annotation (Placement(transformation(origin = {210.000000, 42.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
-        SysplorerEmbeddedCoder.Port.Outport 'SlipR[-]' 
+        SysplorerEmbeddedCoder.Port.Outport 'SlipR [-]' 
           annotation (Placement(transformation(origin = {210.000000, -138.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
         block Scope "示波器
 显示仿真过程中生成的信号。"
@@ -14785,24 +14744,21 @@ extent={{-156,30},{156,-30}})},sizePolicy=SizePolicy.Fixed,rotationPolicy=Rotati
         connect('WhlSpdF[m/s]', Add2.u1) 
         annotation(Line(origin={0,0},
         points={{-113,18},{-90,18},{-76,18},{-76,147},{-76,148},{39,148}}));
-        connect('VehSpd[m/s]', 'Scope'.u1) 
+        connect('VehSpd [m/s]', 'Scope'.u1) 
         annotation(Line(origin={0,0},
-        points={{-113,62},{-103,62},{-103,194},{-19,194}}),__MWORKS(BlockSystem(NamedSignal(name="VehSpd[m/s]"))));
-        connect('VehSpd[m/s]', Max.u1) 
+        points={{-113,62},{-103,62},{-103,194},{-19,194}}));
+        connect('VehSpd [m/s]', Max.u1) 
         annotation(Line(origin={0,0},
-        points={{-113,62},{-103,62},{-35,62},{-35,63},{35,63}}),__MWORKS(BlockSystem(NamedSignal(name="VehSpd[m/s]"))));
-        connect('VehSpd[m/s]', Max1.u1) 
+        points={{-113,62},{-103,62},{-35,62},{-35,63},{35,63}}));
+        connect('VehSpd [m/s]', Max1.u1) 
         annotation(Line(origin={0,0},
-        points={{-113,62},{-103,62},{-35,62},{-35,-57},{-35,-118},{28,-118},{28,-117},{39,-117}}),__MWORKS(BlockSystem(NamedSignal(name="VehSpd[m/s]"))));
-        connect('VehSpd[m/s]', Add3.u2) 
+        points={{-113,62},{-103,62},{-35,62},{-35,-57},{-35,-118},{28,-118},{28,-117},{39,-117}}));
+        connect('VehSpd [m/s]', Add3.u2) 
         annotation(Line(origin={0,0},
-        points={{-113,62},{-103,62},{-35,62},{-35,-57},{32,-57},{32,-56},{42,-56}}),__MWORKS(BlockSystem(NamedSignal(name="VehSpd[m/s]"))));
-        connect('VehSpd[m/s]', Add2.u2) 
+        points={{-113,62},{-103,62},{-35,62},{-35,-57},{32,-57},{32,-56},{42,-56}}));
+        connect('VehSpd [m/s]', Add2.u2) 
         annotation(Line(origin={0,0},
-points={{-101,62.0000048},{-35,62.0000048},{-35,123.75},{42.2,123.75}}),Text(origin={-68,65.9104},
-extent={{0,-3},{0,3}},
-textString="%signal",
-fontSize=14),__MWORKS(BlockSystem(NamedSignal(name="VehSpd[m/s]"))));
+        points={{-113,62},{-103,62},{-35,62},{-35,123},{28,123},{28,124},{39,124}}));
         connect('WhlSpdR[m/s]', Max1.u2) 
         annotation(Line(origin={0,0},
         points={{-113,-33},{-74,-33},{-74,-162},{29,-162},{29,-160},{39,-160}}));
@@ -14812,10 +14768,10 @@ fontSize=14),__MWORKS(BlockSystem(NamedSignal(name="VehSpd[m/s]"))));
         connect('WhlSpdR[m/s]', Add3.u1) 
         annotation(Line(origin={0,0},
         points={{-113,-33},{-74,-33},{-52,-33},{32,-33},{32,-32},{42,-32}}));
-        connect(Divide.y, 'SlipF[-]') 
+        connect(Divide.y, 'SlipF [-]') 
         annotation(Line(origin={0,0},
         points={{157,44},{157,42},{210,42}}));
-        connect(Divide1.y, 'SlipR[-]') 
+        connect(Divide1.y, 'SlipR [-]') 
         annotation(Line(origin={0,0},
         points={{157,-136},{157,-138},{210,-138}}));
         end Slip_calc_type;
@@ -14896,19 +14852,53 @@ fontSize=14),__MWORKS(BlockSystem(NamedSignal(name="VehSpd[m/s]"))));
         annotation(Line(origin={0,0},
         points={{-204,66},{-103,66}}));
         end SlopeResistance_Calc_type;
+      block Scope1 "示波器
+显示仿真过程中生成的信号。"
+
+        parameter String displayFormat = "y(t)" annotation(HideResult = true);
+
+        parameter String showOnSimulator = "false" annotation(HideResult = true);
+
+        SysplorerEmbeddedCoder.Types.InputAuto u1 
+           annotation (Placement(transformation(origin={-110,0},
+          extent={{-10,-10},{10,10}}),
+          iconTransformation(origin={-101.8,0},
+          extent={{-1.8,-1.8},{1.8,1.8}})),
+            __MWORKS(BlockSystem(AllowDimension(choices(choice=DimensionType.scalar,
+           choice=DimensionType.array1D,
+      choice=DimensionType.scalar,choice=DimensionType.rowVector2D,choice=DimensionType.columnVector2D,choice=DimensionType.array2D)),
+            AllowType(choices(choice = "double", choice = "float", choice = "int8", choice = "uint8", choice = "int16", choice = "uint16", choice = "int32",
+            choice = "uint32", choice = "int64", choice = "uint64", choice = "string", choice = "boolean", choice="fixdt(1,16,0)", choice="fixdt(1,16,2^0,0)", choice = "enum", choice = "bus")))));
+
+        annotation(defaultComponentName = "scope", __MWORKS(BlockSystem(blockKind=Types.BlockKind.atomic, bltBlockKind=Types.BltBlockKind.scope),PortArrangement(Left(u1)),sourceModel=SysplorerEmbeddedCoder.Utilities.Scope,independentInstance=true,hide=true), Icon(coordinateSystem(extent={{-100,-100},{100,100}},
+      grid={2,2}),graphics = {Rectangle(origin={0,0},
+      fillColor={255,255,255},
+      fillPattern=FillPattern.Solid,
+      lineThickness=3,
+      frame=true,
+      extent={{-100,100},{100,-100}},
+      rotationPolicy=RotationPolicy.Follow), Rectangle(origin={1,54.5},
+      fillColor={255,255,255},
+      fillPattern=FillPattern.Solid,
+      lineThickness=2,
+      extent={{-79,24.5},{79,-24.5}},
+      radius=10), Text(origin={0,-120},
+      lineColor={0,0,0},
+      extent={{0,-20},{0,20}},
+      textString="%name",
+      fontSize=14,
+      textStyle={TextStyle.None},
+      textColor={0,0,0},
+      verticalAlignment=TextAlignment.Top)},rotationPolicy=RotationPolicy.Ignore),Protection(access=Access.packageDuplicate));
+
+      end Scope1;
     equation
       connect(Add1.y, 'RollResis[N]') 
       annotation(Line(origin={0,0},
-      points={{329,9},{375,9},{375,7},{467,7}}));
-      connect(Add1.y, 'Display'.u) 
-      annotation(Line(origin={0,0},
-      points={{329,9},{375,9},{375,-28},{375,-31},{418,-31}}));
+points={{325.8,9},{448,9}}));
       connect(Add.y, 'DriveForce[N]') 
       annotation(Line(origin={0,0},
   points={{325.8,93.5},{448,93.5}}));
-      connect(Add.y, 'Display1'.u) 
-      annotation(Line(origin={0,0},
-  points={{325.8,93.5},{375,93.5},{375,54},{420.7,54}}));
       connect('Bus10Selector'.y4, Goto.u) 
       annotation(Line(origin={0,0},
   points={{-416.7,-33.125},{-373.3,-33.125},{-373.3,-34}}),Text(origin={-395,-29.125},
@@ -14948,16 +14938,13 @@ fontSize=14),__MWORKS(BlockSystem(NamedSignal(name="VehSpd[m/s]"))));
       connect('Land[-]', 'Bus10Selector'.u) 
       annotation(Line(origin={0,0},
   points={{-444,-13.25},{-423.8,-13.25}}));
-      connect(CI_Calc.'CI[kPa]', 'Display2'.u) 
-      annotation(Line(origin={0,0},
-      points={{-262,0},{-256,0},{-256,-3},{-256,-23},{-256,-24},{-223,-24}}));
       connect(CI_Calc.'CI[kPa]', Bn_Calc_single.'CI[kPa]') 
       annotation(Line(origin={0,0},
       points={{-262,0},{-256,0},{-256,-3},{-256,-6},{-65,-6}}));
       connect('DriveCmd [-]', F_longitudinal_Calc_single.'DriveCmd [-]') 
       annotation(Line(origin={0,0},
   points={{60,91.2727},{145.7,91.2727}}));
-      connect('VehSpd[m/s]', Slip_calc.'VehSpd[m/s]') 
+      connect('VehSpd[m/s]', Slip_calc.'VehSpd [m/s]') 
       annotation(Line(origin={0,0},
   points={{-109,-22.8182},{-89,-22.8182},{-89,-42},{-62.3,-42}}));
       connect('VehSpd[m/s]', F_longitudinal_Calc_single.'VehSpd[m/s]') 
@@ -14969,10 +14956,10 @@ fontSize=14),__MWORKS(BlockSystem(NamedSignal(name="VehSpd[m/s]"))));
       connect(Bn_Calc_single.Bn_r, F_longitudinal_Calc_single.Bn_r) 
       annotation(Line(origin={0,0},
   points={{-1.7,0},{145.7,1.42109e-14}}));
-      connect(Slip_calc.'SlipF[-]', F_longitudinal_Calc_single.S_f) 
+      connect(Slip_calc.'SlipF [-]', F_longitudinal_Calc_single.S_f) 
       annotation(Line(origin={0,0},
       points={{15,-46},{113,-46},{113,-40},{143,-40}}));
-      connect(Slip_calc.'SlipF[-]', 'Scope'.u1) 
+      connect(Slip_calc.'SlipF [-]', 'Scope'.u1) 
       annotation(Line(origin={0,0},
       points={{15,-46},{113,-46},{113,-148},{113,-149},{143,-149}}));
       connect('AxlTrqF [Nm]', Gain4.u) 
@@ -14990,10 +14977,10 @@ fontSize=14),__MWORKS(BlockSystem(NamedSignal(name="VehSpd[m/s]"))));
       connect(F_longitudinal_Calc_single.'Fx_r[N]', Gain1.u) 
       annotation(Line(origin={0,0},
   points={{240.3,62.75},{265.2,62.75}}));
-      connect(Slip_calc.'SlipR[-]', F_longitudinal_Calc_single.S_r) 
+      connect(Slip_calc.'SlipR [-]', F_longitudinal_Calc_single.S_r) 
       annotation(Line(origin={0,0},
       points={{15,-70},{46,-70},{46,-62},{143,-62}}));
-      connect(Slip_calc.'SlipR[-]', 'Scope'.u2) 
+      connect(Slip_calc.'SlipR [-]', 'Scope'.u2) 
       annotation(Line(origin={0,0},
       points={{15,-70},{46,-70},{46,-158},{46,-160},{143,-160}}));
       connect(Gain4.y, F_longitudinal_Calc_single.'T_Wf [Nm]') 
@@ -15516,6 +15503,10 @@ fontSize=14),__MWORKS(BlockSystem(NamedSignal(name="VehSpd[m/s]"))));
       annotation(Line(origin={-371,47},
   points={{28.2,-27.125},{7,-27.125},{7,67.0910048},{-29,67.0910048}},
   color={0,0,0}),__MWORKS(BlockSystem(NamedSignal)));
+      connect(scope.u1, CI_Calc.'CI[kPa]') 
+      annotation(Line(origin={-249,-16},
+points={{38.2,-14.5},{-5,-14.5},{-5,10},{-7,10},{-7,16},{-16.2,16}},
+color={0,0,0}),__MWORKS(BlockSystem(NamedSignal)));
 
 
 
@@ -17770,10 +17761,10 @@ fontSize=14),__MWORKS(BlockSystem(NamedSignal(name="VehSpd[m/s]"))));
       SysplorerEmbeddedCoder.Port.Inport 'DriveForce[N]' 
         annotation (Placement(transformation(origin = {-288.000000, 100.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
       SysplorerEmbeddedCoder.Port.Inport 'RollRes[N]' 
-        annotation (Placement(transformation(origin={-266,48.4999952},
-  extent={{-10,-10},{10,10}}),
-  iconTransformation(origin={-301.8,30},
-  extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
+        annotation (Placement(transformation(origin={-288,48.4999952},
+extent={{-10,-10},{10,10}}),
+iconTransformation(origin={-301.8,30},
+extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
       SysplorerEmbeddedCoder.Port.Inport 'SlopeResis[N]' 
         annotation (Placement(transformation(origin={-288,25.4999952},
   extent={{-10,-10},{10,10}}),
@@ -17806,7 +17797,7 @@ fontSize=14),__MWORKS(BlockSystem(NamedSignal(name="VehSpd[m/s]"))));
       SysplorerEmbeddedCoder.Discontinuities.Saturation Saturation2(zeroCross=true,upLimit=2,lowLimit=-1) 
         annotation (Placement(transformation(origin = {100.000000, -70.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(zeroCross=true,Instance(y(Type(inherit=InheritType.sameAsInput))))));
       Scope 'Scope' 
-        annotation (Placement(transformation(origin = {287.000000, 76.000000}, extent = {{-13.500000, -36.000000}, {13.500000, 36.000000}},rotation=0)),WindowAttribute={2560, 1494},LayoutPlotCommand={CreatePlot(id=1, x_display_unit="s", legend_layout=1, zoom_x=(0, 30), zoom_y_l=(-10, 60)),Plot(y=["WorkloadModel.Tractor.'Scope'.u1"], thicknesses=[2], colors=["4278190335"]),CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(2, 1), zoom_x=(0, 30), zoom_y_l=(25, 60)),Plot(y=["WorkloadModel.Tractor.'Scope'.u2"], thicknesses=[2], colors=["4278190335"]),CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(3, 1), zoom_x=(0, 30), zoom_y_l=(-0.002, 0.01)),Plot(y=["WorkloadModel.Tractor.'Scope'.u3"], thicknesses=[2], colors=["4278190335"])});
+        annotation (Placement(transformation(origin = {287.000000, 76.000000}, extent = {{-13.500000, -36.000000}, {13.500000, 36.000000}},rotation=0)),WindowAttribute={2560, 1494},LayoutPlotCommand={CreatePlot(id=1, x_display_unit="s", legend_layout=1, zoom_x=(0, 340), zoom_y_l=(-10, 60)),Plot(y=["WorkloadModel.Tractor.'Scope'.u1"], thicknesses=[2], colors=["4278190335"]),CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(2, 1), zoom_x=(0, 340), zoom_y_l=(-20, 100)),Plot(y=["WorkloadModel.Tractor.'Scope'.u2"], thicknesses=[2], colors=["4278190335"]),CreatePlot(id=-1, x_display_unit="s", legend_layout=1, sub_plot=(3, 1), zoom_x=(0, 340), zoom_y_l=(-2, 12)),Plot(y=["WorkloadModel.Tractor.'Scope'.u3"], thicknesses=[2], colors=["4278190335"])});
       SysplorerEmbeddedCoder.MathOperation.Sum Subtract(inputs="+-",isSaturate=false) 
         annotation (Placement(transformation(origin={-57.5,-2},
   extent={{-6.5,-21},{6.5,21}})),__MWORKS(BlockSystem(Instance(u(u1,u2),y(Type(inherit=InheritType.internalRule))),Type(overflowKind=SysplorerEmbeddedCoder.Types.OverflowKind.wrap)),PortLabels(labelType="CustomType",labels(label(text="+",instance="u1"),label(text="-",instance="u2")))));
@@ -17895,7 +17886,7 @@ fontSize=14),__MWORKS(BlockSystem(NamedSignal(name="VehSpd[m/s]"))));
   points={{-276,-24},{-180.8,-24}}),__MWORKS(BlockSystem(LabeledSignal=true)));
       connect('RollRes[N]', Add3.u1) 
       annotation(Line(origin={0,0},
-  points={{-254,48.5},{-227.8,48.5}}));
+points={{-276,48.5},{-227.8,48.5}}));
       connect(Constant1.y, Add.u2) 
       annotation(Line(origin={0,0},
       points={{-18,-100},{2,-100},{2,-80},{7,-80}}));
@@ -17907,7 +17898,10 @@ fontSize=14),__MWORKS(BlockSystem(NamedSignal(name="VehSpd[m/s]"))));
   points={{-276,25.5},{-227.8,25.5}}));
       connect(Gain3.y, 'Scope'.u1) 
       annotation(Line(origin={0,0},
-      points={{5,100},{269,100}}),Text(origin={137,103},extent={{0,-3},{0,3}},textString="%signal",fontSize=12),__MWORKS(BlockSystem(NamedSignal(name="DriveForce[kN]"),LabeledSignal=true)));
+points={{2.3,100},{271.7,100}}),Text(origin={137,103.469},
+extent={{0,-3},{0,3}},
+textString="%signal",
+fontSize=12),__MWORKS(BlockSystem(NamedSignal(name="DriveForce[kN]"),LabeledSignal=true)));
       connect(Gain2.y, 'Scope'.u2) 
       annotation(Line(origin={0,0},
       points={{5,76},{269,76}}),Text(origin={137,79},extent={{0,-3},{0,3}},textString="%signal",fontSize=12),__MWORKS(BlockSystem(NamedSignal(name="Resistance[kN]"),LabeledSignal=true)));
@@ -17978,7 +17972,7 @@ fontSize=14),__MWORKS(BlockSystem(NamedSignal(name="VehSpd[m/s]"))));
     block Transmission_type "子系统
 通过子系统创建模型分层结构。"
 
-      annotation (defaultComponentName="subSystem", __MWORKS(PortArrangement(Left('DriveCmd [-]', 'GearCmd[-]', 'EngTrq [Nm]', 'PTOTrq [Nm]', 'LiftTrq [Nm]', 'WhlSpdR [m/s]'), Right('EngSpd [rpm]', 'AxlTrqF [Nm]', 'AxlTrqR [Nm]', _EngSpd_rpm_)),BlockSystem(blockKind=BlockKind.subSystem, SampleTime(auto=true), SubSystem(virtual=true, functionPack=FunctionPack.auto, functionName="", sourceFile="")),PortLabels(labelType="PortName"),sourceModel=SysplorerEmbeddedCoder.SubSystems.SubSystem,independentInstance=true,hide=true), Icon(coordinateSystem(extent={{-300,-120},{300,120}},
+      annotation (defaultComponentName="subSystem", __MWORKS(PortArrangement(Left('DriveCmd [-]', 'GearCmd[-]', 'EngTrq [Nm]', 'PTOTrq [Nm]', 'LiftTrq [Nm]', 'WhlSpdR [m/s]'), Right('EngSpd [rpm]', 'AxlTrqF [Nm]', 'AxlTrqR [Nm]')),BlockSystem(blockKind=BlockKind.subSystem, SampleTime(auto=true), SubSystem(virtual=true, functionPack=FunctionPack.auto, functionName="", sourceFile="")),PortLabels(labelType="PortName"),sourceModel=SysplorerEmbeddedCoder.SubSystems.SubSystem,independentInstance=true,hide=true), Icon(coordinateSystem(extent={{-300,-120},{300,120}},
     grid={2,2}),graphics = {Rectangle(sizePolicy=SizePolicy.Expanding,
     rotationPolicy=RotationPolicy.Follow,
     origin={0,0},
@@ -17992,91 +17986,42 @@ fontSize=14),__MWORKS(BlockSystem(NamedSignal(name="VehSpd[m/s]"))));
     fontSize=14,
     textStyle={TextStyle.None},
     textColor={0,0,0},
-    verticalAlignment=TextAlignment.Top)},sizePolicy=SizePolicy.Fixed,rotationPolicy=RotationPolicy.Ignore),Protection(access=Access.packageDuplicate),Diagram(coordinateSystem(extent={{-100,-100},{100,100}},
-grid={2,2})));
+    verticalAlignment=TextAlignment.Top)},sizePolicy=SizePolicy.Fixed,rotationPolicy=RotationPolicy.Ignore),Protection(access=Access.packageDuplicate));
       SysplorerEmbeddedCoder.Port.Inport 'DriveCmd [-]' 
-        annotation (Placement(transformation(origin={-135,93},
-extent={{-10,-10},{10,10}}),
-iconTransformation(origin={-301.8,100},
-extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
+        annotation (Placement(transformation(origin = {-135.000000, 93.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
       SysplorerEmbeddedCoder.Port.Inport 'GearCmd[-]' 
-        annotation (Placement(transformation(origin={-292,73},
-extent={{-10,-10},{10,10}}),
-iconTransformation(origin={-301.8,60},
-extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
+        annotation (Placement(transformation(origin = {-292.000000, 73.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
       SysplorerEmbeddedCoder.Port.Inport 'EngTrq [Nm]' 
-        annotation (Placement(transformation(origin={-292,53},
-extent={{-10,-10},{10,10}}),
-iconTransformation(origin={-301.8,20},
-extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
+        annotation (Placement(transformation(origin = {-292.000000, 53.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
       SysplorerEmbeddedCoder.Port.Inport 'PTOTrq [Nm]' 
-        annotation (Placement(transformation(origin={-135,32},
-extent={{-10,-10},{10,10}}),
-iconTransformation(origin={-301.8,-20},
-extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
+        annotation (Placement(transformation(origin = {-135.000000, 32.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
       SysplorerEmbeddedCoder.Port.Inport 'LiftTrq [Nm]' 
-        annotation (Placement(transformation(origin={-135,12},
-extent={{-10,-10},{10,10}}),
-iconTransformation(origin={-301.8,-60},
-extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
+        annotation (Placement(transformation(origin = {-135.000000, 12.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
       SysplorerEmbeddedCoder.Port.Inport 'WhlSpdR [m/s]' 
-        annotation (Placement(transformation(origin={51,-73},
-extent={{-10,-10},{10,10}}),
-iconTransformation(origin={-301.8,-100},
-extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
+        annotation (Placement(transformation(origin = {51.000000, -73.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
       Display 'Display' 
-        annotation (Placement(transformation(origin={105,39},
-extent={{-23.5,-10},{23.5,10}})));
-      Display1 'Display1' 
-        annotation (Placement(transformation(origin={292,12},
-extent={{-23.5,-10},{23.5,10}})));
+        annotation (Placement(transformation(origin = {105.000000, 39.000000}, extent = {{-23.500000, -10.000000}, {23.500000, 10.000000}},rotation=0)));
       EngSpdCalc_type EngSpdCalc 
-        annotation (Placement(transformation(origin={146,-73},
-extent={{-47.5,-34.5},{47.5,34.5}})),__MWORKS(PortLabels(labelType="PortName")));
+        annotation (Placement(transformation(origin = {146.000000, -73.000000}, extent = {{-47.500000, -34.500000}, {47.500000, 34.500000}},rotation=0)),__MWORKS(PortLabels(labelType="PortName")));
       GearBox_type GearBox 
-        annotation (Placement(transformation(origin={-201,63},
-extent={{-39,-21.5},{39,21.5}})),__MWORKS(PortLabels(labelType="PortName")));
+        annotation (Placement(transformation(origin = {-201.000000, 63.000000}, extent = {{-39.000000, -21.500000}, {39.000000, 21.500000}},rotation=0)),__MWORKS(PortLabels(labelType="PortName")));
       GearBox2Axle_type GearBox2Axle 
-        annotation (Placement(transformation(origin={-31,53},
-extent={{-56,-53},{56,53}})),__MWORKS(PortLabels(labelType="PortName")));
+        annotation (Placement(transformation(origin = {-31.000000, 53.000000}, extent = {{-56.000000, -53.000000}, {56.000000, 53.000000}},rotation=0)),__MWORKS(PortLabels(labelType="PortName")));
       Scope Scope2 
-        annotation (Placement(transformation(origin={265,-29},
-extent={{-6.5,-21},{6.5,21}})));
+        annotation (Placement(transformation(origin = {265.000000, -29.000000}, extent = {{-6.500000, -21.000000}, {6.500000, 21.000000}},rotation=0)));
       SysplorerEmbeddedCoder.Sources.Constant 'Wheel radius'(k=Rr) 
-        annotation (Placement(transformation(origin={51,-97},
-extent={{-10,-5},{10,5}})),__MWORKS(BlockSystem(SampleTime(auto=false)=-1,Instance(y(Type(inherit=InheritType.constantValue))))));
+        annotation (Placement(transformation(origin = {51.000000, -97.000000}, extent = {{-10.000000, -5.000000}, {10.000000, 5.000000}},rotation=0)),__MWORKS(BlockSystem(SampleTime(auto=false)=-1,Instance(y(Type(inherit=InheritType.constantValue))))));
       SysplorerEmbeddedCoder.Port.Outport 'EngSpd [rpm]' 
-        annotation (Placement(transformation(origin={286,-73},
-extent={{-10,-10},{10,10}}),
-iconTransformation(origin={301.8,90},
-extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
+        annotation (Placement(transformation(origin = {286.000000, -73.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
       SysplorerEmbeddedCoder.Port.Outport 'AxlTrqF [Nm]' 
-        annotation (Placement(transformation(origin={146,93},
-extent={{-10,-10},{10,10}}),
-iconTransformation(origin={301.8,30},
-extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
+        annotation (Placement(transformation(origin = {146.000000, 93.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
       SysplorerEmbeddedCoder.Port.Outport 'AxlTrqR [Nm]' 
-        annotation (Placement(transformation(origin={146,66},
-extent={{-10,-10},{10,10}}),
-iconTransformation(origin={301.8,-30},
-extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
-      SysplorerEmbeddedCoder.Sources.Constant LoadTrqManu(k=LoadTrqManu) 
-        annotation (Placement(transformation(origin={-117,-262.5},
-extent={{-40.5,-10},{40.5,10}})),__MWORKS(BlockSystem(SampleTime(auto=false)=-1,Instance(y(Type(inherit=InheritType.constantValue)))),ComponentMask(backgroundColor={0,209,0})));
-      SysplorerEmbeddedCoder.Sources.Constant LoadTrqSW(k=LoadTrqSW) 
-        annotation (Placement(transformation(origin={76,-177.5},
-extent={{-40.5,-10},{40.5,10}})),__MWORKS(BlockSystem(SampleTime(auto=false)=-1,Instance(y(Type(inherit=InheritType.constantValue)))),ComponentMask(backgroundColor={0,209,0})));
-      Motion_type Motion 
-        annotation (Placement(transformation(origin={44,-246.5},
-extent={{-73,-31.5},{73,31.5}})),__MWORKS(PortLabels(labelType="PortName"),ComponentMask(backgroundColor={0,209,0})));
-      SysplorerEmbeddedCoder.SignalRouting.Switch Switch(threshold=0,zeroCross=true,ct=SysplorerEmbeddedCoder.SignalRouting.Switch.ConditionType.Great,hasDiffSize=false) 
-        annotation (Placement(transformation(origin={227,-177.5},
-extent={{-11.5,-68},{11.5,68}})),__MWORKS(BlockSystem(zeroCross=true,Instance(y(Type(inherit=InheritType.internalRule)))),ComponentMask(backgroundColor={0,209,0})));
-      SysplorerEmbeddedCoder.Port.Outport _EngSpd_rpm_ 
-        annotation (Placement(transformation(origin={284,-177.5},
-extent={{-10,-10},{10,10}}),
-iconTransformation(origin={301.8,-90},
-extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
+        annotation (Placement(transformation(origin = {146.000000, 66.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
+      Scope1 scope 
+        annotation (Placement(transformation(origin = {212, 2}, extent = {{-10, -10}, {10, 10}})),WindowAttribute={750, 600});
+      Scope3 scope1 
+        annotation (Placement(transformation(origin={-224,17},
+extent={{-10,-10},{10,10}})));
       block Display "显示
 显示输入数据的值。"
 
@@ -18142,71 +18087,6 @@ extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.a
       verticalAlignment=TextAlignment.Top)},rotationPolicy=RotationPolicy.Ignore), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}},
           grid = {2, 2})),Protection(access=Access.packageDuplicate));
       end Display;
-      block Display1 "显示
-显示输入数据的值。"
-
-
-        type NumericDisplayFormat = enumeration(
-          short "short",
-          long "long",
-          short_e "short_e",
-          long_e "long_e",
-          bank "bank",
-          hex "hex(Integer)",
-          binary "binary(Integer)",
-          decimal "decimal(Integer)",
-          octal "octal(Integer)") 
-          annotation(__MWORKS(hide = true),Protection(access=Access.packageDuplicate));
-
-        parameter SysplorerEmbeddedCoder.Types.NumericDisplayFormat format = SysplorerEmbeddedCoder.Types.NumericDisplayFormat.short "数值显示格式" 
-          annotation(HideResult = true, choices(choice = NumericDisplayFormat.short "short", choice = NumericDisplayFormat.long "long", choice = NumericDisplayFormat.short_e "short_e", choice = NumericDisplayFormat.long_e "long_e", choice = NumericDisplayFormat.bank "bink", choice = NumericDisplayFormat.hex "hex(Integer)", choice = NumericDisplayFormat.binary "binary(Integer)", choice = NumericDisplayFormat.decimal "decimal(Integer)", choice = NumericDisplayFormat.octal "octal(Integer)"));
-        parameter Integer decimation = 1 "抽取(显示的频率)" 
-          annotation(HideResult = true);
-        SysplorerEmbeddedCoder.Types.InputAuto u 
-          annotation(Placement(transformation(origin = {-110, 0},
-          extent = {{-10, -10}, {10, 10}}),
-          iconTransformation(origin = {-101.8, 0},
-          extent = {{-1.8, -1.8}, {1.8, 1.8}})),
-          __MWORKS(BlockSystem(AllowDimension(choices(choice = DimensionType.scalar, choice = DimensionType.array1D, choice = DimensionType.scalar, choice = DimensionType.rowVector2D, choice = DimensionType.columnVector2D, choice = DimensionType.array2D)),
-          AllowType(choices(choice = "double", choice = "float", choice = "int8", choice = "uint8", choice = "int16", choice = "uint16", choice = "int32",
-          choice = "uint32", choice = "int64", choice = "uint64", choice = "string", choice = "boolean", choice = "enum")))));
-
-        SysplorerEmbeddedCoder.Types.OutputAuto y 
-          annotation(
-          __MWORKS(BlockSystem(AllowDimension(choices(choice = DimensionType.scalar, choice = DimensionType.array1D, choice = DimensionType.scalar, choice = DimensionType.rowVector2D, choice = DimensionType.columnVector2D, choice = DimensionType.array2D)),
-          AllowType(choices(choice = "double", choice = "float", choice = "int8", choice = "uint8", choice = "int16", choice = "uint16", choice = "int32",
-          choice = "uint32", choice = "int64", choice = "uint64", choice = "string", choice = "boolean", choice = "enum")))));
-
-      algorithm
-        y := u;
-
-        annotation(defaultComponentName = "disPlay", __MWORKS(BlockSystem(blockKind = Types.BlockKind.atomic, bltBlockKind = Types.BltBlockKind.display),PortArrangement(Left(u)),sourceModel=SysplorerEmbeddedCoder.Utilities.Display,independentInstance=true,hide=true), Icon(coordinateSystem(extent={{-100,-100},{100,100}},
-      grid={2,2}),graphics = {Rectangle(origin={0,0},
-      fillColor={255,255,255},
-      fillPattern=FillPattern.Solid,
-      lineThickness=3,
-      extent={{-100,100},{100,-100}},
-      rotationPolicy=RotationPolicy.Follow), Rectangle(origin={0,70},
-      fillColor={255,255,255},
-      fillPattern=FillPattern.Solid,
-      lineThickness=2,
-      extent={{-90,20},{90,-20}}), Text(origin={0,70},
-      lineColor={0,0,0},
-      extent={{-88,20},{88,-20}},
-      textString="%{u(short)}",
-      fontSize=12,
-      textStyle={TextStyle.None},
-      textColor={0,0,0},
-      horizontalAlignment=TextAlignment.Left), Text(origin={0,-120},
-      lineColor={0,0,0},
-      extent={{0,-20},{0,20}},
-      textString="%name",
-      fontSize=14,
-      textStyle={TextStyle.None},
-      textColor={0,0,0},
-      verticalAlignment=TextAlignment.Top)},rotationPolicy=RotationPolicy.Ignore), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}},
-          grid = {2, 2})),Protection(access=Access.packageDuplicate));
-      end Display1;
       block EngSpdCalc_type "子系统
 通过子系统创建模型分层结构。"
 
@@ -18298,7 +18178,9 @@ extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.a
         SysplorerEmbeddedCoder.LookupTable.LookupTable1D '1-D Lookup10Table3'(interpolationMethod=SysplorerEmbeddedCoder.LookupTable.LookupTable1D.InterpolationMethod.linearPointSlope,indexSearchMethod=SysplorerEmbeddedCoder.LookupTable.LookupTable1D.IndexSearchMethod.linearSearch,table=SlowFastGear,axis1=SlowFastC,tableSize=2) 
           annotation (Placement(transformation(origin = {-51.000000, 28.000000}, extent = {{-22.000000, -14.500000}, {22.000000, 14.500000}},rotation=0)),__MWORKS(ComponentMask(backgroundColor={0,209,0})));
         SysplorerEmbeddedCoder.SignalRouting.BusSelector 'Bus10Selector' 
-          annotation (Placement(transformation(origin = {-142.000000, -7.000000}, extent = {{-1.500000, -53.500000}, {1.500000, 53.500000}},rotation=0)),__MWORKS(BlockSystem(Instance(y(y1(elementName="FastSlowCmd"),y2(elementName="GearMCmd"),y3(elementName="GearACmd"))))));
+          annotation (Placement(transformation(origin = {-142.000000, -7.000000}, extent = {{-1.500000, -53.500000}, {1.500000, 53.500000}},rotation=0)),__MWORKS(BlockSystem(Instance(y(y4(elementName="FSCmd", elementShowName="FSCmd"),
+y2(elementName="GearMCmd", elementShowName="GearMCmd"),
+y3(elementName="GearACmd", elementShowName="GearACmd"))))));
         SysplorerEmbeddedCoder.Sources.Constant Effi(k=TransEff) 
           annotation (Placement(transformation(origin = {112.000000, 21.000000}, extent = {{-15.000000, -5.000000}, {15.000000, 5.000000}},rotation=0)),__MWORKS(BlockSystem(SampleTime(auto=false)=-1,Instance(y(Type(inherit=InheritType.constantValue))))));
         SysplorerEmbeddedCoder.MathOperation.Product Product1(inputs="3",isSaturate=false,multiplication=SysplorerEmbeddedCoder.MathOperation.Product.MultiplicationType.elementWise) 
@@ -18328,9 +18210,6 @@ extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.a
         connect('GearCmd[-]', 'Bus10Selector'.u) 
         annotation(Line(origin={0,0},
         points={{-199,-6},{-199,-8},{-148,-8}}));
-        connect('Bus10Selector'.y1, '1-D Lookup10Table3'.u) 
-        annotation(Line(origin={0,0},
-        points={{-136,28},{-139,28},{-139,27},{-78,27}}),Text(origin={-108,30},extent={{0,-3},{0,3}},textString="%signal",fontSize=12),__MWORKS(BlockSystem(NamedSignal(propagatedSignal="<FastSlowCmd>"))));
         connect('Bus10Selector'.y2, '1-D Lookup10Table1'.u) 
         annotation(Line(origin={0,0},
         points={{-136,-7},{-139,-7},{-78,-7}}),Text(origin={-108,-4},extent={{0,-3},{0,3}},textString="%signal",fontSize=12),__MWORKS(BlockSystem(NamedSignal(propagatedSignal="<GearMCmd>"))));
@@ -18346,6 +18225,13 @@ extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.a
         connect('1-D Lookup10Table2'.y, Product1.u3) 
         annotation(Line(origin={0,0},
         points={{-24,-41},{7,-41}}));
+        connect('Bus10Selector'.y4, '1-D Lookup10Table3'.u) 
+        annotation(Line(origin={-107,28},
+points={{-31.7,0.666667},{32.2,0.666667},{32.2,0}},
+color={0,0,0}),__MWORKS(BlockSystem(NamedSignal(propagatedSignal="<FSCmd>"))),Text(origin={-18.441,-3.24375},
+extent={{0,-3},{0,3}},
+textString="%signal",
+fontSize=14));
         end GearBox_type;
       block GearBox2Axle_type "子系统
 通过子系统创建模型分层结构。"
@@ -18599,116 +18485,86 @@ extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.a
       verticalAlignment=TextAlignment.Top)},rotationPolicy=RotationPolicy.Ignore),Protection(access=Access.packageDuplicate));
 
       end Scope;
-      block Motion_type "子系统
-通过子系统创建模型分层结构。"
+      block Scope1 "示波器
+显示仿真过程中生成的信号。"
 
-        annotation (defaultComponentName="subSystem", __MWORKS(PortArrangement(Left(EngineTrq_Nm, LoadTrq_Nm), Right(EngineSpd_rpm)),BlockSystem(blockKind=BlockKind.subSystem, SampleTime(auto=true), SubSystem(virtual=true, functionPack=FunctionPack.auto, functionName="", sourceFile="")),PortLabels(labelType="PortName"),sourceModel=SysplorerEmbeddedCoder.SubSystems.SubSystem,independentInstance=true,hide=true), Icon(coordinateSystem(extent={{-300,-120},{300,120}},
-      grid={2,2}),graphics = {Rectangle(sizePolicy=SizePolicy.Expanding,
-      rotationPolicy=RotationPolicy.Follow,
-      origin={0,0},
+        parameter String displayFormat = "y(t)" annotation(HideResult = true);
+
+        parameter String showOnSimulator = "false" annotation(HideResult = true);
+
+        SysplorerEmbeddedCoder.Types.InputAuto u1 
+           annotation (Placement(transformation(origin={-110,0},
+          extent={{-10,-10},{10,10}}),
+          iconTransformation(origin={-101.8,0},
+          extent={{-1.8,-1.8},{1.8,1.8}})),
+            __MWORKS(BlockSystem(AllowDimension(choices(choice=DimensionType.scalar,
+           choice=DimensionType.array1D,
+      choice=DimensionType.scalar,choice=DimensionType.rowVector2D,choice=DimensionType.columnVector2D,choice=DimensionType.array2D)),
+            AllowType(choices(choice = "double", choice = "float", choice = "int8", choice = "uint8", choice = "int16", choice = "uint16", choice = "int32",
+            choice = "uint32", choice = "int64", choice = "uint64", choice = "string", choice = "boolean", choice="fixdt(1,16,0)", choice="fixdt(1,16,2^0,0)", choice = "enum", choice = "bus")))));
+
+        annotation(defaultComponentName = "scope", __MWORKS(BlockSystem(blockKind=Types.BlockKind.atomic, bltBlockKind=Types.BltBlockKind.scope),PortArrangement(Left(u1)),sourceModel=SysplorerEmbeddedCoder.Utilities.Scope,independentInstance=true,hide=true), Icon(coordinateSystem(extent={{-100,-100},{100,100}},
+      grid={2,2}),graphics = {Rectangle(origin={0,0},
       fillColor={255,255,255},
       fillPattern=FillPattern.Solid,
       lineThickness=3,
       frame=true,
-      extent={{-300,120},{300,-120}}), Text(origin={0,-140},
+      extent={{-100,100},{100,-100}},
+      rotationPolicy=RotationPolicy.Follow), Rectangle(origin={1,54.5},
+      fillColor={255,255,255},
+      fillPattern=FillPattern.Solid,
+      lineThickness=2,
+      extent={{-79,24.5},{79,-24.5}},
+      radius=10), Text(origin={0,-120},
       lineColor={0,0,0},
       extent={{0,-20},{0,20}},
       textString="%name",
       fontSize=14,
       textStyle={TextStyle.None},
       textColor={0,0,0},
-      verticalAlignment=TextAlignment.Top)},sizePolicy=SizePolicy.Fixed,rotationPolicy=RotationPolicy.Ignore),Protection(access=Access.packageDuplicate));
-        SysplorerEmbeddedCoder.Port.Inport EngineTrq_Nm 
-          annotation (Placement(transformation(origin = {-231.000000, -5.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1,outputFunctionCall=false,latchByDelayingOutsideSignal=false,latchFeedbackFuncCallSubsystemSignal=false)));
-        SysplorerEmbeddedCoder.Port.Inport LoadTrq_Nm 
-          annotation (Placement(transformation(origin = {-231.000000, -33.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1,outputFunctionCall=false,latchByDelayingOutsideSignal=false,latchFeedbackFuncCallSubsystemSignal=false)));
-        SysplorerEmbeddedCoder.MathOperation.Sum Add(inputs="+-",isSaturate=false) 
-          annotation (Placement(transformation(origin = {-170.000000, -18.000000}, extent = {{-3.000000, -27.500000}, {3.000000, 27.500000}},rotation=0)),__MWORKS(BlockSystem(Instance(u(u1,u2),y(Type(inherit=InheritType.internalRule))),Type(overflowKind=SysplorerEmbeddedCoder.Types.OverflowKind.wrap)),PortLabels(labelType="CustomType",labels(label(text="+",instance="u1"),label(text="-",instance="u2")))));
-        SysplorerEmbeddedCoder.Sources.Constant Constant(k=Inertia) 
-          annotation (Placement(transformation(origin = {-204.000000, -66.000000}, extent = {{-37.000000, -5.000000}, {37.000000, 5.000000}},rotation=0)),__MWORKS(BlockSystem(SampleTime(auto=false)=-1,Instance(y(Type(inherit=InheritType.constantValue))))));
-        SysplorerEmbeddedCoder.Sources.Constant Constant1(k=radps2rpm) 
-          annotation (Placement(transformation(origin = {-45.000000, -73.000000}, extent = {{-37.000000, -5.000000}, {37.000000, 5.000000}},rotation=0)),__MWORKS(BlockSystem(SampleTime(auto=false)=-1,Instance(y(Type(inherit=InheritType.constantValue))))));
-        SysplorerEmbeddedCoder.MathOperation.Product Divide(inputs="*/",isSaturate=false,multiplication=SysplorerEmbeddedCoder.MathOperation.Product.MultiplicationType.elementWise) 
-          annotation (Placement(transformation(origin = {-118.000000, -33.000000}, extent = {{-5.000000, -30.500000}, {5.000000, 30.500000}},rotation=0)),__MWORKS(BlockSystem(Instance(u(u1,u2),y(Type(inherit=InheritType.internalRule))),Type(overflowKind=SysplorerEmbeddedCoder.Types.OverflowKind.wrap)),PortLabels(labelType="CustomType",labels(label(text="*",instance="u1"),label(text="/",instance="u2")))));
-        SysplorerEmbeddedCoder.Continuous.Integrator Integrator(externalResetType=SysplorerEmbeddedCoder.Continuous.Integrator.ExternalResetType.None,initCond=SpeedInit,initCondSourceType=SysplorerEmbeddedCoder.Continuous.Integrator.InitCondSourceType.Internal,zeroCross=true,limitOutput=true,upperSaturationLimit=2400,lowerSaturationLimit=700,wrapState=false,showSaturationPort=false,showStatePort=false) 
-          annotation (Placement(transformation(origin = {91.000000, -56.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(zeroCross=true)));
-        SysplorerEmbeddedCoder.SignalRouting.Mux Mux(portNumber=2) 
-          annotation (Placement(transformation(origin = {58.000000, 65.000000}, extent = {{-1.500000, -12.500000}, {1.500000, 12.500000}},rotation=0)),__MWORKS(BlockSystem(Instance(u(u1,u2)))));
-        SysplorerEmbeddedCoder.MathOperation.Product Product(inputs="2",isSaturate=false,multiplication=SysplorerEmbeddedCoder.MathOperation.Product.MultiplicationType.elementWise) 
-          annotation (Placement(transformation(origin = {36.000000, -54.000000}, extent = {{-3.000000, -36.000000}, {3.000000, 36.000000}},rotation=0)),__MWORKS(BlockSystem(Instance(u(u1,u2),y(Type(inherit=InheritType.internalRule))),Type(overflowKind=SysplorerEmbeddedCoder.Types.OverflowKind.wrap)),PortLabels(labelType="CustomType",labels(label(text="*",instance="u1"),label(text="*",instance="u2")))));
-        Scope_type Scope2 
-          annotation (Placement(transformation(origin = {175.000000, 55.000000}, extent = {{-6.500000, -21.000000}, {6.500000, 21.000000}},rotation=0)));
-        SysplorerEmbeddedCoder.Port.Outport EngineSpd_rpm 
-          annotation (Placement(transformation(origin = {230.000000, -56.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}},rotation=0)),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
-        block Scope_type "示波器
+      verticalAlignment=TextAlignment.Top)},rotationPolicy=RotationPolicy.Ignore),Protection(access=Access.packageDuplicate));
+
+      end Scope1;
+      block Scope3 "示波器
 显示仿真过程中生成的信号。"
 
-          parameter String displayFormat = "y(t)" annotation(HideResult = true);
+        parameter String displayFormat = "y(t)" annotation(HideResult = true);
 
-          parameter String showOnSimulator = "false" annotation(HideResult = true);
-          SysplorerEmbeddedCoder.Types.InputAuto u1 annotation(Placement(transformation(origin = { -110,0 },extent = { { -10,-10 },{ 10,10 } }),iconTransformation(origin = { -101.8,0 },extent = { { -1.8,-1.8 },{ 1.8,1.8 } })));
-          SysplorerEmbeddedCoder.Types.InputAuto u2 annotation(Placement(transformation(origin = { -110,0 },extent = { { -10,-10 },{ 10,10 } }),iconTransformation(origin = { -101.8,0 },extent = { { -1.8,-1.8 },{ 1.8,1.8 } })));
+        parameter String showOnSimulator = "false" annotation(HideResult = true);
 
-          annotation(defaultComponentName = "scope", __MWORKS(BlockSystem(blockKind=Types.BlockKind.atomic, bltBlockKind=Types.BltBlockKind.scope),PortArrangement(Left(u1, u2)),sourceModel=SysplorerEmbeddedCoder.Utilities.Scope,independentInstance=true,hide=true), Icon(coordinateSystem(extent={{-100,-100},{100,100}},
-        grid={2,2}),graphics = {Rectangle(origin={0,0},
-        fillColor={255,255,255},
-        fillPattern=FillPattern.Solid,
-        lineThickness=3,
-        frame=true,
-        extent={{-100,100},{100,-100}},
-        rotationPolicy=RotationPolicy.Follow), Rectangle(origin={1,54.5},
-        fillColor={255,255,255},
-        fillPattern=FillPattern.Solid,
-        lineThickness=2,
-        extent={{-79,24.5},{79,-24.5}},
-        radius=10), Text(origin={0,-120},
-        lineColor={0,0,0},
-        extent={{0,-20},{0,20}},
-        textString="%name",
-        fontSize=14,
-        textStyle={TextStyle.None},
-        textColor={0,0,0},
-        verticalAlignment=TextAlignment.Top)},rotationPolicy=RotationPolicy.Ignore),Protection(access=Access.packageDuplicate));
+        SysplorerEmbeddedCoder.Types.InputAuto u1 
+           annotation (Placement(transformation(origin={-110,0},
+          extent={{-10,-10},{10,10}}),
+          iconTransformation(origin={-101.8,0},
+          extent={{-1.8,-1.8},{1.8,1.8}})),
+            __MWORKS(BlockSystem(AllowDimension(choices(choice=DimensionType.scalar,
+           choice=DimensionType.array1D,
+      choice=DimensionType.scalar,choice=DimensionType.rowVector2D,choice=DimensionType.columnVector2D,choice=DimensionType.array2D)),
+            AllowType(choices(choice = "double", choice = "float", choice = "int8", choice = "uint8", choice = "int16", choice = "uint16", choice = "int32",
+            choice = "uint32", choice = "int64", choice = "uint64", choice = "string", choice = "boolean", choice="fixdt(1,16,0)", choice="fixdt(1,16,2^0,0)", choice = "enum", choice = "bus")))));
 
-        end Scope_type;
-      equation
-        connect(EngineTrq_Nm, Mux.u1) 
-        annotation(Line(origin={0,0},
-        points={{-231,-5},{-217,-5},{-217,73},{-217,71},{52,71}}));
-        connect(EngineTrq_Nm, Add.u1) 
-        annotation(Line(origin={0,0},
-        points={{-231,-5},{-217,-5},{-217,-4},{-178,-4}}));
-        connect(LoadTrq_Nm, Mux.u2) 
-        annotation(Line(origin={0,0},
-        points={{-231,-33},{-208,-33},{-208,58},{-208,59},{52,59}}));
-        connect(LoadTrq_Nm, Add.u2) 
-        annotation(Line(origin={0,0},
-        points={{-231,-33},{-208,-33},{-208,-31},{-178,-31}}));
-        connect(Add.y, Divide.u1) 
-        annotation(Line(origin={0,0},
-        points={{-162,-18},{-128,-18}}));
-        connect(Constant.y, Divide.u2) 
-        annotation(Line(origin={0,0},
-        points={{-162,-66},{-139,-66},{-139,-49},{-139,-48},{-128,-48}}));
-        connect(Constant1.y, Product.u2) 
-        annotation(Line(origin={0,0},
-        points={{-3,-73},{-3,-72},{28,-72}}));
-        connect(Product.y, Integrator.u1) 
-        annotation(Line(origin={0,0},
-        points={{44,-54},{44,-56},{76,-56}}));
-        connect(Divide.y, Product.u1) 
-        annotation(Line(origin={0,0},
-        points={{-108,-33},{-108,-36},{28,-36}}));
-        connect(Integrator.y, Scope2.u2) 
-        annotation(Line(origin={0,0},
-        points={{106,-56},{134,-56},{134,46},{134,44},{164,44}}));
-        connect(Integrator.y, EngineSpd_rpm) 
-        annotation(Line(origin={0,0},
-        points={{106,-56},{134,-56},{230,-56}}));
-        connect(Mux.y, Scope2.u1) 
-        annotation(Line(origin={0,0},
-        points={{64,64},{64,65},{164,65}}));
-        end Motion_type;
+        annotation(defaultComponentName = "scope", __MWORKS(BlockSystem(blockKind=Types.BlockKind.atomic, bltBlockKind=Types.BltBlockKind.scope),PortArrangement(Left(u1)),sourceModel=SysplorerEmbeddedCoder.Utilities.Scope,independentInstance=true,hide=true), Icon(coordinateSystem(extent={{-100,-100},{100,100}},
+      grid={2,2}),graphics = {Rectangle(origin={0,0},
+      fillColor={255,255,255},
+      fillPattern=FillPattern.Solid,
+      lineThickness=3,
+      frame=true,
+      extent={{-100,100},{100,-100}},
+      rotationPolicy=RotationPolicy.Follow), Rectangle(origin={1,54.5},
+      fillColor={255,255,255},
+      fillPattern=FillPattern.Solid,
+      lineThickness=2,
+      extent={{-79,24.5},{79,-24.5}},
+      radius=10), Text(origin={0,-120},
+      lineColor={0,0,0},
+      extent={{0,-20},{0,20}},
+      textString="%name",
+      fontSize=14,
+      textStyle={TextStyle.None},
+      textColor={0,0,0},
+      verticalAlignment=TextAlignment.Top)},rotationPolicy=RotationPolicy.Ignore),Protection(access=Access.packageDuplicate));
+
+      end Scope3;
     equation
       connect('WhlSpdR [m/s]', EngSpdCalc.'DriveWhlSpd[m/s]') 
       annotation(Line(origin={0,0},
@@ -18721,558 +18577,19 @@ extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.a
       points={{66,-97},{66,-96},{94,-96}}));
       connect(GearBox2Axle.'AxlTrqR [Nm]', 'AxlTrqR [Nm]') 
       annotation(Line(origin={0,0},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      points={{30,67},{30,66},{146,66}}));
-      connect(GearBox2Axle.'Gear_R[-]', 'Display1'.u) 
-      annotation(Line(origin={0,0},
-      points={{30,15},{67,15},{67,12},{264,12}}));
+points={{26.8,66.25},{134,66.25},{134,66.0000048}}),Text(origin={80.4,70.1604},
+extent={{0,-3},{0,3}},
+textString="%signal",
+fontSize=14),__MWORKS(BlockSystem(NamedSignal(name="AxlTrqR [Nm]"))));
       connect(GearBox2Axle.'Gear_R[-]', EngSpdCalc.'Gear_R[-]') 
       annotation(Line(origin={0,0},
       points={{30,15},{67,15},{67,-46},{101,-46},{101,-50},{94,-50}}));
       connect(GearBox2Axle.'AxlTrqF [Nm]', 'AxlTrqF [Nm]') 
       annotation(Line(origin={0,0},
-      points={{30,93},{146,93}}));
+points={{26.8,92.75},{134,92.75},{134,93.0000048}}),Text(origin={80.4,96.6604},
+extent={{0,-3},{0,3}},
+textString="%signal",
+fontSize=14),__MWORKS(BlockSystem(NamedSignal(name="AxlTrqF [Nm]"))));
       connect('DriveCmd [-]', GearBox2Axle.'DriveCmd [-]') 
       annotation(Line(origin={0,0},
       points={{-135,93},{-135,96},{-92,96}}));
@@ -19297,31 +18614,19 @@ extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.a
       connect(GearBox.'GearTrq [Nm]', GearBox2Axle.'GearTrq [Nm]') 
       annotation(Line(origin={0,0},
       points={{-157,74},{-157,75},{-92,75}}));
+      connect(EngSpdCalc.'EngSpd [rpm]', 'EngSpd [rpm]') 
+      annotation(Line(origin={0,0},
+      points={{198,-73},{208,-73},{286,-73}}));
       connect(EngSpdCalc.'EngSpd [rpm]', Scope2.u2) 
       annotation(Line(origin={0,0},
       points={{198,-73},{208,-73},{208,-39},{254,-39}}));
-      connect('EngTrq [Nm]', Motion.EngineTrq_Nm) 
-      annotation(Line(origin={-235,-85},
-points={{-45,138},{-33,138},{-33,-145.75},{204.2,-145.75}}));
-      connect(LoadTrqSW.y, Switch.u2) 
-      annotation(Line(origin={-149,-72.5},
-points={{267.3,-105},{362.7,-105}}));
-      connect(Motion.EngineSpd_rpm, Switch.u3) 
-      annotation(Line(origin={-149,-72.5},
-points={{267.8,-174},{313,-174},{313,-150.333},{362.7,-150.333}}));
-      connect(LoadTrqManu.y, Motion.LoadTrq_Nm) 
-      annotation(Line(origin={-149,-72.5},
-points={{74.3,-190},{118.2,-190},{118.2,-189.75}}),Text(origin={96.25,-186.09},
-extent={{0,-3},{0,3}},
-textString="%signal",
-fontSize=14),__MWORKS(BlockSystem(NamedSignal(name="LoadTrqManu"))));
-      connect(Switch.y, 'EngSpd [rpm]') 
-      annotation(Line(origin={257,-125},
-      points={{-16.7,-52.5},{10.8191,-52.5},{10.8191,52.0000048},{17,52.0000048}},
-      color={0,0,0}));
-      connect(Switch.u1, EngSpdCalc.'EngSpd [rpm]') 
-      annotation(Line(origin={205,-103},
-points={{8.7,-29.1667},{1,-29.1667},{1,30},{-9.7,30}},
+      connect(scope.u1, GearBox2Axle.'Gear_R[-]') 
+      annotation(Line(origin={114,8},
+      points={{86.2,-6},{-47,-6},{-47,5.25},{-87.2,5.25}},
+      color={0,0,0}),__MWORKS(BlockSystem(NamedSignal)));
+      connect(scope1.u1, 'EngTrq [Nm]') 
+      annotation(Line(origin={-265,43},
+points={{29.2,-26},{5,-26},{5,10.0000048},{-15,10.0000048}},
 color={0,0,0}),__MWORKS(BlockSystem(NamedSignal)));
       end Transmission_type;
     block _AgriculturalImplement_type_ "子系统
@@ -21206,7 +20511,7 @@ color={0,0,0}),__MWORKS(BlockSystem(NamedSignal)));
       block _MoldboardPlow1_type_ "子系统
 通过子系统创建模型分层结构。"
 
-        annotation (defaultComponentName="subSystem", __MWORKS(PortArrangement(Left('VehSpd [m/s]', 'LiftCmd [-]', 'Soil [-]'),Top('Action Port'),Right(ToolWidth_m, Draught_N, DraughtPwr_kW, LiftTrq_N)),BlockSystem(blockKind=BlockKind.subSystem,SampleTime(auto=true),SubSystem(virtual=false,functionPack=FunctionPack.auto,functionName="",sourceFile="")),PortLabels(labelType="PortName"),sourceModel=SysplorerEmbeddedCoder.SubSystems.SubSystem,independentInstance=true,hide=true), Icon(coordinateSystem(extent={{-300,-120},{300,120}},
+        annotation (defaultComponentName="subSystem", __MWORKS(PortArrangement(Left('VehSpd [m/s]', 'LiftCmd [-]', 'Soil [-]'), Top('Action Port'), Right(ToolWidth_m, Draught_N, DraughtPwr_kW, LiftTrq_Nm)),BlockSystem(blockKind=BlockKind.subSystem,SampleTime(auto=true),SubSystem(virtual=false,functionPack=FunctionPack.auto,functionName="",sourceFile="")),PortLabels(labelType="PortName"),sourceModel=SysplorerEmbeddedCoder.SubSystems.SubSystem,independentInstance=true,hide=true), Icon(coordinateSystem(extent={{-300,-120},{300,120}},
       grid={2,2}),graphics = {Rectangle(sizePolicy=SizePolicy.Expanding,
       rotationPolicy=RotationPolicy.Follow,
       origin={0,0},
@@ -21333,7 +20638,7 @@ color={0,0,0}),__MWORKS(BlockSystem(NamedSignal)));
       extent={{-10,-10},{10,10}}),
       iconTransformation(origin={301.8,-30},
       extent={{-1.8,-1.8},{1.8,1.8}})));
-        SysplorerEmbeddedCoder.Port.Outport LiftTrq_N 
+        SysplorerEmbeddedCoder.Port.Outport LiftTrq_Nm 
           annotation (Placement(transformation(origin={468,-103},
       extent={{-10,-10},{10,10}}),
       iconTransformation(origin={301.8,-90},
@@ -21551,7 +20856,7 @@ color={0,0,0}),__MWORKS(BlockSystem(NamedSignal)));
         annotation(Line(origin={445,-25},
       points={{-11.2,-0.5},{13,-0.5}},
       color={0,0,0}));
-        connect(Switch1.y, LiftTrq_N) 
+        connect(Switch1.y, LiftTrq_Nm) 
         annotation(Line(origin={335,-103},
       points={{-24.7,0},{121,0}},
       color={0,0,0}));
@@ -21706,7 +21011,7 @@ color={0,0,0}),__MWORKS(BlockSystem(NamedSignal)));
         annotation(Line(origin = {-686.6875, 658.721},
         points = {{-76.2, 99.125}, {-11.85, 99.125}, {-11.85, -104.861}, {79.2, -104.861}},
         color = {0, 0, 0}));
-      connect(MoldboardPlow.LiftTrq_N, merge4.u2) 
+      connect(MoldboardPlow.LiftTrq_Nm, merge4.u2) 
         annotation(Line(origin = {-686.6875, 611.721},
         points = {{-76.2, 64.125}, {12.15, 64.125}, {12.15, -70.24285}, {79.2, -70.24285}},
         color = {0, 0, 0}));
@@ -21952,8 +21257,8 @@ color={0,0,0}),__MWORKS(BlockSystem(NamedSignal)));
   iconTransformation(origin={-301.8,0},
   extent={{-1.8,-1.8},{1.8,1.8}})),__MWORKS(BlockSystem(Type(inherit=InheritType.auto),Dimension(dimensionType=DimensionType.auto)=-1,SampleTime(auto=true)=-1)));
         SysplorerEmbeddedCoder.SubSystems.ActionPort 'Action Port' 
-          annotation (Placement(transformation(origin={12,189},
-  extent={{-35,-9.5},{35,9.5}})),__MWORKS(portFlag="%actionPort(if (u1 == 0))"));
+          annotation (Placement(transformation(origin={30,56.5},
+extent={{-35,-9.5},{35,9.5}})),__MWORKS(portFlag="%actionPort(if (u1 == 0))"));
         SysplorerEmbeddedCoder.Sources.Constant '0'(k=0) 
           annotation (Placement(transformation(origin={-159,-9.3},
   extent={{-10,-10},{10,10}})),__MWORKS(BlockSystem(SampleTime(auto=false)=-1,Instance(y(Type(inherit=InheritType.backPropagation))))));
@@ -21988,7 +21293,7 @@ color={0,0,0}),__MWORKS(BlockSystem(NamedSignal)));
         SysplorerEmbeddedCoder.Sources.Constant Constant2(k=2.2) 
           annotation (Placement(transformation(origin={-244,-204},
   extent={{-11.5,-6.5},{11.5,6.5}})),__MWORKS(BlockSystem(SampleTime(auto=false)=-1,Instance(y(Type(inherit=InheritType.constantValue))))));
-        SysplorerEmbeddedCoder.Sources.Constant Constant3(k=1.5) 
+        SysplorerEmbeddedCoder.Sources.Constant Constant3(k=1.8) 
           annotation (Placement(transformation(origin={-244,-224},
   extent={{-11.5,-6.5},{11.5,6.5}})),__MWORKS(BlockSystem(SampleTime(auto=false)=-1,Instance(y(Type(inherit=InheritType.constantValue))))));
         SysplorerEmbeddedCoder.Sources.Constant Constant4(k=1.2) 
@@ -22051,6 +21356,9 @@ color={0,0,0}),__MWORKS(BlockSystem(NamedSignal)));
         SysplorerEmbeddedCoder.MathOperation.Gain gain3(k=1000) 
           annotation (Placement(transformation(origin={230,-162.9},
   extent={{-10,-10},{10,10}})));
+        SysplorerEmbeddedCoder.MathOperation.Bias bias(bias=1) 
+          annotation (Placement(transformation(origin={60,-152.9},
+extent={{-10,-10},{10,10}})));
         equation
         connect('1'.y, 'Multiport10Switch1'.u2) 
         annotation(Line(origin={-3,-120.5},
@@ -22172,9 +21480,13 @@ color={0,0,0}),__MWORKS(BlockSystem(NamedSignal)));
         annotation(Line(origin={203,-184},
         points={{15.2,21.1},{-3,21.1},{-3,-20.833},{-15.2,-20.833}},
         color={0,0,0}),__MWORKS(BlockSystem(NamedSignal)));
-        connect(product1.u1, component.y) 
-        annotation(Line(origin={135,-97},
-        points={{139.2,-55.9},{-130.3,-55.9},{-130.3,56.5},{-140.2,56.5}},
+        connect(product1.u1, bias.y) 
+        annotation(Line(origin={173,-153},
+        points={{101.2,0.1},{-101.2,0.1}},
+        color={0,0,0}));
+        connect(bias.u, component.y) 
+        annotation(Line(origin={22,-97},
+        points={{26.2,-55.9},{-17.3,-55.9},{-17.3,56.5},{-27.2,56.5}},
         color={0,0,0}),__MWORKS(BlockSystem(NamedSignal)));
         end PTO_type;
       block PTO_type2 "子系统
@@ -22314,7 +21626,7 @@ color={0,0,0}),__MWORKS(BlockSystem(NamedSignal)));
       textStyle={TextStyle.None},
       textColor={0,0,0},
       verticalAlignment=TextAlignment.Top)},sizePolicy=SizePolicy.Fixed,rotationPolicy=RotationPolicy.Ignore),Protection(access=Access.packageDuplicate),Diagram(coordinateSystem(extent={{-100,-100},{100,100}},
-      grid={2,2})));
+grid={2,2})));
         SysplorerEmbeddedCoder.Port.Inport 'PTOSpdCmd [-]' 
           annotation (Placement(transformation(origin={-217,141},
       extent={{-10,-10},{10,10}}),
@@ -22340,9 +21652,6 @@ color={0,0,0}),__MWORKS(BlockSystem(NamedSignal)));
         SysplorerEmbeddedCoder.Sources.Constant Constant(k=500) 
           annotation (Placement(transformation(origin={-222,22.6},
   extent={{-6.5,-5},{6.5,5}})),__MWORKS(BlockSystem(SampleTime(auto=false)=-1,Instance(y(Type(inherit=InheritType.constantValue))))));
-        SysplorerEmbeddedCoder.Utilities.Fcn Fcn(y=0.0005*u*u) 
-          annotation (Placement(transformation(origin={156,-32},
-      extent={{-20,-10},{20,10}})));
         SysplorerEmbeddedCoder.MathOperation.Gain Gain2(k=0.001,gainType=SysplorerEmbeddedCoder.MathOperation.Gain.GainType.elementWise,rndMeth=SysplorerEmbeddedCoder.MathOperation.Gain.RndType.floorType) 
           annotation (Placement(transformation(origin={314.5,-78},
       extent={{-18.5,-10},{18.5,10}})),__MWORKS(BlockSystem(Instance(k(Type(inherit=InheritType.internalRule)),y(Type(inherit=InheritType.internalRule))))));
@@ -22388,6 +21697,9 @@ color={0,0,0}),__MWORKS(BlockSystem(NamedSignal)));
         SysplorerEmbeddedCoder.MathOperation.Product Product2(inputs="2",isSaturate=false,multiplication=SysplorerEmbeddedCoder.MathOperation.Product.MultiplicationType.elementWise) 
           annotation (Placement(transformation(origin={84.5,-32},
       extent={{-8.5,-17},{8.5,17}})),__MWORKS(BlockSystem(Instance(u(u1,u2),y(Type(inherit=InheritType.internalRule))),Type(overflowKind=SysplorerEmbeddedCoder.Types.OverflowKind.wrap)),PortLabels(labelType="CustomType",labels(label(text="*",instance="u1"),label(text="*",instance="u2")))));
+        SysplorerEmbeddedCoder.Utilities.Fcn Fcn1(y=0.0005*u*u) 
+          annotation (Placement(transformation(origin={12,-40.5},
+extent={{-20,-10},{20,10}})));
       equation
         connect('1'.y, 'Multiport10Switch1'.u2) 
         annotation(Line(origin={0,0},
@@ -22410,9 +21722,6 @@ color={0,0,0}),__MWORKS(BlockSystem(NamedSignal)));
         connect('PTOSpdCmd [-]', 'Multiport10Switch1'.controlSignal) 
         annotation(Line(origin={0,0},
         points={{-217,141},{-217,143},{-103,143}}));
-        connect(Fcn.y, Product1.u1) 
-        annotation(Line(origin={152.5,-71},
-      points={{25.3,39},{49,39},{49,1.5},{86.7,1.5}}));
         connect('rpm2rad/s'.y, Product1.u2) 
         annotation(Line(origin={152.5,-71},
       points={{28.8,-15.5},{86.7,-15.5}}));
@@ -22426,10 +21735,6 @@ color={0,0,0}),__MWORKS(BlockSystem(NamedSignal)));
         annotation(Line(origin={349.5,-80},
       points={{-14.7,2},{29,2}},
       color={0,0,0}));
-        connect(PTOTrq_Nm, Fcn.y) 
-        annotation(Line(origin={234.5,-32},
-      points={{62.5,4.8e-6},{-56.7,4.8e-6}},
-      color={0,0,0}),__MWORKS(BlockSystem(NamedSignal)));
         connect(inletCmd, _Multiport10Switch1_.controlSignal) 
         annotation(Line(origin={-32,74.14},
       points={{28,0.2525},{56.2,0.2525}},
@@ -22446,17 +21751,25 @@ color={0,0,0}),__MWORKS(BlockSystem(NamedSignal)));
         annotation(Line(origin={4,3.14},
       points={{20.2,1.6075},{9.8,1.6075}},
       color={0,0,0}));
-        connect(Fcn.u, Product2.y) 
-        annotation(Line(origin={115,-32},
-        points={{19.2,7.10543e-15},{-20.2,1.42109e-14}},
+        connect(Product2.u2, Fcn1.y) 
+        annotation(Line(origin={54,-40},
+        points={{20.2,-0.5},{-20.2,-0.5}},
         color={0,0,0}));
+        connect(Fcn1.u, 'Multiport10Switch1'.y) 
+        annotation(Line(origin={-43,20},
+        points={{33.2,-60.5},{-8,-60.5},{-8,60},{-33.2,60}},
+        color={0,0,0}),__MWORKS(BlockSystem(NamedSignal)));
         connect(_Multiport10Switch1_.y, Product2.u1) 
         annotation(Line(origin={58,8},
         points={{-17.2,31.57},{12.4,31.57},{12.4,-31.5},{16.2,-31.5}},
         color={0,0,0}));
-        connect(Product2.u2, 'Multiport10Switch1'.y) 
-        annotation(Line(origin={-1,20},
-        points={{75.2,-60.5},{-50,-60.5},{-50,60},{-75.2,60}},
+        connect(Product2.y, Product1.u1) 
+        annotation(Line(origin={167,-51},
+        points={{-72.2,19},{68.4,19},{68.4,-18.5},{72.2,-18.5}},
+        color={0,0,0}));
+        connect(PTOTrq_Nm, Product2.y) 
+        annotation(Line(origin={196,-32},
+        points={{101,4.8e-6},{-101.2,0}},
         color={0,0,0}),__MWORKS(BlockSystem(NamedSignal)));
         end PTO_type1;
       block PTO_type3 "子系统
@@ -24607,53 +23920,53 @@ color={0,0,0}),__MWORKS(BlockSystem(NamedSignal)));
       points={{84.2,-27.0625},{-68,-27.0625},{-68,27.875},{-84,27.875}},
       color={0,0,0}),__MWORKS(BlockSystem(NamedSignal)));
       end _TiresandGround_type_1;
-  equation
-    connect('Tires_and_Ground'.'RollResis[N]', Tractor.'RollRes[N]') 
+    equation
+    connect('Tires and Ground'.'RollResis[N]', Tractor.'RollRes[N]') 
       annotation(Line(origin = {0, 0},
       points = {{132.3, 105.25}, {179.7, 105.25}}));
     connect(From23.y, Transmission.'GearCmd[-]') 
       annotation(Line(origin = {0, 0},
       points = {{-293.2, 108}, {-259.3, 108}}));
-    connect(Transmission.'AxlTrqR [Nm]', 'Tires_and_Ground'.'AxlTrqR [Nm]') 
+    connect(Transmission.'AxlTrqR [Nm]', 'Tires and Ground'.'AxlTrqR [Nm]') 
       annotation(Line(origin = {0, 0},
       points = {{-134, 63}, {-102, 63}, {-102, 76}, {-102, 78}, {7, 78}}));
     connect(Tractor.'VehSpd [m/s]', Goto32.u) 
       annotation(Line(origin = {0, 0},
       points = {{307.8, 95}, {326.2, 95}}));
-    connect(Transmission.'AxlTrqF [Nm]', 'Tires_and_Ground'.'AxlTrqF [Nm]') 
+    connect(Transmission.'AxlTrqF [Nm]', 'Tires and Ground'.'AxlTrqF [Nm]') 
       annotation(Line(origin = {0, 0},
       points = {{-136.7, 88}, {9.7, 88.1667}}));
-    connect('Tires_and_Ground'.'DriveForce[N]', Tractor.'DriveForce[N]') 
+    connect('Tires and Ground'.'DriveForce[N]', Tractor.'DriveForce[N]') 
       annotation(Line(origin = {0, 0},
       points = {{132.3, 125.75}, {179.7, 125.75}}));
     connect(Transmission.'EngSpd [rpm]', 'EngSpd [rpm]') 
       annotation(Line(origin = {0, 0},
       points = {{-134, 115}, {-87, 115}}));
-    connect(From34.y, 'Tires_and_Ground'.'Land[-]') 
+    connect(From34.y, 'Tires and Ground'.'Land[-]') 
       annotation(Line(origin = {0, 0},
       points = {{3, 115}, {3, 117}, {7, 117}}));
-    connect(From26.y, 'Tires_and_Ground'.'Scene[-]') 
+    connect(From26.y, 'Tires and Ground'.'Scene[-]') 
       annotation(Line(origin = {0, 0},
       points = {{3, 129}, {3, 130}, {7, 130}}));
-    connect('Tires_and_Ground'.'SlopeResis[N]', Tractor.'SlopeResis[N]') 
+    connect('Tires and Ground'.'SlopeResis[N]', Tractor.'SlopeResis[N]') 
       annotation(Line(origin = {0, 0},
       points = {{132.3, 84.75}, {179.7, 84.75}}));
     connect('EngTrq [Nm]', Transmission.'EngTrq [Nm]') 
       annotation(Line(origin = {0, 0},
       points = {{-334, 94.6667}, {-259.3, 94.6667}}));
-    connect(From29.y, 'Tires_and_Ground'.'DriveCmd [-]') 
+    connect(From29.y, 'Tires and Ground'.'DriveCmd [-]') 
       annotation(Line(origin = {0, 0},
       points = {{-331, 143}, {-293, 143}, {-56, 143}, {-56, 103}, {-56, 104}, {7, 104}}));
     connect(From29.y, Transmission.'DriveCmd [-]') 
       annotation(Line(origin = {0, 0},
       points = {{-331, 143}, {-293, 143}, {-293, 123}, {-293, 122}, {-262, 122}}));
-    connect('Tires_and_Ground'.'WhlSpdR[m/s]', Transmission.'WhlSpdR [m/s]') 
+    connect('Tires and Ground'.'WhlSpdR[m/s]', Transmission.'WhlSpdR [m/s]') 
       annotation(Line(origin = {0, 0},
       points = {{135, 66}, {146, 66}, {146, 37}, {-264, 37}, {-264, 56}, {-264, 57}, {-262, 57}}));
     connect(From3.y, 'Unit Delay'.u1) 
       annotation(Line(origin = {0, 0},
       points = {{-41.2, 60}, {-29.3, 60}}));
-    connect('Unit Delay'.y, 'Tires_and_Ground'.'VehSpd[m/s]') 
+    connect('Unit Delay'.y, 'Tires and Ground'.'VehSpd[m/s]') 
       annotation(Line(origin = {0, 0},
       points = {{-8.7, 60}, {9.7, 60}, {9.7, 60.8333}}));
     connect(Transmission.'PTOTrq [Nm]', from1.y) 
@@ -24670,97 +23983,434 @@ color={0,0,0}),__MWORKS(BlockSystem(NamedSignal)));
       color = {0, 0, 0}));
     connect(from.y, multiportSwitch.controlSignal) 
       annotation(Line(origin={-125,-44.8004},
-  points={{50.8,47.0504},{77.2,47.0504}},
-  color={0,0,0}));
+points={{48.8,51.21417},{80.4,51.21417},{80.4,52.8174},{84.2,52.8174}},
+color={0,0,0}));
     connect(Trailer.outport, multiportSwitch.u1) 
-      annotation(Line(origin={-148,-41.8004},
-  points={{31.8,-11.9496},{100.2,-11.9496}},
-  color={0,0,0}));
+      annotation(Line(origin={-148,-38.2504},
+points={{31.8,-11.9496},{107.2,-11.9496}},
+color={0,0,0}));
     connect(AgriculturalImplement.outport, multiportSwitch.u2) 
-      annotation(Line(origin={-147,-96.8004},
-  points={{30.8,-12.9496},{99.2,-12.9496}},
-  color={0,0,0}));
+      annotation(Line(origin={-147,-89.7004},
+points={{30.8,-12.9496},{102.4,-12.9496},{102.4,-18.7166},{106.2,-18.7166}},
+color={0,0,0}));
     connect(PTO.outport, multiportSwitch.u3) 
       annotation(Line(origin={-82,-135.8},
-  points={{-34.2,-30.325},{34.2,-30.325},{34.2,-29.95}},
-  color={0,0,0}));
+points={{-34.2,-32.4375},{37.4,-32.4375},{37.4,-30.834},{41.2,-30.834}},
+color={0,0,0}));
     connect(multiportSwitch.y, deMux.u) 
       annotation(Line(origin={22,-65.8004},
-  points={{-20.2,-15.9496},{45.2,-15.9496},{45.2,-15.1996}},
-  color={0,0,0}));
+points={{-19.2,-13.5081},{52.4,-13.5081},{52.4,-15.1115},{56.2,-15.1115}},
+color={0,0,0}));
     connect(deMux.y1, Goto1.u) 
-      annotation(Line(origin={103,-49.4},
-  points={{-28.2,32.1101},{21.7,32.11}},
-  color={0,0,0}));
+      annotation(Line(origin={114,-49.3119},
+points={{-28.2,32.1101},{21.7,32.11}},
+color={0,0,0}));
     connect(deMux.y2, goto1.u) 
-      annotation(Line(origin={101,-63.4},
-  points={{-26.2,20.62605},{23.7,20.626}},
-  color={0,0,0}));
+      annotation(Line(origin={112,-63.3119},
+points={{-26.2,20.626},{23.7,20.626}},
+color={0,0,0}));
     connect(deMux.y3, Goto23.u) 
-      annotation(Line(origin={101,-77.4},
-  points={{-26.2,9.14202},{23.7,9.142}},
-  color={0,0,0}));
+      annotation(Line(origin={112,-77.3119},
+points={{-26.2,9.14202},{23.7,9.142}},
+color={0,0,0}));
     connect(deMux.y4, goto.u) 
-      annotation(Line(origin={103,-91.4},
-  points={{-28.2,-2.34202},{26.2,-2.342}},
-  color={0,0,0}));
+      annotation(Line(origin={114,-91.3119},
+points={{-28.2,-2.34202},{26.2,-2.342}},
+color={0,0,0}));
     connect(deMux.y5, goto2.u) 
-      annotation(Line(origin={101,-105.4},
-  points={{-26.2,-13.8261},{24.2,-13.8256}},
-  color={0,0,0}));
+      annotation(Line(origin={112,-105.312},
+points={{-26.2,-13.8261},{24.2,-13.8256}},
+color={0,0,0}));
     connect(deMux.y6, Goto24.u) 
-      annotation(Line(origin={101,-118.4},
-  points={{-26.2,-26.3105},{24.2,-26.31}},
-  color={0,0,0}));
+      annotation(Line(origin={112,-118.312},
+points={{-26.2,-26.3101},{24.2,-26.31}},
+color={0,0,0}));
     connect(from4.y, Trailer.inport) 
-      annotation(Line(origin={-242,-33},
-  points={{-17.2,-12},{18.2,-12}},
-  color={0,0,0}));
+      annotation(Line(origin={-242,-29.45},
+points={{-17.2,-12},{18.2,-12}},
+color={0,0,0}));
     connect(Trailer.inport1, from5.y) 
-      annotation(Line(origin={-239,-51},
-  points={{15.2,-11.5},{-20.2,-11.5}},
-  color={0,0,0}));
+      annotation(Line(origin={-239,-47.45},
+points={{15.2,-11.5},{-20.2,-11.5}},
+color={0,0,0}));
     connect(AgriculturalImplement.inport, from4.y) 
-      annotation(Line(origin={-241,-54},
-  points={{17.2,-35.43},{3,-35.43},{3,9},{-18.2,9}},
-  color={0,0,0}), __MWORKS(BlockSystem(NamedSignal)));
+      annotation(Line(origin={-241,-43.35},
+points={{17.2,-38.98},{3,-38.98},{3,1.9},{-18.2,1.9}},
+color={0,0,0}), __MWORKS(BlockSystem(NamedSignal)));
     connect(AgriculturalImplement.inport1, from5.y) 
-      annotation(Line(origin={-241,-68},
-  points={{17.2,-31.59},{-3,-31.59},{-3,5.5},{-18.2,5.5}},
-  color={0,0,0}), __MWORKS(BlockSystem(NamedSignal)));
+      annotation(Line(origin={-241,-57.35},
+points={{17.2,-35.14},{-3,-35.14},{-3,-1.6},{-18.2,-1.6}},
+color={0,0,0}), __MWORKS(BlockSystem(NamedSignal)));
     connect(From1.y, AgriculturalImplement.inport3) 
-      annotation(Line(origin={-241,-121.4996},
-  points={{-18.2,1.5896},{17.2,1.5896}},
-  color={0,0,0}));
+      annotation(Line(origin={-241,-114.3996},
+points={{-18.2,1.5896},{17.2,1.5896}},
+color={0,0,0}));
     connect(from6.y, AgriculturalImplement.inport2) 
-      annotation(Line(origin={-241,-110.4996},
-  points={{-17.2,0.7496},{17.2,0.7496}},
-  color={0,0,0}));
+      annotation(Line(origin={-241,-103.3996},
+points={{-17.2,0.7496},{17.2,0.7496}},
+color={0,0,0}));
     connect(PTO.inport, from7.y) 
-      annotation(Line(origin={-233,-146.775},
-  points={{9.2,-0.3},{-9.2,-0.3},{-9.2,0.217}},
-  color={0,0,0}));
+      annotation(Line(origin={-233,-143.65},
+points={{9.2,-0.0775},{-9.2,-0.0775},{-9.2,0.217}},
+color={0,0,0}));
     connect(PTO.inport1, From2.y) 
-      annotation(Line(origin={-233,-157.775},
-  points={{9.2,-2},{-9.2,-2}},
-  color={0,0,0}));
+      annotation(Line(origin={-233,-154.65},
+points={{9.2,-1.3325},{-9.2,-1.3325},{-9.2,-2}},
+color={0,0,0}));
     connect(From4.y, PTO.inport2) 
-      annotation(Line(origin={-233,-170.775},
-  points={{-9.2,-0.5875},{9.2,-0.5875}},
-  color={0,0,0}));
+      annotation(Line(origin={-233,-167.65},
+points={{-9.2,-0.5875},{9.2,-0.5875}},
+color={0,0,0}));
     connect(From5.y, AgriculturalImplement.inport4) 
-      annotation(Line(origin={-241,-125.4996},
-  points={{-64.2,-4.6504},{17.2,-4.5704}},
-  color={0,0,0}));
+      annotation(Line(origin={-241,-118.3996},
+points={{-64.2,-4.6504},{17.2,-4.5704}},
+color={0,0,0}));
     connect(from8.y, PTO.inport3) 
-    annotation(Line(origin={-236,-186},
-  points={{-11.2,2.3825},{12.2,2.3825}},
-  color={0,0,0}));
+    annotation(Line(origin={-236,-182.875},
+points={{-11.2,2.3825},{12.2,2.3825}},
+color={0,0,0}));
     connect(from9.y, PTO.inport4) 
-    annotation(Line(origin={-232,-192},
-  points={{-9.2,-3.8725},{8.2,-3.8725}},
-  color={0,0,0}));
-  end WorkloadModel_type1;
+    annotation(Line(origin={-232,-188.875},
+points={{-9.2,-3.8725},{8.2,-3.8725}},
+color={0,0,0}));
+    end WorkloadModel_type1;
+  block Cockpit_type "子系统
+通过子系统创建模型分层结构。"
+    annotation(defaultComponentName = "subSystem", __MWORKS(PortArrangement(Left(u), Right(y)),BlockSystem(blockKind = BlockKind.subSystem,SampleTime(auto = true),SubSystem(functionPack=FunctionPack.auto,functionName="",fileName=""),Instance(Mask(LoadCmd(Type(inherit=InheritType.none,ref="double"),Dimension(dimensionType=DimensionType.auto)=1,HideResult=true)=0))),PortLabels(labelType = "PortName"),sourceModel = SysplorerEmbeddedCoder.SubSystems.SubSystem,independentInstance = true,hide = true,parameterDialog="{
+    \"apply callback\": \"\",
+    \"init callback\": \"\",
+    \"layout info\": \"Vertical\",
+    \"sub widgets\": [
+        {
+            \"bind data\": \"Scene\",
+            \"bind relationship\": \"Variable.Value\",
+            \"control name\": \"Scene\",
+            \"control promote\": true,
+            \"promoted control\": false,
+            \"text\": \"场景 0-水田,1-旱田,2-果园\",
+            \"widget type\": \"line edit\",
+            \"word wrap\": true
+        },
+        {
+            \"bind data\": \"Soil\",
+            \"bind relationship\": \"Variable.Value\",
+            \"control name\": \"Soil\",
+            \"control promote\": true,
+            \"promoted control\": false,
+            \"text\": \"土质 0-粘土, 1-壤土, 2-砂土\",
+            \"widget type\": \"line edit\",
+            \"word wrap\": true
+        },
+        {
+            \"bind data\": \"Moisture\",
+            \"bind relationship\": \"Variable.Value\",
+            \"control name\": \"Moisture\",
+            \"control promote\": true,
+            \"promoted control\": false,
+            \"text\": \"土壤含水量(%)\",
+            \"widget type\": \"line edit\",
+            \"word wrap\": true
+        },
+        {
+            \"bind data\": \"Density\",
+            \"bind relationship\": \"Variable.Value\",
+            \"control name\": \"Density\",
+            \"control promote\": true,
+            \"promoted control\": false,
+            \"text\": \"土壤容重(g/cm3)\",
+            \"widget type\": \"line edit\",
+            \"word wrap\": true
+        },
+        {
+            \"bind data\": \"Terrain\",
+            \"bind relationship\": \"Variable.Value\",
+            \"control name\": \"Terrain\",
+            \"control promote\": true,
+            \"promoted control\": false,
+            \"text\": \"地形 0-平坦 1-起伏 2-陡峭\",
+            \"widget type\": \"line edit\",
+            \"word wrap\": true
+        },
+        {
+            \"bind data\": \"DriveCmd\",
+            \"bind relationship\": \"Variable.Value\",
+            \"control name\": \"DriveCmd\",
+            \"control promote\": true,
+            \"promoted control\": false,
+            \"text\": \"驱动模式 0-Rear,1-Four\",
+            \"widget type\": \"line edit\",
+            \"word wrap\": true
+        },
+        {
+            \"bind data\": \"FSCmd\",
+            \"bind relationship\": \"Variable.Value\",
+            \"control name\": \"FSCmd\",
+            \"control promote\": true,
+            \"promoted control\": false,
+            \"text\": \"慢快档 0-Slow，1-Fast\",
+            \"widget type\": \"line edit\",
+            \"word wrap\": true
+        },
+        {
+            \"bind data\": \"GearMCmd\",
+            \"bind relationship\": \"Variable.Value\",
+            \"control name\": \"GearMCmd\",
+            \"control promote\": true,
+            \"promoted control\": false,
+            \"text\": \"主变速器 0 1 2 3\",
+            \"widget type\": \"line edit\",
+            \"word wrap\": true
+        },
+        {
+            \"bind data\": \"GearACmd\",
+            \"bind relationship\": \"Variable.Value\",
+            \"control name\": \"GearACmd\",
+            \"control promote\": true,
+            \"promoted control\": false,
+            \"text\": \"辅变速器 0-R 1-N 2-L 3-M 4-H\",
+            \"widget type\": \"line edit\",
+            \"word wrap\": true
+        },
+        {
+            \"bind data\": \"ThrottleCmd\",
+            \"bind relationship\": \"Variable.Value\",
+            \"control name\": \"ThrottleCmd\",
+            \"control promote\": true,
+            \"promoted control\": false,
+            \"text\": \"油门(%)\",
+            \"widget type\": \"line edit\",
+            \"word wrap\": true
+        },
+        {
+            \"bind data\": \"WorkCmd\",
+            \"bind relationship\": \"Variable.Value\",
+            \"control name\": \"WorkCmd\",
+            \"control promote\": true,
+            \"promoted component\": \"\'WorkCmd\'\",
+            \"promoted control\": true,
+            \"promoted parameter\": \"k\",
+            \"text\": \"工作模式 0-拖车 1-牵引 2-PTO\",
+            \"widget type\": \"line edit\",
+            \"word wrap\": true
+        },
+        {
+            \"bind data\": \"TypeCmd\",
+            \"bind relationship\": \"Variable.Value\",
+            \"control name\": \"TypeCmd\",
+            \"control promote\": true,
+            \"promoted control\": false,
+            \"text\": \"农机类型：拖车模式0 ；工作模式1 0-耕耘机 1-铧式犁 2-扫地犁 3-深松机 4-凿式犁 5-水田犁；工作模式2 0-旋耕机 1-收割机 2-播种机 3-喷洒机\",
+            \"widget type\": \"line edit\",
+            \"word wrap\": true
+        },
+        {
+            \"bind data\": \"PTOSpdCmd\",
+            \"bind relationship\": \"Variable.Value\",
+            \"control name\": \"PTOSpdCmd\",
+            \"control promote\": true,
+            \"promoted control\": false,
+            \"text\": \"PTO 0-无需求 1-540rpm 2-1000rpm 3-同步转速\",
+            \"widget type\": \"line edit\",
+            \"word wrap\": true
+        },
+        {
+            \"bind data\": \"LoadCmd\",
+            \"bind relationship\": \"Variable.Value\",
+            \"control name\": \"LoadCmd\",
+            \"control promote\": true,
+            \"promoted component\": \"\'LoadCmd\'\",
+            \"promoted control\": true,
+            \"promoted parameter\": \"k\",
+            \"text\": \"工作模式0 拖车负载(kg)/工作模式2 进料量 0-小 1-中 2-大\",
+            \"widget type\": \"line edit\",
+            \"word wrap\": true
+        },
+        {
+            \"bind data\": \"TravelDistance\",
+            \"bind relationship\": \"Variable.Value\",
+            \"control name\": \"TravelDistance\",
+            \"control promote\": true,
+            \"promoted control\": false,
+            \"text\": \"掉头距离(m)\",
+            \"widget type\": \"line edit\",
+            \"word wrap\": true
+        }
+    ]
+}
+"  ), Icon(coordinateSystem(extent = {{-300, -120}, {300, 120}},
+      grid = {2, 2}), graphics = {Rectangle(sizePolicy = SizePolicy.Expanding,
+      rotationPolicy = RotationPolicy.Follow,
+      origin = {0, 0},
+      fillColor = {255, 255, 255},
+      fillPattern = FillPattern.Solid,
+      lineThickness = 3,
+      extent = {{-300, 120}, {300, -120}}), Text(origin = {0, -140},
+      lineColor = {0, 0, 0},
+      extent = {{0, -20}, {0, 20}},
+      textString = "%name",
+      fontSize = 14,
+      textStyle = {TextStyle.None},
+      textColor = {0, 0, 0},
+      verticalAlignment = TextAlignment.Top)}, sizePolicy = SizePolicy.Fixed, rotationPolicy = RotationPolicy.Ignore), Protection(access = Access.packageDuplicate), Diagram(coordinateSystem(extent={{-100,-100},{100,100}},
+  grid={2,2}),graphics = {Rectangle(origin={0,-2.66},
+  lineColor={0,0,0},
+  fillColor={230,230,255},
+  fillPattern=FillPattern.Solid,
+  extent={{-314.84,-152.66},{314.84,152.66}}), Text(origin={2,142},
+  lineColor={0,0,0},
+  extent={{-314.84,-8},{314.84,8}},
+  textString="Driver",
+  fontSize=22,
+  textStyle={TextStyle.None},
+  textColor={0,0,0},
+  horizontalAlignment=TextAlignment.Left)}));
+    parameter SysplorerEmbeddedCoder.Types.Auto FSCmd = 0 annotation(__MWORKS(BlockSystem(blkParameter = true, Type(inherit = InheritType.internalRule), Dimension(dimensionType = DimensionType.auto))), HideResult = true);
+    parameter SysplorerEmbeddedCoder.Types.Auto GearMCmd = 0 annotation(__MWORKS(BlockSystem(blkParameter = true, Type(inherit = InheritType.internalRule), Dimension(dimensionType = DimensionType.auto))), HideResult = true);
+    parameter SysplorerEmbeddedCoder.Types.Auto GearACmd = 0 annotation(__MWORKS(BlockSystem(blkParameter = true, Type(inherit = InheritType.internalRule), Dimension(dimensionType = DimensionType.auto))), HideResult = true);
+    parameter SysplorerEmbeddedCoder.Types.Auto DriveCmd = 0 annotation(__MWORKS(BlockSystem(blkParameter = true, Type(inherit = InheritType.internalRule), Dimension(dimensionType = DimensionType.auto))), HideResult = true);
+    parameter SysplorerEmbeddedCoder.Types.Auto ThrottleCmd = 0 annotation(__MWORKS(BlockSystem(blkParameter = true, Type(inherit = InheritType.internalRule), Dimension(dimensionType = DimensionType.auto))), HideResult = true);
+    parameter SysplorerEmbeddedCoder.Types.Auto Scene = 0 annotation(__MWORKS(BlockSystem(blkParameter = true, Type(inherit = InheritType.internalRule), Dimension(dimensionType = DimensionType.auto))), HideResult = true);
+    parameter SysplorerEmbeddedCoder.Types.Auto Soil = 0 annotation(__MWORKS(BlockSystem(blkParameter = true, Type(inherit = InheritType.internalRule), Dimension(dimensionType = DimensionType.auto))), HideResult = true);
+    parameter SysplorerEmbeddedCoder.Types.Auto Moisture = 0 annotation(__MWORKS(BlockSystem(blkParameter = true, Type(inherit = InheritType.internalRule), Dimension(dimensionType = DimensionType.auto))), HideResult = true);
+    parameter SysplorerEmbeddedCoder.Types.Auto Density = 0 annotation(__MWORKS(BlockSystem(blkParameter = true, Type(inherit = InheritType.internalRule), Dimension(dimensionType = DimensionType.auto))), HideResult = true);
+    parameter SysplorerEmbeddedCoder.Types.Auto Terrain = 0 annotation(__MWORKS(BlockSystem(blkParameter = true, Type(inherit = InheritType.internalRule), Dimension(dimensionType = DimensionType.auto))), HideResult = true);
+    parameter SysplorerEmbeddedCoder.Types.Auto TypeCmd = 0 annotation(__MWORKS(BlockSystem(blkParameter = true, Type(inherit = InheritType.internalRule), Dimension(dimensionType = DimensionType.auto))), HideResult = true);
+    parameter SysplorerEmbeddedCoder.Types.Auto PTOSpdCmd = 0 annotation(__MWORKS(BlockSystem(blkParameter = true, Type(inherit = InheritType.internalRule), Dimension(dimensionType = DimensionType.auto))), HideResult = true);
+    parameter SysplorerEmbeddedCoder.Types.Auto TravelDistance = 0 annotation(__MWORKS(BlockSystem(blkParameter = true, Type(inherit = InheritType.internalRule), Dimension(dimensionType = DimensionType.auto))), HideResult = true);
+    SysplorerEmbeddedCoder.MathOperation.Bias Bias(bias = 1) 
+      annotation(Placement(transformation(origin = {-239.000000, 56.000000}, extent = {{-13.500000, -10.000000}, {13.500000, 10.000000}}, rotation = 0)));
+    SysplorerEmbeddedCoder.MathOperation.Bias Bias1(bias = -1) 
+      annotation(Placement(transformation(origin = {-239.000000, 1.000000}, extent = {{-13.500000, -10.000000}, {13.500000, 10.000000}}, rotation = 0)));
+    SysplorerEmbeddedCoder.SignalRouting.BusCreator 'Bus10Creator' 
+      annotation(Placement(transformation(origin = {-176.000000, 57.000000}, extent = {{-1.500000, -80.500000}, {1.500000, 80.500000}}, rotation = 0)), __MWORKS(BlockSystem(Instance(u(u1, u2, u3), y(Type)),BusCreator(showSignalNames = true),Signals(u1="FastSlowCmd", u2="GearMCmd", u3="GearACmd"))));
+    SysplorerEmbeddedCoder.SignalRouting.BusCreator 'Bus10Creator2' 
+      annotation(Placement(transformation(origin = {31.000000, 0.000000}, extent = {{-1.500000, -61.500000}, {1.500000, 61.500000}}, rotation = 0)), __MWORKS(BlockSystem(Instance(u(u1, u2, u3, u4), y(Type)),BusCreator(showSignalNames = true),Signals(u1="Soil", u2="Moisture", u3="Density", u4="Terrain"))));
+    SysplorerEmbeddedCoder.Sources.Constant 'Density [g/cm3]'(k = Density) 
+      annotation(Placement(transformation(origin = {-38.000000, -16.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}}, rotation = 0)), __MWORKS(BlockSystem(SampleTime(auto = false) = -1, Instance(y(Type(inherit = InheritType.constantValue))))));
+    SysplorerEmbeddedCoder.Sources.Constant 'DriveCmd [-]'(k = DriveCmd) 
+      annotation(Placement(transformation(origin = {-272.000000, -70.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}}, rotation = 0)), __MWORKS(BlockSystem(SampleTime(auto = false) = -1, Instance(y(Type(inherit = InheritType.constantValue))))));
+    SysplorerEmbeddedCoder.Sources.Constant 'FastSlowCmd [-]'(k = FSCmd) 
+      annotation(Placement(transformation(origin = {-276.000000, 110.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}}, rotation = 0)), __MWORKS(BlockSystem(SampleTime(auto = false) = -1, Instance(y(Type(inherit = InheritType.constantValue))))));
+    SysplorerEmbeddedCoder.MathOperation.Gain Gain1(k = 0.01, gainType = SysplorerEmbeddedCoder.MathOperation.Gain.GainType.elementWise, rndMeth = SysplorerEmbeddedCoder.MathOperation.Gain.RndType.floorType) 
+      annotation(Placement(transformation(origin = {-196.000000, -111.000000}, extent = {{-15.000000, -10.000000}, {15.000000, 10.000000}}, rotation = 0)), __MWORKS(BlockSystem(Instance(k(Type(inherit = InheritType.internalRule)), y(Type(inherit = InheritType.internalRule))))));
+    SysplorerEmbeddedCoder.Sources.Constant 'GearACmd [-]'(k = GearACmd) 
+      annotation(Placement(transformation(origin = {-276.000000, 1.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}}, rotation = 0)), __MWORKS(BlockSystem(SampleTime(auto = false) = -1, Instance(y(Type(inherit = InheritType.constantValue))))));
+    SysplorerEmbeddedCoder.Sources.Constant 'GearMCmd [-]'(k = GearMCmd) 
+      annotation(Placement(transformation(origin = {-276.000000, 56.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}}, rotation = 0)), __MWORKS(BlockSystem(SampleTime(auto = false) = -1, Instance(y(Type(inherit = InheritType.constantValue))))));
+    SysplorerEmbeddedCoder.SignalRouting.Goto Goto22 
+      annotation(Placement(transformation(origin = {-116.000000, 56.000000}, extent = {{-27.000000, -10.000000}, {27.000000, 10.000000}}, rotation = 0)), __MWORKS(BlockSystem(GotoTag(tagName="GearCmd",tagSocped="",tagVisibility="Global"))));
+    SysplorerEmbeddedCoder.SignalRouting.Goto Goto25 
+      annotation(Placement(transformation(origin = {275.000000, -70.000000}, extent = {{-27.000000, -10.000000}, {27.000000, 10.000000}}, rotation = 0)), __MWORKS(BlockSystem(GotoTag(tagName="TravelDistance",tagSocped="",tagVisibility="Global"))));
+    SysplorerEmbeddedCoder.SignalRouting.Goto Goto26 
+      annotation(Placement(transformation(origin = {-116.000000, -70.000000}, extent = {{-27.000000, -10.000000}, {27.000000, 10.000000}}, rotation = 0)), __MWORKS(BlockSystem(GotoTag(tagName="DriveCmd",tagSocped="",tagVisibility="Global"))));
+    SysplorerEmbeddedCoder.SignalRouting.Goto Goto27 
+      annotation(Placement(transformation(origin = {81, 0},
+      extent = {{-27, -10}, {27, 10}})), __MWORKS(BlockSystem(GotoTag(tagName="Land",tagSocped="",tagVisibility="Global"))));
+    SysplorerEmbeddedCoder.SignalRouting.Goto Goto28 
+      annotation(Placement(transformation(origin = {275.000000, -5.000000}, extent = {{-27.000000, -10.000000}, {27.000000, 10.000000}}, rotation = 0)), __MWORKS(BlockSystem(GotoTag(tagName="PTOSpdCmd",tagSocped="",tagVisibility="Global"))));
+    SysplorerEmbeddedCoder.SignalRouting.Goto Goto29 
+      annotation(Placement(transformation(origin = {-116.000000, -111.000000}, extent = {{-27.000000, -10.000000}, {27.000000, 10.000000}}, rotation = 0)), __MWORKS(BlockSystem(GotoTag(tagName="ThrottleCmd",tagSocped="",tagVisibility="Global"))));
+    SysplorerEmbeddedCoder.SignalRouting.Goto Goto30 
+      annotation(Placement(transformation(origin = {275.000000, 49.000000}, extent = {{-27.000000, -10.000000}, {27.000000, 10.000000}}, rotation = 0)), __MWORKS(BlockSystem(GotoTag(tagName="TypeCmd",tagSocped="",tagVisibility="Global"))));
+    SysplorerEmbeddedCoder.SignalRouting.Goto Goto31 
+      annotation(Placement(transformation(origin = {74.000000, 103.000000}, extent = {{-20.000000, -10.000000}, {20.000000, 10.000000}}, rotation = 0)), __MWORKS(BlockSystem(GotoTag(tagName="Scene",tagSocped="",tagVisibility="Global"))));
+    SysplorerEmbeddedCoder.Sources.Constant 'Moisture [%]'(k = Moisture) 
+      annotation(Placement(transformation(origin = {-38.000000, 15.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}}, rotation = 0)), __MWORKS(BlockSystem(SampleTime(auto = false) = -1, Instance(y(Type(inherit = InheritType.constantValue))))));
+    SysplorerEmbeddedCoder.Sources.Constant 'PTOSpdCmd [-]'(k = PTOSpdCmd) 
+      annotation(Placement(transformation(origin = {166, -5},
+      extent = {{-20, -10}, {20, 10}})), __MWORKS(BlockSystem(SampleTime(auto = false) = -1, Instance(y(Type(inherit = InheritType.constantValue))))));
+    SysplorerEmbeddedCoder.Sources.Constant 'Scene'(k = Scene) 
+      annotation(Placement(transformation(origin = {-48.000000, 103.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}}, rotation = 0)), __MWORKS(BlockSystem(SampleTime(auto = false) = -1, Instance(y(Type(inherit = InheritType.constantValue))))));
+    SysplorerEmbeddedCoder.Sources.Constant 'Soil [-]'(k = Soil) 
+      annotation(Placement(transformation(origin = {-38.000000, 46.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}}, rotation = 0)), __MWORKS(BlockSystem(SampleTime(auto = false) = -1, Instance(y(Type(inherit = InheritType.constantValue))))));
+    SysplorerEmbeddedCoder.Sources.Constant 'Terrain [-]'(k = Terrain) 
+      annotation(Placement(transformation(origin = {-38.000000, -46.000000}, extent = {{-10.000000, -10.000000}, {10.000000, 10.000000}}, rotation = 0)), __MWORKS(BlockSystem(SampleTime(auto = false) = -1, Instance(y(Type(inherit = InheritType.constantValue))))));
+    SysplorerEmbeddedCoder.Sources.Constant 'ThrottleCmd [%]'(k = ThrottleCmd) 
+      annotation(Placement(transformation(origin={-272,-111},
+  extent={{-10,-10},{10,10}})), __MWORKS(BlockSystem(SampleTime(auto = false) = -1, Instance(y(Type(inherit = InheritType.constantValue))))));
+    SysplorerEmbeddedCoder.Sources.Constant 'TravelDistance[m]'(k = TravelDistance) 
+      annotation(Placement(transformation(origin = {166, -70},
+      extent = {{-20, -10}, {20, 10}})), __MWORKS(BlockSystem(SampleTime(auto = false) = -1, Instance(y(Type(inherit = InheritType.constantValue))))));
+    SysplorerEmbeddedCoder.Sources.Constant 'TypeCmd [-]'(k = TypeCmd) 
+      annotation(Placement(transformation(origin = {166, 49},
+      extent = {{-20, -10}, {20, 10}})), __MWORKS(BlockSystem(SampleTime(auto = false) = -1, Instance(y(Type(inherit = InheritType.constantValue))))));
+    SysplorerEmbeddedCoder.Sources.Constant 'WorkCmd'(k=WorkCmd) 
+      annotation (Placement(transformation(origin={166,103},
+  extent={{-20,-10},{20,10}})),__MWORKS(BlockSystem(SampleTime(auto=false)=-1)));
+    SysplorerEmbeddedCoder.SignalRouting.Goto goto 
+      annotation (Placement(transformation(origin={273.633,103},
+  extent={{-21.633,-10},{21.633,10}})),__MWORKS(BlockSystem(GotoTag(tagName="WorkCmd",tagSocped="",tagVisibility="Global"))));
+    SysplorerEmbeddedCoder.Sources.Constant 'LoadCmd'(k=LoadCmd) 
+      annotation (Placement(transformation(origin={166,-120},
+  extent={{-20,-10},{20,10}})),__MWORKS(BlockSystem(SampleTime(auto=false)=-1)));
+    SysplorerEmbeddedCoder.SignalRouting.Goto goto1 
+      annotation (Placement(transformation(origin={275.835,-120},
+  extent={{-21.633,-10},{21.633,10}})),__MWORKS(BlockSystem(GotoTag(tagName="LoadCmd",tagSocped="",tagVisibility="Global"))));
+    parameter RealAuto WorkCmd = 0 annotation(__MWORKS(BlockSystem(Type(inherit=InheritType.none,ref="double"),Dimension(dimensionType=DimensionType.none)=1,blkParameter=true)),HideResult=true);
+    equation
+    connect('Terrain [-]'.y, 'Bus10Creator2'.u4) 
+      annotation(Line(origin = {0, 0},
+      points = {{-23, -46}, {-23, -44}, {25, -44}}), Text(origin = {1, -41}, extent = {{0, -3}, {0, 3}}, textString = "%signal", fontSize = 12), __MWORKS(BlockSystem(NamedSignal(name = "Terrain"))));
+    connect(Bias.y, 'Bus10Creator'.u2) 
+      annotation(Line(origin = {0, 0},
+      points = {{-221, 56}, {-221, 58}, {-182, 58}}), Text(origin = {-201, 61}, extent = {{0, -3}, {0, 3}}, textString = "%signal", fontSize = 12), __MWORKS(BlockSystem(NamedSignal(name = "GearMCmd"))));
+    connect('FastSlowCmd [-]'.y, 'Bus10Creator'.u1) 
+      annotation(Line(origin = {0, 0},
+      points = {{-261, 110}, {-261, 111}, {-182, 111}}), Text(origin = {-221, 114}, extent = {{0, -3}, {0, 3}}, textString = "%signal", fontSize = 12), __MWORKS(BlockSystem(NamedSignal(name = "FastSlowCmd"))));
+    connect(Gain1.y, Goto29.u) 
+      annotation(Line(origin = {0, 0},
+      points = {{-176, -111}, {-148, -111}}));
+    connect('DriveCmd [-]'.y, Goto26.u) 
+      annotation(Line(origin = {0, 0},
+      points = {{-257, -70}, {-148, -70}}));
+    connect('ThrottleCmd [%]'.y, Gain1.u) 
+      annotation(Line(origin = {0, 0},
+      points = {{-257, -111}, {-216, -111}}));
+    connect('TypeCmd [-]'.y, Goto30.u) 
+      annotation(Line(origin = {0, 0},
+      points = {{191, 49}, {243, 49}}));
+    connect('TravelDistance[m]'.y, Goto25.u) 
+      annotation(Line(origin = {0, 0},
+      points = {{191, -70}, {243, -70}}));
+    connect('Scene'.y, Goto31.u) 
+      annotation(Line(origin = {0, 0},
+      points = {{-33, 103}, {49, 103}}));
+    connect(Bias1.y, 'Bus10Creator'.u3) 
+      annotation(Line(origin = {0, 0},
+      points = {{-221, 1}, {-221, 5}, {-182, 5}}), Text(origin = {-201, 8}, extent = {{0, -3}, {0, 3}}, textString = "%signal", fontSize = 12), __MWORKS(BlockSystem(NamedSignal(name = "GearACmd"))));
+    connect('Density [g/cm3]'.y, 'Bus10Creator2'.u3) 
+      annotation(Line(origin = {0, 0},
+      points = {{-23, -16}, {-23, -14}, {25, -14}}), Text(origin = {1, -11}, extent = {{0, -3}, {0, 3}}, textString = "%signal", fontSize = 12), __MWORKS(BlockSystem(NamedSignal(name = "Density"))));
+    connect('Bus10Creator'.y, Goto22.u) 
+      annotation(Line(origin = {0, 0},
+      points = {{-170, 57}, {-170, 56}, {-148, 56}}));
+    connect('GearMCmd [-]'.y, Bias.u) 
+      annotation(Line(origin = {0, 0},
+      points = {{-261, 56}, {-257, 56}}));
+    connect('Moisture [%]'.y, 'Bus10Creator2'.u2) 
+      annotation(Line(origin = {0, 0},
+      points = {{-23, 15}, {-23, 16}, {25, 16}}), Text(origin = {1, 19}, extent = {{0, -3}, {0, 3}}, textString = "%signal", fontSize = 12), __MWORKS(BlockSystem(NamedSignal(name = "Moisture"))));
+    connect('Bus10Creator2'.y, Goto27.u) 
+      annotation(Line(origin = {0, 0},
+      points = {{34.3, 0}, {52.2, 0}}));
+    connect('Soil [-]'.y, 'Bus10Creator2'.u1) 
+      annotation(Line(origin = {0, 0},
+      points = {{-23, 46}, {25, 46}}), Text(origin = {1, 49}, extent = {{0, -3}, {0, 3}}, textString = "%signal", fontSize = 12), __MWORKS(BlockSystem(NamedSignal(name = "Soil"))));
+    connect('PTOSpdCmd [-]'.y, Goto28.u) 
+      annotation(Line(origin = {0, 0},
+      points = {{191, -5}, {243, -5}}));
+    connect('GearACmd [-]'.y, Bias1.u) 
+      annotation(Line(origin = {0, 0},
+      points = {{-261, 1}, {-257, 1}}));
+    connect('WorkCmd'.y, goto.u) 
+    annotation(Line(origin={217,103},
+    points={{-49.2,0},{49.934,0}},
+    color={0,0,0}));
+    connect('LoadCmd'.y, goto1.u) 
+    annotation(Line(origin={227,-120},
+    points={{-39.2,0},{38.668,0}},
+    color={0,0,0}));
+  end Cockpit_type;
   package DataDic
     annotation(__MWORKS(hide=true,BlockSystem(blockKind=BlockKind.dataDictionary)));
     constant Auto ANRtarget=1.05 annotation(__MWORKS(BlockSystem(Type(inherit=InheritType.none,ref="double"),Dimension(dimensionType=DimensionType.none)=1,DataDictionary(dataKind = DataDictKind.parm, dataType = "double", storageType = "Auto"))));
@@ -24961,39 +24611,39 @@ color={0,0,0}));
   connect(Cockpit.Goto26.y, WorkloadModel.From29.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="DriveCmd"))));
   connect(WorkloadModel.Goto32.y, WorkloadModel.From3.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="VehSpd"))));
   connect(Cockpit.Goto27.y, WorkloadModel.From34.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Land"))));
-  connect(WorkloadModel.'Tires_and_Ground'.CI_Calc.Goto.y, WorkloadModel.'Tires_and_Ground'.CI_Calc.From.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="moisture"))));
-  connect(WorkloadModel.'Tires_and_Ground'.CI_Calc.Goto1.y, WorkloadModel.'Tires_and_Ground'.CI_Calc.From1.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="density"))));
-  connect(WorkloadModel.'Tires_and_Ground'.CI_Calc.Goto.y, WorkloadModel.'Tires_and_Ground'.CI_Calc.From4.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="moisture"))));
-  connect(WorkloadModel.'Tires_and_Ground'.CI_Calc.Goto1.y, WorkloadModel.'Tires_and_Ground'.CI_Calc.From5.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="density"))));
-  connect(WorkloadModel.'Tires_and_Ground'.CI_Calc.Goto.y, WorkloadModel.'Tires_and_Ground'.CI_Calc.From6.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="moisture"))));
-  connect(WorkloadModel.'Tires_and_Ground'.CI_Calc.Goto1.y, WorkloadModel.'Tires_and_Ground'.CI_Calc.From7.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="density"))));
-  connect(WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.Goto.y, WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.From.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Fzf"))));
-  connect(WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.Goto1.y, WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.From1.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Fzr"))));
-  connect(WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.Goto4.y, WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.From10.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="S_f"))));
-  connect(WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.Goto5.y, WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.From11.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="S_r"))));
-  connect(WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.Goto2.y, WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.From2.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Bn_f"))));
-  connect(WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.Goto3.y, WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.From3.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Bn_r"))));
-  connect(WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.Goto4.y, WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.From4.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="S_f"))));
-  connect(WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.Goto5.y, WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.From5.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="S_r"))));
-  connect(WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.Goto.y, WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.From6.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Fzf"))));
-  connect(WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.Goto1.y, WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.From7.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Fzr"))));
-  connect(WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.Goto2.y, WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.From8.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Bn_f"))));
-  connect(WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.Goto3.y, WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.From9.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Bn_r"))));
-  connect(WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.dryfruit.Goto2.y, WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.dryfruit.From.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Bn_f"))));
-  connect(WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.dryfruit.Goto1.y, WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.dryfruit.From1.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Bn_r"))));
-  connect(WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.dryfruit.Goto3.y, WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.dryfruit.From2.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="S_f"))));
-  connect(WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.dryfruit.Goto2.y, WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.dryfruit.From3.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Bn_f"))));
-  connect(WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.dryfruit.Goto4.y, WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.dryfruit.From4.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="S_r"))));
-  connect(WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.dryfruit.Goto1.y, WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.dryfruit.From5.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Bn_r"))));
-  connect(WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.WET.Goto2.y, WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.WET.From.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Bn_f"))));
-  connect(WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.WET.Goto1.y, WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.WET.From1.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Bn_r"))));
-  connect(WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.WET.Goto3.y, WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.WET.From2.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="S_f"))));
-  connect(WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.WET.Goto2.y, WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.WET.From3.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Bn_f"))));
-  connect(WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.WET.Goto4.y, WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.WET.From4.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="S_r"))));
-  connect(WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.WET.Goto1.y, WorkloadModel.'Tires_and_Ground'.F_longitudinal_Calc_single.WET.From5.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Bn_r"))));
-  connect(WorkloadModel.'Tires_and_Ground'.Goto3.y, WorkloadModel.'Tires_and_Ground'.From.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="WhlSpdF"))));
-  connect(WorkloadModel.'Tires_and_Ground'.Goto.y, WorkloadModel.'Tires_and_Ground'.From1.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Terrain"))));
-  connect(WorkloadModel.'Tires_and_Ground'.Goto4.y, WorkloadModel.'Tires_and_Ground'.From3.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="WhlSpdR"))));
+  connect(WorkloadModel.'Tires and Ground'.CI_Calc.Goto.y, WorkloadModel.'Tires and Ground'.CI_Calc.From.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="moisture"))));
+  connect(WorkloadModel.'Tires and Ground'.CI_Calc.Goto1.y, WorkloadModel.'Tires and Ground'.CI_Calc.From1.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="density"))));
+  connect(WorkloadModel.'Tires and Ground'.CI_Calc.Goto.y, WorkloadModel.'Tires and Ground'.CI_Calc.From4.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="moisture"))));
+  connect(WorkloadModel.'Tires and Ground'.CI_Calc.Goto1.y, WorkloadModel.'Tires and Ground'.CI_Calc.From5.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="density"))));
+  connect(WorkloadModel.'Tires and Ground'.CI_Calc.Goto.y, WorkloadModel.'Tires and Ground'.CI_Calc.From6.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="moisture"))));
+  connect(WorkloadModel.'Tires and Ground'.CI_Calc.Goto1.y, WorkloadModel.'Tires and Ground'.CI_Calc.From7.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="density"))));
+  connect(WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.Goto.y, WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.From.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Fzf"))));
+  connect(WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.Goto1.y, WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.From1.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Fzr"))));
+  connect(WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.Goto4.y, WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.From10.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="S_f"))));
+  connect(WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.Goto5.y, WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.From11.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="S_r"))));
+  connect(WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.Goto2.y, WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.From2.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Bn_f"))));
+  connect(WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.Goto3.y, WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.From3.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Bn_r"))));
+  connect(WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.Goto4.y, WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.From4.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="S_f"))));
+  connect(WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.Goto5.y, WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.From5.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="S_r"))));
+  connect(WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.Goto.y, WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.From6.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Fzf"))));
+  connect(WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.Goto1.y, WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.From7.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Fzr"))));
+  connect(WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.Goto2.y, WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.From8.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Bn_f"))));
+  connect(WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.Goto3.y, WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.From9.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Bn_r"))));
+  connect(WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.dryfruit.Goto2.y, WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.dryfruit.From.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Bn_f"))));
+  connect(WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.dryfruit.Goto1.y, WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.dryfruit.From1.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Bn_r"))));
+  connect(WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.dryfruit.Goto3.y, WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.dryfruit.From2.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="S_f"))));
+  connect(WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.dryfruit.Goto2.y, WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.dryfruit.From3.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Bn_f"))));
+  connect(WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.dryfruit.Goto4.y, WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.dryfruit.From4.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="S_r"))));
+  connect(WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.dryfruit.Goto1.y, WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.dryfruit.From5.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Bn_r"))));
+  connect(WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.WET.Goto2.y, WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.WET.From.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Bn_f"))));
+  connect(WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.WET.Goto1.y, WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.WET.From1.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Bn_r"))));
+  connect(WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.WET.Goto3.y, WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.WET.From2.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="S_f"))));
+  connect(WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.WET.Goto2.y, WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.WET.From3.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Bn_f"))));
+  connect(WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.WET.Goto4.y, WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.WET.From4.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="S_r"))));
+  connect(WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.WET.Goto1.y, WorkloadModel.'Tires and Ground'.F_longitudinal_Calc_single.WET.From5.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Bn_r"))));
+  connect(WorkloadModel.'Tires and Ground'.Goto3.y, WorkloadModel.'Tires and Ground'.From.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="WhlSpdF"))));
+  connect(WorkloadModel.'Tires and Ground'.Goto.y, WorkloadModel.'Tires and Ground'.From1.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="Terrain"))));
+  connect(WorkloadModel.'Tires and Ground'.Goto4.y, WorkloadModel.'Tires and Ground'.From3.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="WhlSpdR"))));
   connect(Cockpit.goto.y, WorkloadModel.from.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="WorkCmd"))));
   connect(WorkloadModel.goto2.y, WorkloadModel.from1.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="PTOTrq"))));
   connect(WorkloadModel.goto.y, WorkloadModel.from2.u) annotation(__MWORKS(BlockSystem(GotoFromConnection = true, GotoTag(tagName="LiftTrq"))));

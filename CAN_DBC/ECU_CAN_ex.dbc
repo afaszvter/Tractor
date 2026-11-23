@@ -1,0 +1,137 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: VCU ECU
+
+BO_ 2566849024 Obj_Fast_Fb1: 8 ECU
+ SG_ EngSpeed_rpm : 0|16@1+ (0.1,0) [0|3000] "rpm"  VCU
+ SG_ FuelCycle_Act_mg : 16|16@1+ (0.001,0) [0|200] "mg/cycle"  VCU
+ SG_ EGR_Ratio_Act : 32|16@1+ (0.001,0) [0|50] "%"  VCU
+ SG_ ThrottleCmd_pct : 48|16@1+ (0.01,0) [0|100] "%"  VCU
+
+BO_ 2566849280 Obj_Fast_Fb2: 8 ECU
+ SG_ RailPrs_kpa : 0|16@1+ (0.1,0) [0|2000] "kPa"  VCU
+ SG_ IntakeMass_kgph : 16|16@1+ (0.1,0) [0|1500] "kg/h"  VCU
+ SG_ Reserved_0300 : 32|32@1+ (1,0) [0|4294967295] ""  VCU
+
+BO_ 2566849536 Obj_Temp_Fb1: 8 ECU
+ SG_ DOC_In_Temp_C : 0|16@1+ (0.1,0) [0|1000] "degC"  VCU
+ SG_ DOC_Out_Temp_C : 16|16@1+ (0.1,0) [0|1000] "degC"  VCU
+ SG_ DPF_Out_Temp_C : 32|16@1+ (0.1,0) [0|1000] "degC"  VCU
+ SG_ SCR_In_Temp_C : 48|16@1+ (0.1,0) [0|1000] "degC"  VCU
+
+BO_ 2566849792 Obj_Temp_Fb2: 8 ECU
+ SG_ SCR_Out_Temp_C : 0|16@1+ (0.1,0) [0|1000] "degC"  VCU
+ SG_ ExhMassFlow_kgph : 16|16@1+ (0.1,0) [0|2000] "kg/h"  VCU
+ SG_ Reserved_0500 : 32|32@1+ (1,0) [0|4294967295] ""  VCU
+
+BO_ 2566850048 Obj_Slow_Fb1: 8 ECU
+ SG_ SootLoad_g : 0|16@1+ (0.01,0) [0|80] "g"  VCU
+ SG_ DPF_dP_kPa : 16|16@1+ (0.01,0) [0|20] "kPa"  VCU
+ SG_ NOx_SCR_In_gph : 32|16@1+ (0.1,0) [0|2000] "g/h"  VCU
+ SG_ NOx_SCR_Out_gph : 48|16@1+ (0.1,0) [0|500] "g/h"  VCU
+
+BO_ 2566850304 Obj_Slow_Fb2: 8 ECU
+ SG_ NH3_Store_g : 0|16@1+ (0.01,0) [0|10] "g"  VCU
+ SG_ O2_frac_pct : 16|16@1+ (0.01,0) [0|21] "%"  VCU
+ SG_ Regen_State : 32|4@1+ (1,0) [0|15] ""  VCU
+ SG_ Reserved_0700 : 36|28@1+ (1,0) [0|268435455] ""  VCU
+
+BO_ 2566850560 VCU_Cmd_Fast: 8 VCU
+ SG_ EngSpdTgt_rpm : 0|16@1+ (0.1,0) [0|3000] "rpm"  ECU
+ SG_ FuelCycleTgt_mg : 16|16@1+ (0.001,0) [0|200] "mg/cycle"  ECU
+ SG_ EGROpeningTgt_pct : 32|16@1+ (0.01,0) [0|100] "%"  ECU
+ SG_ PostInj_Request : 48|8@1+ (1,0) [0|1] ""  ECU
+ SG_ DPF_regen_req : 56|8@1+ (1,0) [0|1] ""  ECU
+
+BO_ 2566850816 VCU_Cmd_Slow: 8 VCU
+ SG_ mUREA_target_gph : 0|16@1+ (0.1,0) [0|1000] "g/h"  ECU
+ SG_ Reserved_0900 : 16|48@1+ (1,0) [0|281474976710655] ""  ECU
+
+CM_ SG_ 2566849024 EngSpeed_rpm "发动机转速";
+CM_ SG_ 2566849024 FuelCycle_Act_mg "实际循环喷油量";
+CM_ SG_ 2566849024 EGR_Ratio_Act "实际 EGR 率";
+CM_ SG_ 2566849024 ThrottleCmd_pct "油门踏板开度";
+CM_ SG_ 2566849280 RailPrs_kpa "共轨压力";
+CM_ SG_ 2566849280 IntakeMass_kgph "进气质量流量";
+CM_ SG_ 2566849280 Reserved_0300 "预留";
+CM_ SG_ 2566849536 DOC_In_Temp_C "DOC 入口温度（原 EGT_Out_C）";
+CM_ SG_ 2566849536 DOC_Out_Temp_C "DOC 出口温度";
+CM_ SG_ 2566849536 DPF_Out_Temp_C "DPF 出口温度";
+CM_ SG_ 2566849536 SCR_In_Temp_C "SCR 入口温度";
+CM_ SG_ 2566849792 SCR_Out_Temp_C "SCR 出口温度";
+CM_ SG_ 2566849792 ExhMassFlow_kgph "排气总质量流量";
+CM_ SG_ 2566849792 Reserved_0500 "预留";
+CM_ SG_ 2566850048 SootLoad_g "DPF 碳载量";
+CM_ SG_ 2566850048 DPF_dP_kPa "DPF 压降";
+CM_ SG_ 2566850048 NOx_SCR_In_gph "SCR 入口 NOx";
+CM_ SG_ 2566850048 NOx_SCR_Out_gph "SCR 出口 NOx";
+CM_ SG_ 2566850304 NH3_Store_g "SCR 氨存储量";
+CM_ SG_ 2566850304 O2_frac_pct "排气氧浓度";
+CM_ SG_ 2566850304 Regen_State "再生状态";
+CM_ SG_ 2566850304 Reserved_0700 "预留";
+CM_ SG_ 2566850560 EngSpdTgt_rpm "目标发动机转速";
+CM_ SG_ 2566850560 FuelCycleTgt_mg "目标循环喷油量";
+CM_ SG_ 2566850560 EGROpeningTgt_pct "EGR 目标开度";
+CM_ SG_ 2566850560 PostInj_Request "后喷请求";
+CM_ SG_ 2566850560 DPF_regen_req "DPF 再生请求";
+CM_ SG_ 2566850816 mUREA_target_gph "尿素喷射目标流量";
+CM_ SG_ 2566850816 Reserved_0900 "预留";
+
+VAL_ 2566850304 Regen_State 0 "待机" 1 "等待条件" 2 "再生中" 3 "禁止再生" ;
+VAL_ 2566850560 PostInj_Request 0 "不请求" 1 "请求" ;
+VAL_ 2566850560 DPF_regen_req 0 "不请求" 1 "请求" ;
+
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 65535;
+BA_DEF_DEF_  "VFrameFormat" "StandardCAN";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_ "VFrameFormat" BO_ 2566849024 1;
+BA_ "GenMsgCycleTime" BO_ 2566849024 10;
+BA_ "VFrameFormat" BO_ 2566849280 1;
+BA_ "GenMsgCycleTime" BO_ 2566849280 10;
+BA_ "VFrameFormat" BO_ 2566849536 1;
+BA_ "GenMsgCycleTime" BO_ 2566849536 50;
+BA_ "VFrameFormat" BO_ 2566849792 1;
+BA_ "GenMsgCycleTime" BO_ 2566849792 50;
+BA_ "VFrameFormat" BO_ 2566850048 1;
+BA_ "GenMsgCycleTime" BO_ 2566850048 100;
+BA_ "VFrameFormat" BO_ 2566850304 1;
+BA_ "GenMsgCycleTime" BO_ 2566850304 100;
+BA_ "VFrameFormat" BO_ 2566850560 1;
+BA_ "GenMsgCycleTime" BO_ 2566850560 10;
+BA_ "VFrameFormat" BO_ 2566850816 1;
+BA_ "GenMsgCycleTime" BO_ 2566850816 100;
+
